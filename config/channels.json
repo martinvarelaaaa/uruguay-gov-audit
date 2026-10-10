@@ -1,0 +1,8 @@
+{
+  "channels": [
+    {"slug": "senado", "channel_id": "UCyM7oro5NhR5oPyMEFB_rUA", "nombre": "Cámara de Senadores (Asamblea General)"},
+    {"slug": "diputados", "channel_id": "UCUxioxgZ7obrP3wVJApAK1w", "nombre": "Cámara de Representantes"},
+    {"slug": "presidencia", "channel_id": "UCz1Li9JcQB9XP-HfgN0IYLQ", "nombre": "Presidencia Uruguay"},
+    {"slug": "parlamento", "channel_id": "UCvy9D0ZwbNmvNfyQUl3RQnQ", "nombre": "Parlamento del Uruguay"}
+  ]
+}
