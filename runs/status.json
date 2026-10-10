@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-10-10T19:27:47.314496-03:00",
+  "fuentes": {
+    "ckan": {
+      "source": "ckan",
+      "ok": 250,
+      "err": 2,
+      "skipped": 38,
+      "running": 1,
+      "last_finish": "2026-10-10T19:27:42-03:00",
+      "stale_horas": null
+    },
+    "ocds": {
+      "source": "ocds",
+      "ok": 18,
+      "err": 0,
+      "skipped": 0,
+      "running": 1,
+      "last_finish": "2026-10-10T19:27:45-03:00",
+      "stale_horas": null
+    },
+    "test": {
+      "source": "test",
+      "ok": 1,
+      "err": 0,
+      "skipped": 0,
+      "running": 0,
+      "last_finish": "2026-10-10T19:23:37-03:00",
+      "stale_horas": null
+    }
+  },
+  "hung": [],
+  "recoverable": [
+    {
+      "id": 182,
+      "run_id": "ckan-full-20261010",
+      "source": "ckan",
+      "item_id": "mides-indicador-9121/b26d8244-461d-4a48-99c3-18772980c61a",
+      "item_url": "https://catalogodatos.gub.uy/dataset/0d4fe550-b1e5-4b47-a7b2-8978cfe78681/resource/b26d8244-461d-4a48-99c3-18772980c61a/download/metadatos_indicador-9121.json",
+      "error": "Server disconnected without sending a response."
+    },
+    {
+      "id": 185,
+      "run_id": "ckan-full-20261010",
+      "source": "ckan",
+      "item_id": "ine-encuesta-continua-de-hogares-ano-2014/41ea10f5-750c-4bb0-9132-a15d8f146154",
+      "item_url": "http://www.ine.gub.uy/c/document_library/get_file?uuid=9c9612fd-3bc3-47c5-a684-06daaf25da6c&groupId=10181",
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)"
+    }
+  ],
+  "permanent_errors": [],
+  "runs_abiertos": [
+    {
+      "run_id": "ckan-full-20261010",
+      "source": "ckan",
+      "mode": "backfill",
+      "started_at": "2026-10-10T19:24:21-03:00",
+      "status": "running"
+    },
+    {
+      "run_id": "ocds-full-20261010",
+      "source": "ocds",
+      "mode": "backfill",
+      "started_at": "2026-10-10T19:26:58-03:00",
+      "status": "running"
+    }
+  ]
+}

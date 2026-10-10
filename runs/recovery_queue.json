@@ -1,0 +1,14 @@
+[
+  {
+    "source": "ckan",
+    "item_id": "mides-indicador-9121/b26d8244-461d-4a48-99c3-18772980c61a",
+    "url": "https://catalogodatos.gub.uy/dataset/0d4fe550-b1e5-4b47-a7b2-8978cfe78681/resource/b26d8244-461d-4a48-99c3-18772980c61a/download/metadatos_indicador-9121.json",
+    "queued_at": "2026-10-10T19:27:47.324362-03:00"
+  },
+  {
+    "source": "ckan",
+    "item_id": "ine-encuesta-continua-de-hogares-ano-2014/41ea10f5-750c-4bb0-9132-a15d8f146154",
+    "url": "http://www.ine.gub.uy/c/document_library/get_file?uuid=9c9612fd-3bc3-47c5-a684-06daaf25da6c&groupId=10181",
+    "queued_at": "2026-10-10T19:27:47.324362-03:00"
+  }
+]
