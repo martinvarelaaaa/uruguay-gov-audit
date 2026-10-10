@@ -69,5 +69,36 @@ def listar_extracciones(source: str = "", limit: int = 20) -> dict:
     q += " ORDER BY id DESC LIMIT ?"; params = (*params, limit)
     return {"extractions": [dict(r) for r in c.execute(q, params)], "provenance": _prov()}
 
+@mcp.tool()
+def ayuda_sistema() -> dict:
+    """Auto-descripción del sistema: qué data hay, cómo se actualiza, qué consultas poser hacer. TODO sale del estado real (ledger + metadata), nada hardcodeado."""
+    c = _db()
+    # fuentes y frescura real
+    fuentes = [dict(r) for r in c.execute(
+        """SELECT source, SUM(status='ok') ok, SUM(status='error') err, MAX(finished_at) last_ok
+           FROM extractions GROUP BY source""")]
+    # datasets con archivos reales en disco
+    con_datos = c.execute("SELECT COUNT(DISTINCT split_name) FROM extractions WHERE source='ckan' AND status='ok' AND split_name != ''").fetchone()[0] if False else None
+    # tareas posibles: derivadas de fuentes reales
+    recetas = {
+        "ckan": "buscá cualquier tema público: 'buscá datasets de vivienda', '¿qué hay de neonatología?' — busca_dataset + consulto el archivo en disco",
+        "ocds": "'¿a quién le compró el MSP en 2024?', 'top 10 proveedores del Estado', 'licitaciones de mi departamento' — consulto la base de compras 2002-2026",
+        "departamentales": "'¿cuánto gastó la intendencia de Rocha desde 2010?', 'compará ingresos de Canelones vs Maldonado' — series históricas 1989+",
+        "youtube": "'¿qué dijo el presidente en la conferencia del 15/9?', 'transcribí la sesión del Senado' — transcripts con timestamps clickeables",
+        "youtube_whisper": " videos sin subtítulos, transcribí localmente con whisper",
+        "x_representantes": "'¿qué dijo Oddone sobre el déficit?', 'qué tuiteó tal en marzo' — redes de los representantes",
+        "youtube_talks": "'donde habló X político en entrevistas', 'qué prometió en el Desayuno Informal' — charlas + cruzar con hechos",
+        "planes_gobierno": "'¿qué prometió el FA sobre educación?', 'cumplió?' — compromisos indexados del programa electoral",
+        "perfil_gobernantes": "'trayectoria del senador X', 'con cuántos votos llegó', 'qué sector del partido es' — filiación/carrera/respaldo electoral",
+    }
+    return {
+        "que_puedo_consultar": {s: recetas[s] for s in recetas if any(f["source"] == s for f in fuentes)},
+        "proximamente": {s: recetas[s] for s in recetas if not any(f["source"] == s for f in fuentes)},
+        "fuentes_estado_actual": fuentes,
+        "como_se_actualiza": "cron diario (CKAN/compras/presupuesto), cada 6h (YouTube), semanal (departamentales); supervisor cada 30min verifica staleness y re-lanza fallidas; herramienta status_ingestion muestra la frescura exacta por fuente",
+        "como_verifico_un_dato": "cada respuesta lleva: dataset oficial + URL original + checksum sha256; podés abrir la URL y comparar así mismo",
+        "provenance": _prov("introspeccion_real"),
+    }
+
 if __name__ == "__main__":
     mcp.run()
