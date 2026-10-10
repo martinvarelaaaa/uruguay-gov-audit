@@ -17,8 +17,10 @@ from ledger import record_start, record_finish, start_run, finish_run, export_cs
 OUT = os.path.join(os.path.dirname(__file__), "..", "data")
 CONFIG = os.path.join(os.path.dirname(__file__), "..", "config", "channels.json")
 
+YT_DLP = os.environ.get("GOVAUDIT_YTDLP") or os.path.join(os.path.dirname(__file__), "..", ".venv", "Scripts", "yt-dlp.exe")
+
 def yt_dlp(*args):
-    cmd = ["yt-dlp", *args, "--no-warnings", "--quiet"]
+    cmd = [YT_DLP, *args, "--no-warnings", "--quiet"]
     r = subprocess.run(cmd, capture_output=True, text=True, timeout=1800)
     if r.returncode != 0:
         raise RuntimeError(f"yt-dlp fail {r.stderr[-300:]}")
@@ -36,7 +38,8 @@ def list_channel(cid):
 def run(run_id="youtube-backfill", channels=None, subs=True, limit=0):
     start_run(run_id, "youtube", mode="backfill")
     ok = err = 0
-    chans = json.load(open(CONFIG, encoding="utf-8")) if os.path.exists(CONFIG) else []
+    data = json.load(open(CONFIG, encoding="utf-8")) if os.path.exists(CONFIG) else {}
+    chans = data.get("channels", []) if isinstance(data, dict) else data
     for ch in chans:
         slug, cid = ch["slug"], ch["channel_id"]
         try:

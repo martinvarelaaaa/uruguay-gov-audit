@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-10T19:27:47.314496-03:00",
+  "generated_at": "2026-10-10T19:28:19.450465-03:00",
   "fuentes": {
     "ckan": {
       "source": "ckan",
-      "ok": 250,
+      "ok": 276,
       "err": 2,
       "skipped": 38,
       "running": 1,
-      "last_finish": "2026-10-10T19:27:42-03:00",
+      "last_finish": "2026-10-10T19:28:19-03:00",
       "stale_horas": null
     },
     "ocds": {
       "source": "ocds",
-      "ok": 18,
+      "ok": 25,
       "err": 0,
       "skipped": 0,
       "running": 1,
-      "last_finish": "2026-10-10T19:27:45-03:00",
+      "last_finish": "2026-10-10T19:28:18-03:00",
       "stale_horas": null
     },
     "test": {
