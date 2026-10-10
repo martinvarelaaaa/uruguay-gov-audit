@@ -1,0 +1,18 @@
+# data pesada: nunca al git
+data/
+!data/metadata/
+!data/export/
+data/ckan/
+data/ocds/
+data/pdf/
+data/transcripts/
+data/vector/
+data/audio/
+
+# runs: manifests json chicos SÍ, logs NO
+runs/logs/
+
+__pycache__/
+*.pyc
+.env
+venv/
