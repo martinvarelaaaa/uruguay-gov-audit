@@ -1,0 +1,338 @@
+{
+ "artigas": {
+  "base": "https://artigas.gub.uy",
+  "status": 200,
+  "final_url": "https://www.artigas.gub.uy/",
+  "title": "Intendencia Departamental de Artigas - Sitio oficial",
+  "links": [
+   {
+    "t": "intendencia de artigas",
+    "u": "https://www.artigas.gub.uy/pablo-caram-intendente-de-artigas/"
+   },
+   {
+    "t": "transparencia",
+    "u": "https://www.artigas.gub.uy/category/institucional/institucional-transparencia/"
+   },
+   {
+    "t": "transparencia activa",
+    "u": "https://youtu.be/Y1UF_udWa3Y"
+   },
+   {
+    "t": "presupuesto 2026-2030",
+    "u": "https://www.artigas.gub.uy/wp-content/uploads/2026/07/Presupuesto-2026-2030.pdf"
+   },
+   {
+    "t": "rendición de cuentas 2023",
+    "u": "https://www.artigas.gub.uy/wp-content/uploads/2024/08/Rendicion-2023-2-1.pdf"
+   }
+  ]
+ },
+ "cerro-largo": {
+  "base": "https://www.cerrolargo.gub.uy",
+  "error": "TooManyRedirects: Exceeded maximum allowed redirects."
+ },
+ "colonia": {
+  "base": "https://www.colonia.gub.uy",
+  "status": 200,
+  "final_url": "https://www.colonia.gub.uy",
+  "title": "Intendencia de Colonia",
+  "links": [
+   {
+    "t": "ordenanzas",
+    "u": "https://www.juntacolonia.gub.uy/index.php/template/ordenanzas"
+   },
+   {
+    "t": "presupuesto quinquenal 2026-2030 de la intendencia",
+    "u": "https://www.colonia.gub.uy/uploads/normativa/Presupuesto Quinquenal 2026-2030.pdf"
+   },
+   {
+    "t": "transparencia",
+    "u": "javascript:showSubMenu(4,7);"
+   },
+   {
+    "t": "registro único de proveedores del estado (rupe)",
+    "u": "https://www.comprasestatales.gub.uy/inicio/proveedores/rupe/como-inscribirse/"
+   },
+   {
+    "t": "organigrama",
+    "u": "https://www.colonia.gub.uy/uploads/transparencia/organigrama20262030.pdf"
+   },
+   {
+    "t": "cargos-remuneraciones (mayo 2026)",
+    "u": "https://www.colonia.gub.uy/uploads/transparencia/remuneraciones-09-26.pdf"
+   },
+   {
+    "t": "presupuesto quinquenal 2026-2030 de la intendencia",
+    "u": "https://www.colonia.gub.uy/uploads/normativa/Presupuesto Quinquenal 2026-2030.pdf"
+   },
+   {
+    "t": "organigrama",
+    "u": "https://www.colonia.gub.uy/uploads/transparencia/organigrama20262030.pdf"
+   },
+   {
+    "t": "cargos-remuneraciones (mayo 2026)",
+    "u": "https://www.colonia.gub.uy/uploads/transparencia/remuneraciones-09-26.pdf"
+   }
+  ]
+ },
+ "flores": {
+  "base": "https://www.flores.gub.uy",
+  "status": 200,
+  "final_url": "https://www.flores.gub.uy",
+  "title": "Intendencia de Flores",
+  "links": [
+   {
+    "t": "ver detalle",
+    "u": "https://flores.gub.uy/images/datos_abiertos/presupuesto_flores.html"
+   },
+   {
+    "t": "ver gastos",
+    "u": "https://flores.gub.uy/images/datos_abiertos/Rendicion_Festival_del_Lago_2026.pdf"
+   },
+   {
+    "t": "",
+    "u": "https://www.flores.gub.uy/ver-noticia/alumnos-de-la-escuela-n-18-presentaron-proyecto-al-intendente-lic-diego-irazabal"
+   },
+   {
+    "t": "runaev",
+    "u": "https://www.gub.uy/congreso-intendentes/RUNAEV"
+   },
+   {
+    "t": "📋 licitaciones",
+    "u": "https://www.comprasestatales.gub.uy/consultas/buscar/tipo-pub/VIG/inciso/85/ue/1"
+   },
+   {
+    "t": "autoridades",
+    "u": "https://www.flores.gub.uy/institucional/autoridades"
+   },
+   {
+    "t": "licitaciones",
+    "u": "https://www.flores.gub.uy/institucional/licitaciones"
+   }
+  ]
+ },
+ "lavalleja": {
+  "base": "https://www.lavalleja.gub.uy",
+  "error": "ConnectTimeout: [WinError 10060] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder"
+ },
+ "maldonado": {
+  "base": "https://www.maldonado.gub.uy",
+  "status": 200,
+  "final_url": "https://www.maldonado.gub.uy",
+  "title": "Home | Intendencia Maldonado",
+  "links": [
+   {
+    "t": "equipo de gobierno",
+    "u": "https://www.maldonado.gub.uy/autoridades"
+   },
+   {
+    "t": "transparencia",
+    "u": "https://www.maldonado.gub.uy/transparencia"
+   }
+  ]
+ },
+ "paysandu": {
+  "base": "https://www.paysandu.gub.uy",
+  "status": 200,
+  "final_url": "https://www.paysandu.gub.uy",
+  "title": "Home - Intendencia de Paysandú",
+  "links": [
+   {
+    "t": "autoridades",
+    "u": "https://www.paysandu.gub.uy/autoridades/"
+   },
+   {
+    "t": "transparencia",
+    "u": "https://www.paysandu.gub.uy/transparencia/"
+   },
+   {
+    "t": "plan de modernización",
+    "u": "https://www.paysandu.gub.uy/transparencia/plan-de-modernizacion/"
+   },
+   {
+    "t": "imagen institucional",
+    "u": "https://www.paysandu.gub.uy/transparencia/imagen-institucional/"
+   },
+   {
+    "t": "adquisiciones y licitaciones",
+    "u": "https://www.paysandu.gub.uy/adquisiciones/"
+   }
+  ]
+ },
+ "rionegro": {
+  "base": "https://www.rionegro.gub.uy",
+  "status": 200,
+  "final_url": "https://www.rionegro.gub.uy",
+  "title": "Río Negro Gobierno Departamental - Intendencia de Río Negro",
+  "links": [
+   {
+    "t": "intendente",
+    "u": "https://www.rionegro.gub.uy/arq-guillermo-levratto-intendente-de-rio-negro/"
+   },
+   {
+    "t": "secretario general",
+    "u": "https://www.rionegro.gub.uy/gabinete-2025-2030/secretario-general/"
+   },
+   {
+    "t": "pro secretario general",
+    "u": "https://www.rionegro.gub.uy/gabinete-2025-2030/pro-secretario-general/"
+   },
+   {
+    "t": "dirección gral de hacienda",
+    "u": "https://www.rionegro.gub.uy/gabinete-2025-2030/dir-gral-hacienda/"
+   },
+   {
+    "t": "otras dependencias",
+    "u": "https://www.rionegro.gub.uy/gabinete-2025-2030/dependencias/"
+   },
+   {
+    "t": "presupuesto 2026-2030",
+    "u": "https://www.rionegro.gub.uy/presupuesto-2026-2030/"
+   },
+   {
+    "t": "oficina montevideo",
+    "u": "https://www.rionegro.gub.uy/gabinete-2025-2030/oficina-montevideo/"
+   },
+   {
+    "t": "ver licitaciones",
+    "u": "https://www.rionegro.gub.uy/gestion/licitaciones/"
+   },
+   {
+    "t": "",
+    "u": "https://www.rionegro.gub.uy/transparencia/"
+   },
+   {
+    "t": "instrumentos de ordenamiento territorial y desarrollo sosten",
+    "u": "https://www.rionegro.gub.uy/gabinete-2025-2030/gestion-territorial/#ot"
+   }
+  ]
+ },
+ "rivera": {
+  "base": "https://www.rivera.gub.uy",
+  "status": 200,
+  "final_url": "https://www.rivera.gub.uy/portal/",
+  "title": "Intendencia Departamental de Rivera – Creciendo con equidad",
+  "links": [
+   {
+    "t": "transparencia",
+    "u": "https://www.rivera.gub.uy/portal/transparencia/"
+   },
+   {
+    "t": "licitaciones",
+    "u": "https://www.rivera.gub.uy/portal/category/licitaciones/"
+   },
+   {
+    "t": "compras y licitaciones",
+    "u": "https://www.rivera.gub.uy/portal/compras-y-licitaciones/"
+   },
+   {
+    "t": "presupuesto",
+    "u": "https://www.rivera.gub.uy/portal/transparencia/presupuesto/"
+   },
+   {
+    "t": "remuneraciones",
+    "u": "https://www.rivera.gub.uy/portal/transparencia/remuneraciones/"
+   },
+   {
+    "t": "rendición de cuentas",
+    "u": "https://www.rivera.gub.uy/portal/transparencia/rendicion-de-cuentas/"
+   },
+   {
+    "t": "ordenanzas",
+    "u": "https://www.rivera.gub.uy/portal/category/normativa/ordenanzas/"
+   }
+  ]
+ },
+ "salto": {
+  "base": "https://www.salto.gub.uy",
+  "status": 200,
+  "final_url": "https://www.salto.gub.uy",
+  "title": "Inicio | Intendencia de Salto",
+  "links": [
+   {
+    "t": "autoridades",
+    "u": "https://www.salto.gub.uy/autoridades"
+   },
+   {
+    "t": "rendicion de cuentas",
+    "u": "https://www.salto.gub.uy/rendicion-de-cuentas"
+   },
+   {
+    "t": "licitaciones",
+    "u": "https://www.salto.gub.uy/licitaciones"
+   },
+   {
+    "t": "presupuesto quinquenal",
+    "u": "https://www.salto.gub.uy/presupuesto-quinquenal"
+   }
+  ]
+ },
+ "soriano": {
+  "base": "https://www.soriano.gub.uy",
+  "status": 200,
+  "final_url": "https://www.soriano.gub.uy",
+  "title": "Intendencia de Soriano",
+  "links": [
+   {
+    "t": "llamados y licitaciones",
+    "u": "https://www.soriano.gub.uy/licitaciones"
+   },
+   {
+    "t": "intendente",
+    "u": "https://www.soriano.gub.uy/intendente.html"
+   },
+   {
+    "t": "",
+    "u": "https://www.soriano.gub.uy/files/presupuesto/PRESUPUESTO_QUINQUENAL_2026_2030_INTENDENCIA_DE_SORIANO.pdf"
+   }
+  ]
+ },
+ "tacuarembo": {
+  "base": "https://www.tacuarembo.gub.uy",
+  "status": 200,
+  "final_url": "https://tacuarembo.gub.uy/",
+  "title": "Intendencia de Tacuarembó – Sitio oficial de la Intendencia Departamental de Tacuarembó.",
+  "links": [
+   {
+    "t": "llamados y licitaciones",
+    "u": "https://www.comprasestatales.gub.uy/consultas/buscar/tipo-pub/ALL/inciso/96/tipo-doc/R/tipo-fecha/ROF/filtro-cat/CAT/orden/ORD_MOD/tipo-orden/DESC"
+   }
+  ]
+ },
+ "treinta-y-tres": {
+  "base": "https://www.treintaytres.gub.uy",
+  "status": 200,
+  "final_url": "https://treintaytres.gub.uy/",
+  "title": "Intendencia de Treinta y Tres",
+  "links": [
+   {
+    "t": "autoridades",
+    "u": "https://treintaytres.gub.uy/autoridades/"
+   },
+   {
+    "t": "presupuesto período 2021- 2025",
+    "u": "https://treintaytres.gub.uy/wp-content/uploads/2021/09/Presupuesto_Intendencia_Departamental_2021_2025.pdf"
+   },
+   {
+    "t": "intendente departamental dejo inaugurados los primeros grand",
+    "u": "https://treintaytres.gub.uy/2026/10/04/intendente-departamental-dejo-inaugurados-los-primeros-grandes-juegos-departamentales/"
+   },
+   {
+    "t": "presidido por el intendente departamental, el comité departa",
+    "u": "https://treintaytres.gub.uy/2026/09/29/presidido-por-el-intendente-departamental-el-comite-departamental-de-emergencia-se-reunio-en-esta-jornada-para-realizar-u"
+   },
+   {
+    "t": "",
+    "u": "https://treintaytres.gub.uy/licitaciones-y-llamados/"
+   },
+   {
+    "t": "",
+    "u": "https://www.gub.uy/congreso-intendentes/RUNAEV"
+   },
+   {
+    "t": "",
+    "u": "https://treintaytres.gub.uy/wp-content/uploads/2020/12/PROYECTO-DE-DECRETO-ORDENANZAS-DEPARTAMENTALES-DE-ORDENAMIENTO-TERRITORIAL.pdf"
+   }
+  ]
+ }
+}

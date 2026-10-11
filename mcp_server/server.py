@@ -81,15 +81,15 @@ def ayuda_sistema() -> dict:
     con_datos = c.execute("SELECT COUNT(DISTINCT split_name) FROM extractions WHERE source='ckan' AND status='ok' AND split_name != ''").fetchone()[0] if False else None
     # tareas posibles: derivadas de fuentes reales
     recetas = {
-        "ckan": "buscá cualquier tema público: 'buscá datasets de vivienda', '¿qué hay de neonatología?' — busca_dataset + consulto el archivo en disco",
-        "ocds": "'¿a quién le compró el MSP en 2024?', 'top 10 proveedores del Estado', 'licitaciones de mi departamento' — consulto la base de compras 2002-2026",
-        "departamentales": "'¿cuánto gastó la intendencia de Rocha desde 2010?', 'compará ingresos de Canelones vs Maldonado' — series históricas 1989+",
-        "youtube": "'¿qué dijo el presidente en la conferencia del 15/9?', 'transcribí la sesión del Senado' — transcripts con timestamps clickeables",
+        "ckan": "Conjuntos de temáticas del Estado: delitos año a año, resultados educativos, precipitaciones, viajes del ómnibus, bosques, compras… más de 5.500 datasets públicos — busco por tema: 'buscá datos de vivienda', '¿qué hay sobre seguridad pública?'",
+        "ocds": "CADA compra que hace el Estado, de 2002 a hoy: '¿a quién le compró el MSP en 2024?', 'top 10 proveedores del Estado', '¿quién ganó la licitación X?' — 2 millones de contratos",
+        "departamentales": "Plata de los gobiernos departamentales: '¿cuánto gastó la intendencia de Rocha desde 2010?', 'compará ingresos de Canelones vs Maldonado' — depósito histórico desde 1989",
+        "youtube": "Lo que se dice EN CÁMARA y en conferencias: '¿qué dijo el presidente el fin de semana?', 'la sesión del Senado con timestamps que te llevan al momento exacto'",
         "youtube_whisper": " videos sin subtítulos, transcribí localmente con whisper",
-        "x_representantes": "'¿qué dijo Oddone sobre el déficit?', 'qué tuiteó tal en marzo' — redes de los representantes",
-        "youtube_talks": "'donde habló X político en entrevistas', 'qué prometió en el Desayuno Informal' — charlas + cruzar con hechos",
-        "planes_gobierno": "'¿qué prometió el FA sobre educación?', 'cumplió?' — compromisos indexados del programa electoral",
-        "perfil_gobernantes": "'trayectoria del senador X', 'con cuántos votos llegó', 'qué sector del partido es' — filiación/carrera/respaldo electoral",
+        "x_representantes": "Lo que dicen LOS REPRESENTANTES en X: '¿qué dijo Oddone sobre el déficit?', 'qué tuiteó tal en marzo'",
+        "youtube_talks": "Lo que los políticos dicen EN ENTREVISTAS: '¿de qué habló tal en el Desayuno Informal?' — después lo cruzo con lo que hizo",
+        "planes_gobierno": "Lo que PROMETIERON los partidos: '¿qué prometió el FA sobre educación?', '¿cumplió?' — el programa electoral completo indexado por compromiso",
+        "perfil_gobernantes": "¿QUIÉN ES quién: 'trayectoria del senador X', '¿con cuántos votos llegó?', '¿qué sector del partido es?'",
     }
     return {
         "que_puedo_consultar": {s: recetas[s] for s in recetas if any(f["source"] == s for f in fuentes)},
