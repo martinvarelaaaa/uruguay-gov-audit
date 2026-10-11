@@ -55,7 +55,7 @@ def _md_compras(rows, total=None, pagina=1, limite=10):
 # ---------------- compras_* (OCDS, base local govaudit.sqlite3 ~2M) ----------------
 
 @mcp.tool()
-def compras_buscar(consulta: str, proveedor: str = "", comprador: str = "", anio: int = 0,
+def compras_buscar(consulta: str = "", proveedor: str = "", comprador: str = "", anio: int = 0,
                    limite: int = 10, pagina: int = 1) -> str:
     """Busca compras del Estado uruguayo (2002-hoy, ~2 millones de procesos OCDS) por texto libre, proveedor, comprador y/o año.
     Ejemples de disparo: 'saas del MEF', proveedor='Tecxar', anio=2024, comprador='Ministry of Salud'.
