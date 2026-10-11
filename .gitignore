@@ -1,19 +1,43 @@
 # data pesada: nunca al git
-data/
-!data/metadata/
-!data/export/
+/*
+!/data/
+!/config/
+!/docs/
+!/pipeline/
+!/mcp_server/
+!/runs/
 data/ckan/
 data/ocds/
 data/pdf/
-data/transcripts/
+data/transcripts/whisper/
 data/vector/
 data/audio/
-
-# runs: manifests json chicos SÍ, logs NO
+data/departamentales/
+data/electoral/
+data/metadata/ckan/
+data/metadata/departamentales/
+data/metadata/roster/
+data/metadata/youtube/senado.json
+data/metadata/youtube/diputados.json
+data/metadata/youtube/presidencia.json
+data/metadata/youtube/parlamento.json
+data/planes/
+data/govaudit.sqlite3
+data/ledger.sqlite3*
+data/export/
+data/transcripts/senado/
+data/transcripts/diputados/
+data/transcripts/parlamento/
+data/transcripts/presidencia/
+data/recomendaciones_mcp.md
+data/metadata/youtube/*.json.tmp
 runs/logs/
 
+# runs: manifests json chicos SÍ, logs NO
 __pycache__/
 *.pyc
 .env
 venv/
 .venv/
+.tmp_probe/
+_scratch*

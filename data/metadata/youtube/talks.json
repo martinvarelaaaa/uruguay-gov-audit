@@ -1,0 +1,19 @@
+{
+  "canales": [
+    {"slug": "desayunos_informales", "channel_id": "UCFFAin85cmlgsKj8c6mNP9w", "nombre": "Desayunos Informales (podcast político uruguayo)", "canal_url": "https://www.youtube.com/@DesayunosInformales", "tipo": "podcast", "verificado": "2026-10-10 via watch page channelId + oEmbed 'Desayunos Informales'"},
+    {"slug": "vtv", "channel_id": "UCA4VRT895OOPPHq-pc2V2CQ", "nombre": "VTV Uruguay — Sin Piedad (entrevistas a políticos)", "canal_url": "https://www.youtube.com/@VTVUruguay", "tipo": "tv", "verificado": "2026-10-10 via watch page channelId + oEmbed 'VTV Uruguay'"},
+    {"slug": "busqueda", "channel_id": "UCa2cus7gyarXD8049iaLHBg", "nombre": "BÚSQUEDA (semanario, entrevistas largas a políticos)", "canal_url": "https://www.youtube.com/@BUSQUEDA_uy", "tipo": "ENTREVISTAS", "verificado": "2026-10-10 via watch page channelId + oEmbed 'BÚSQUEDA'"},
+    {"slug": "arriba_gente", "channel_id": "UCxtwLYYm-TUBDd_uOkjLB9A", "nombre": "Arriba Gente (Canal 10) — entrevistas matinales", "canal_url": "https://www.youtube.com/@ArribaGente_uy", "tipo": "tv", "verificado": "2026-10-10 via yt-dlp --flat-playlist + watch page channelId"},
+    {"slug": "mef", "channel_id": "UCu6vr8WRDa_4vxKeZZS7sxg", "nombre": "Ministerio de Economía y Finanzas Uruguay (rondas de prensa del ministro)", "canal_url": "https://www.youtube.com/@mef_Uruguay", "tipo": "institucional", "verificado": "2026-10-10 via watch page channelId + oEmbed 'Ministerio de Economía y Finanzas Uruguay'"},
+    {"slug": "tvc_ciudad", "channel_id": "UCcEFFCUo9fD5DK1FcclyKUA", "nombre": "TV Ciudad (Montevideo) — Lado B / Info Capital", "canal_url": "https://www.youtube.com/@TVCiudad6.1", "tipo": "canal_publico", "verificado": "2026-10-10 oEmbed 'TV Ciudad' — corre con watch_page (flat playlists MAX 1500 pero inútiles sin fechas)."}
+  ],
+  "videos_semilla": [
+    {"video_id": "tJ2kQOInAkE", "slug": "desayunos_informales", "politico": "Cristina Lustemberg", "tema": "caso Soledad Barrera; defensa del MSP", "duracion": "44:03"},
+    {"video_id": "Nz1J0ghGKHo", "slug": "vtv", "politico": "Cristina Lustemberg", "tema": "gestión y acceso a la salud (Sin Piedad)", "duracion": "49:29"},
+    {"video_id": "71WxWeYHJ4Y", "slug": "busqueda", "politico": "Cristina Lustemberg", "tema": "'Siento que llegué a la política para ejercer el poder'", "duracion": "56:24"},
+    {"video_id": "UBRZRrNa_nc", "slug": "arriba_gente", "politico": "Carlos Negro", "tema": "seguridad pública y defensa de la institucionalidad", "duracion": "33:18"},
+    {"video_id": "cZQHqADq6GU", "slug": "vtv", "politico": "Carlos Negro", "tema": "plan de seguridad: ¿plan o relato?", "duracion": "34:42"},
+    {"video_id": "27irOmt2fOU", "slug": "mef", "politico": "Gabriel Oddone", "tema": "conferencia de prensa MEF (Rendición de Cuentas)", "duracion": "15:34"},
+    {"video_id": "Q4SvsmAGtGE", "slug": "bantotal", "politico": "Gabriel Oddone", "tema": "conferencia de cierre — economía", "duracion": "47:50", "nota_canal": "UCVqF-3k3sGSt_xtNOPYCuqw (Bantotal, evento privado público): No está en canales[] pero sí en videos de semilla para referencia."}
+  ]
+}
