@@ -51,8 +51,25 @@ def import_ocds(c):
                     title = a0.get('title') or title
                     v = (a0.get('value') or {})
                     tv = v.get('amount') or tv; cur = v.get('currency') or cur
-                parts = rec.get('parties') or []
-                sup = ','.join(str(p.get('name') or '') for p in parts if 'supplier' in (p.get('roles') or []))
+                    if tv is None:
+                        # valor real vive en items: unit.value.amount * quantity (sumando items)
+                        try:
+                            amt = sum(
+                                ((it.get('unit') or {}).get('value') or {}).get('amount', 0) * (it.get('quantity') or 1)
+                                for it in (a0.get('items') or []) if ((it.get('unit') or {}).get('value') or {}).get('amount') is not None
+                            ) or None
+                        except Exception:
+                            amt = None
+                        tv = amt
+                        if tv is not None and cur is None:
+                            for it in (a0.get('items') or []):
+                                u_v = (it.get('unit') or {}).get('value') or {}
+                                if u_v.get('currency'): cur = u_v['currency']; break
+                    sups = a0.get('suppliers') or []
+                    sup = ','.join(str(p.get('name') or '') for p in sups)
+                    if not sup:
+                        parts = rec.get('parties') or []
+                        sup = ','.join(str(p.get('name') or '') for p in parts if 'supplier' in (p.get('roles') or []))
                 url = f"https://comprasestatales.gub.uy/portal/detalle?ocid={ocid}"
                 c.execute("INSERT INTO compras VALUES (?,?,?,?,?,?,?,?,?)",
                           (ocid, year, buyer, sup, tv, cur, title, url, fname))

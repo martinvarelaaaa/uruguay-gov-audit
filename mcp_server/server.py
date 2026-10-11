@@ -259,5 +259,76 @@ def ayuda_sistema() -> dict:
             "como_verifico_un_dato": "todo dato lleva su URL oficial original + checksum en el registro de ingesta — abrila y compará",
             "provenance": _prov("introspeccion_real")}
 
+@mcp.tool()
+def discursos_buscar(consulta: str, limite: int = 10) -> str:
+    """Busca texto literal en transcripciones de YouTube de los canales oficiales (Senado, Diputados, Parlamento, Presidencia).
+    Ejemplos: 'seguridad pública', 'reforma previsional', 'Ley de urgencia'.
+    NO cubre videos sin transcript (quedan ~19.6k de Presidencia en ingesta).
+    Devuelve: fragmentos con video_id, minuto, canal y link con timestamp (t=MINs)."""
+    c = sqlite3.connect(GOVAUDIT_DB, timeout=30)
+    c.row_factory = sqlite3.Row
+    lim = max(1, min(int(limite), MAX_LIMITE))
+    try:
+        rows = c.execute("""SELECT video_id, canal, minuto, texto FROM transcripciones_fts
+                            WHERE transcripciones_fts MATCH ? LIMIT ?""",
+                         (consulta, lim * 4)).fetchall()
+    finally:
+        c.close()
+    if not rows:
+        return f"Sin resultados para '{consulta}' en las transcripciones indexadas (622k segmentos, 301 videos de Senado/Diputados/Parlamento/Presidencia)."
+    out, seen = [], set()
+    for r in rows:
+        key = (r["video_id"], r["minuto"])
+        if key in seen:
+            continue
+        seen.add(key)
+        vid = r["video_id"]
+        mm = (r["minuto"] or "0:00")
+        try:
+            m, s_ = (int(x) for x in mm.split(":"))
+            tstamp = m * 60 + s_
+        except Exception:
+            tstamp = 0
+        out.append((f"**[{mm}] {r['canal']}** · https://youtube.com/watch?v={vid}&t={tstamp}s\n> {r['texto'][:300]}"))
+        if len(out) >= lim:
+            break
+    return "\n\n".join(out) + f"\n\n_Fuente: transcripciones locales de canales oficiales de YouTube (ingesta con checksum). Fragmentos literales._"
+
+@mcp.tool()
+def compras_estadisticas(anio: int = 0, limite: int = 10) -> str:
+    """Estadísticas de compras del Estado: total anual, top proveedores y top compradores.
+    Ejemplos: año 2025 → total facturado, proveedor más grande, organismo que más compró.
+    NO cubre: contratos sin valor declarado (~32% de los registros OCDS carecen de monto).
+    Devuelve: markdown con cifras y URLs al portal oficial por ocid cuando aplique."""
+    c = sqlite3.connect(GOVAUDIT_DB, timeout=30)
+    lim = max(1, min(int(limite), MAX_LIMITE))
+    w = "WHERE anio = ?" if anio else ""
+    args = [anio] if anio else []
+    try:
+        tot = c.execute(f"SELECT SUM(total_value), COUNT(*) FROM compras {w} AND total_value IS NOT NULL",
+                        args).fetchone()
+        top_sup = c.execute(f"""SELECT supplier_names, COUNT(*) n, SUM(total_value) s
+                                FROM compras WHERE supplier_names != '' {"AND anio=" + str(anio) if anio else ""}
+                                GROUP BY supplier_names ORDER BY s DESC LIMIT ?""", (lim,)).fetchall()
+        top_buy = c.execute(f"""SELECT buyer_name, COUNT(*) n, SUM(total_value) s
+                                FROM compras WHERE buyer_name != '' {"AND anio=" + str(anio) if anio else ""}
+                                GROUP BY buyer_name ORDER BY s DESC LIMIT ?""", (lim,)).fetchall()
+    finally:
+        c.close()
+    anio_lbl = anio or "2002-2025 (histórico)"
+    lines = [f"## Compras del Estado — {anio_lbl}"]
+    if tot and tot[0]:
+        lines.append(f"**Total con monto declarado: USD {tot[0]:,.0f}** en {tot[1]:,} contratos")
+    if top_sup:
+        lines.append("\n### Top proveedores")
+        for s, n, v in top_sup:
+            lines.append(f"- {s}: {n} contratos · {(v or 0):,.0f}")
+    if top_buy:
+        lines.append("\n### Top compradores")
+        for b, n, v in top_buy:
+            lines.append(f"- {b}: {n} contratos · {(v or 0):,.0f}")
+    lines.append(f"\n_Fuente: comprasestatales.gub.uy (datos abiertos ARCE, ingesta con checksum). Portal: https://comprasestatales.gub.uy_")
+    return "\n".join(lines)
+
 if __name__ == "__main__":
     mcp.run()
