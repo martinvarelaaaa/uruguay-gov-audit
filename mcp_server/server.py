@@ -45,8 +45,8 @@ def _md_compras(rows, total=None, pagina=1, limite=10):
     for r in rows:
         prov = r["supplier_names"] or "proveedor no informado"
         buyer = r["buyer_name"] or "comprador no informado"
-        val = f"${r['tender_value']:,.0f} {r['currency'] or 'UYU'}" if r["tender_value"] else "monto no informado"
-        lines.append(f"**{prov}** ← {buyer} — {r['Compras']} — {val}\n  [{r['ocds_id']}] fuente: comprasestatales.gub.uy ({r['tender_title']})")
+        val = f"${r['total_value']:,.0f} {r['currency'] or 'UYU'}" if r["total_value"] else "monto no informado"
+        lines.append(f"**{prov}** ← {buyer} — {r['anio']} — {val}\n  [{r['ocds_id']}] fuente: comprasestatales.gub.uy ({r['tender_title']})")
     out = "\n".join(lines)
     if total and total > pagina * limite:
         out += f"\n\n_[truncado: quedan {total - pagina*limite} registros — usa pagina={pagina+1}]_"
@@ -72,15 +72,15 @@ def compras_buscar(consulta: str, proveedor: str = "", comprador: str = "", anio
     if comprador:
         where.append("buyer_name LIKE ?"); params.append(f"%{comprador}%")
     if anio:
-        where.append("Compras = ?"); params.append(str(anio))
+        where.append("anio = ?"); params.append(str(anio))
     if not where:
         return "Pasá al menos un parámetro: consulta, proveedor, comprador o año."
     w = " AND ".join(where)
     total = c.execute(f"SELECT COUNT(*) FROM compras WHERE {w}", params).fetchone()[0]
-    rows = c.execute(f"""SELECT ocds_id, Compras, buyer_name, supplier_names, tender_value,
+    rows = c.execute(f"""SELECT ocds_id, anio, buyer_name, supplier_names, total_value,
                          currency, tender_title FROM compras WHERE {w}
-                         ORDER BY tender_value DESC NULLS LAST LIMIT ? OFFSET ?""",
-                     (limite, (pagina-1)*limite)).fetchall()
+                         ORDER BY total_value DESC LIMIT ? OFFSET ?""",
+                     params + [limite, (pagina-1)*limite]).fetchall()
     md = _md_compras([dict(r) for r in rows], total, pagina, limite)
     md += f"\n\n_provenance: compras OCDS estado, {total} resultados totales, filtros: prov={proveedor or '—'} comp={comprador or '—'} anio={anio or '—'}_"
     return md
@@ -96,19 +96,19 @@ def compras_gasto_proveedor(proveedor: str, anio_desde: int = 0, anio_hasta: int
     params = [f"%{proveedor}%"]
     if anio_desde or anio_hasta:
         yrs = [str(anio) for anio in range(anio_desde or 2002, (anio_hasta or 2027) + 1)]
-        base += f" AND Compras IN ({','.join('?'*len(yrs))})"
+        base += f" AND anio IN ({','.join('?'*len(yrs))})"
         params += yrs
     if comprador:
         base += " AND buyer_name LIKE ?"; params.append(f"%{comprador}%")
-    agg = c.execute(f"""SELECT COUNT(*) n, SUM(tender_value) total, MIN(Compras) desde, MAX(Compras) hasta
+    agg = c.execute(f"""SELECT COUNT(*) n, SUM(total_value) total, MIN(anio) desde, MAX(anio) hasta
                         FROM compras WHERE {base}""", params).fetchone()
     if not agg or agg["n"] == 0:
         return f"Sin resultados para proveedor '{proveedor}'. Verificá el nombre — es la razón social tal como aparece en comprasestatales.gub.uy."
-    anual = c.execute(f"""SELECT Compras anio, COUNT(*) n, SUM(tender_value) total
-                          FROM compras WHERE {base} GROUP BY Compras ORDER BY anio DESC""", params).fetchall()
-    top = c.execute(f"""SELECT ocds_id, Compras, buyer_name, tender_value, currency, tender_title
-                        FROM compras WHERE {base} AND tender_value IS NOT NULL
-                        ORDER BY tender_value DESC LIMIT 15""", params).fetchall()
+    anual = c.execute(f"""SELECT anio anio, COUNT(*) n, SUM(total_value) total
+                          FROM compras WHERE {base} GROUP BY anio ORDER BY anio DESC""", params).fetchall()
+    top = c.execute(f"""SELECT ocds_id, anio, buyer_name, total_value, currency, tender_title
+                        FROM compras WHERE {base} AND total_value IS NOT NULL
+                        ORDER BY total_value DESC LIMIT 15""", params).fetchall()
     total = agg["total"] or 0
     out = [f"## {proveedor}: ${total:,.0f} en {agg['n']} procesos ({agg['desde']}–{agg['hasta']})", ""]
     out.append("### Evolución anual")
@@ -117,7 +117,7 @@ def compras_gasto_proveedor(proveedor: str, anio_desde: int = 0, anio_hasta: int
     out.append("")
     out.append("### Top 15 compras individuales")
     for r in top:
-        val = f"${(r['tender_value'] or 0):,.0f} {r['currency'] or 'UYU'}"
+        val = f"${(r['total_value'] or 0):,.0f} {r['currency'] or 'UYU'}"
         out.append(f"- {val} — **{r['buyer_name']}** — { _clip(r['tender_title']) }  [ocid {r['ocds_id']}] fuente: comprasestatales.gub.uy")
     out.append(f"\n_provenance: compras OCDS ARCE; base local con checksum en ledger uruguay-gov-audit._")
     return "\n".join(out)
@@ -129,9 +129,9 @@ def compras_alertas(tipo: str = "unica-oferta", anio: int = 0, limite: int = 15)
     Devuelve: markdown con incidencias + citas. NO cubre: si aún no se bajó el año pedido, sugiere re-corrida."""
     c = _db(GOVAUDIT_DB)
     limite = min(limite, MAX_LIMITE)
-    yy = f"AND Compras = {int(anio)}" if anio else ""
+    yy = f"AND anio = {int(anio)}" if anio else ""
     if tipo == "top-proveedores":
-        rows = c.execute(f"""SELECT supplier_names p, COUNT(*) n, SUM(tender_value) t FROM compras
+        rows = c.execute(f"""SELECT supplier_names p, COUNT(*) n, SUM(total_value) t FROM compras
                              WHERE supplier_names IS NOT NULL AND supplier_names != '' {yy}
                              GROUP BY 1 ORDER BY t DESC LIMIT ?""", (limite,)).fetchall()
         out = ["### Top proveedores del Estado", ""]
@@ -140,9 +140,9 @@ def compras_alertas(tipo: str = "unica-oferta", anio: int = 0, limite: int = 15)
         out.append("\n_provenance: compras OCDS ARCE._")
         return "\n".join(out)
     if tipo == "unica-oferta":
-        rows = c.execute(f"""SELECT buyer_name, supplier_names, tender_value, currency, ocds_id, Compras, tender_title
+        rows = c.execute(f"""SELECT buyer_name, supplier_names, total_value, currency, ocds_id, anio, tender_title
                              FROM compras WHERE supplier_names != '' AND buyer_name != '' {yy}
-                             ORDER BY tender_value DESC LIMIT {limite}""").fetchall()
+                             ORDER BY total_value DESC LIMIT {limite}""").fetchall()
         md = _md_compras([dict(r) for r in rows])
         return f"### Compras de mayor monto (revisar método de adjudicación)\n\n{md}\n\n_sugerencia: para el método real de cada compra usar compras por ocid en comprasestatales.gub.uy._"
     return f"tipo '{tipo}' no implementado todavía — usá 'unica-oferta' o 'top-proveedores'."
@@ -224,7 +224,7 @@ def estados_sistema() -> dict:
             "tools_activas": ["compras_buscar", "compras_gasto_proveedor", "compras_alertas",
                               "parlamento_buscar", "rep_declaraciones", "estados_sistema"],
             "catalogo_referencia": "ayuda_sistema() para el mapa de qué se puede consultar",
-            "provenance": _prov("estado_sistema")}
+            "provenance": _prov(tipo="estado_sistema")}
 
 # alias de compatibilidad v0.1 para clientes ya integrados
 status_ingestion = estados_sistema  # conservar nombre público viejo
@@ -257,7 +257,7 @@ def ayuda_sistema() -> dict:
             "indices_locales": sis["indices_locales"],
             "como_se_actualiza": "cron diario (compras/datos.gub), 6h (YouTube), semanal (departamentales); supervisor 30min re-lanza lo fallido",
             "como_verifico_un_dato": "todo dato lleva su URL oficial original + checksum en el registro de ingesta — abrila y compará",
-            "provenance": _prov("introspeccion_real")}
+            "provenance": _prov(tipo="introspeccion_real")}
 
 @mcp.tool()
 def discursos_buscar(consulta: str, limite: int = 10) -> str:

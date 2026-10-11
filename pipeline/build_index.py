@@ -19,8 +19,8 @@ DB = os.path.join(ROOT, "data", "govaudit.sqlite3")
 def ensure_db():
     c = sqlite3.connect(DB)
     c.execute("""CREATE TABLE IF NOT EXISTS compras (
-        ocds_id TEXT, Compras YEAR INTEGER, buyer_name TEXT, supplier_names TEXT,
-        tender_value DOUBLE, currency TEXT, tender_title TEXT, url TEXT,
+        ocds_id TEXT, anio INTEGER, buyer_name TEXT, supplier_names TEXT,
+        total_value DOUBLE, currency TEXT, tender_title TEXT, url TEXT,
         source_file TEXT)""")
     c.execute("""CREATE VIRTUAL TABLE IF NOT EXISTS transcripciones_fts
         USING fts5(video_id, canal, minuto, texto, url)""")
@@ -70,6 +70,13 @@ def import_ocds(c):
                     if not sup:
                         parts = rec.get('parties') or []
                         sup = ','.join(str(p.get('name') or '') for p in parts if 'supplier' in (p.get('roles') or []))
+                    # ARCE bulk: award.title es el código del proceso (R/...); la descripción real
+                    # vive en items[].classification.description
+                    for it in (a0.get('items') or []):
+                        dsc = ((it.get('classification') or {}).get('description') or '').strip()
+                        if dsc:
+                            title = dsc
+                            break
                 url = f"https://comprasestatales.gub.uy/portal/detalle?ocid={ocid}"
                 c.execute("INSERT INTO compras VALUES (?,?,?,?,?,?,?,?,?)",
                           (ocid, year, buyer, sup, tv, cur, title, url, fname))
