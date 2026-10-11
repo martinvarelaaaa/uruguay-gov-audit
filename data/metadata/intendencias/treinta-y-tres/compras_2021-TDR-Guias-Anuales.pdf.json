@@ -1,0 +1,12 @@
+{
+ "intendencia": "treinta-y-tres",
+ "titulo": "Ver Pliego",
+ "url_documento": "https://treintaytres.gub.uy/wp-content/uploads/2020/12/2021-TDR-Guias-Anuales.pdf",
+ "url_pagina_origen": "https://treintaytres.gub.uy/licitaciones-y-llamados/",
+ "categoria": "compras",
+ "archivo_local": "data\\intendencias\\treinta-y-tres\\compras_2021-TDR-Guias-Anuales.pdf",
+ "bytes": 211449,
+ "sha256": "cf1f0c3075d40cbdf84866322b0dd350f05260459eaf0e84c6f7f10a04aa7728",
+ "descargado_at": "2026-10-10T22:29:01-03:00",
+ "run_id": "intendencias-20261010T2226"
+}

@@ -1,0 +1,12 @@
+{
+ "intendencia": "salto",
+ "titulo": "DESCARGAR PRESUPUESTO 2020-2021",
+ "url_documento": "https://www.salto.gub.uy/sites/default/files/2024-07/DECRETO_7327-2021_-_PRESUPUESTO_QUINQUENAL_INTENDENCIA_SALTO_2020-2025.pdf",
+ "url_pagina_origen": "https://www.salto.gub.uy/presupuesto-quinquenal/presupuesto-quinquenal-periodo-2020-2025",
+ "categoria": "presupuesto",
+ "archivo_local": "data\\intendencias\\salto\\presupuesto_DECRETO_7327-2021_-_PRESUPUESTO_QUINQUENAL_INTENDENCIA_SALTO_2020-2025.pdf",
+ "bytes": 5864645,
+ "sha256": "e390e3cf14cb84226e679f1406d54f238f9f1cd95db2f323ba49578c4d02c57d",
+ "descargado_at": "2026-10-11T00:12:18-03:00",
+ "run_id": "intendencias-20261011T0011"
+}

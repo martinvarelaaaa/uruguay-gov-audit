@@ -1,0 +1,12 @@
+{
+ "intendencia": "flores",
+ "titulo": "Ver informe",
+ "url_documento": "https://flores.gub.uy/images/datos_abiertos/RC_2025.pdf",
+ "url_pagina_origen": "https://www.flores.gub.uy",
+ "categoria": "otros",
+ "archivo_local": "data\\intendencias\\flores\\otros_RC_2025.pdf",
+ "bytes": 15875304,
+ "sha256": "98633675e1461f2a9092f082b98fb601ea810c4952ba5771f0e9dc79565d4759",
+ "descargado_at": "2026-10-10T22:25:30-03:00",
+ "run_id": "intendencias-20261010T2225"
+}

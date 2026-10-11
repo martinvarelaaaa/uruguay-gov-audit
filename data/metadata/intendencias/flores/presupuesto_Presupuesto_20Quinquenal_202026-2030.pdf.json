@@ -1,0 +1,12 @@
+{
+ "intendencia": "flores",
+ "titulo": "⬇ Descargar PDF",
+ "url_documento": "https://flores.gub.uy/images/datos_abiertos/Presupuesto%20Quinquenal%202026-2030.pdf",
+ "url_pagina_origen": "https://flores.gub.uy/images/datos_abiertos/presupuesto_flores.html",
+ "categoria": "presupuesto",
+ "archivo_local": "data\\intendencias\\flores\\presupuesto_Presupuesto_20Quinquenal_202026-2030.pdf",
+ "bytes": 316751,
+ "sha256": "1f8eeef3454e9f4785626b2eeb7caf80a15761f73f3ab9769225621242e6dc9e",
+ "descargado_at": "2026-10-10T22:25:23-03:00",
+ "run_id": "intendencias-20261010T2225"
+}

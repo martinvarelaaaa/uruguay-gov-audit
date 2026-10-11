@@ -1,0 +1,12 @@
+{
+ "intendencia": "paysandu",
+ "titulo": "DESCARGAR PDF",
+ "url_documento": "https://www.paysandu.gub.uy/wp-content/uploads/2026/07/presupuesto-quinquenal-2026-2030-idp.pdf",
+ "url_pagina_origen": "https://www.paysandu.gub.uy/transparencia/",
+ "categoria": "presupuesto",
+ "archivo_local": "data\\intendencias\\paysandu\\presupuesto_presupuesto-quinquenal-2026-2030-idp.pdf",
+ "bytes": 612061,
+ "sha256": "b162904efffbe163044024227b265dbc109ed91c6baf6cebbb0b188a77fe6cce",
+ "descargado_at": "2026-10-10T23:01:32-03:00",
+ "run_id": "intendencias-20261010T2256"
+}

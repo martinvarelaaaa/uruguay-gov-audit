@@ -1,0 +1,12 @@
+{
+ "intendencia": "rivera",
+ "titulo": "descarga",
+ "url_documento": "https://www.rivera.gub.uy/portal/wp-content/uploads/2026/08/Licitacion-Abreviada-Ataudes-2026.pdf",
+ "url_pagina_origen": "https://www.rivera.gub.uy/portal/licitacion-abreviada-16-26-adquisicion-de-ataudes/",
+ "categoria": "compras",
+ "archivo_local": "data\\intendencias\\rivera\\compras_Licitacion-Abreviada-Ataudes-2026.pdf",
+ "bytes": 454368,
+ "sha256": "aa44ee0715f1a04acbd9170c96d5284c8f566aecad0601b10d67a656bee5ba9a",
+ "descargado_at": "2026-10-10T23:30:34-03:00",
+ "run_id": "intendencias-20261010T2321"
+}

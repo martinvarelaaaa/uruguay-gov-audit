@@ -1,0 +1,12 @@
+{
+ "intendencia": "flores",
+ "titulo": "Ver gastos",
+ "url_documento": "https://flores.gub.uy/images/datos_abiertos/Rendicion_Festival_del_Lago_2026.pdf",
+ "url_pagina_origen": "https://www.flores.gub.uy",
+ "categoria": "rendiciones",
+ "archivo_local": "data\\intendencias\\flores\\rendiciones_Rendicion_Festival_del_Lago_2026.pdf",
+ "bytes": 647864,
+ "sha256": "3ee7d4d2d8b19eaf5e069ce932e8e3f7337f96d9cf98bfe27ccc428488a40c33",
+ "descargado_at": "2026-10-10T22:25:26-03:00",
+ "run_id": "intendencias-20261010T2225"
+}

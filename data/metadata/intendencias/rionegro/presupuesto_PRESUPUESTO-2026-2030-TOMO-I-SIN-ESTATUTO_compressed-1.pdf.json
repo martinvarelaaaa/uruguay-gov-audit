@@ -1,0 +1,12 @@
+{
+ "intendencia": "rionegro",
+ "titulo": "DESCARGAR.pdf",
+ "url_documento": "https://www.rionegro.gub.uy/wp-content/uploads/2026/08/PRESUPUESTO-2026-2030-TOMO-I-SIN-ESTATUTO_compressed-1.pdf",
+ "url_pagina_origen": "https://www.rionegro.gub.uy/presupuesto-2026-2030/",
+ "categoria": "presupuesto",
+ "archivo_local": "data\\intendencias\\rionegro\\presupuesto_PRESUPUESTO-2026-2030-TOMO-I-SIN-ESTATUTO_compressed-1.pdf",
+ "bytes": 920265,
+ "sha256": "c84b527681108f138764e49a65f1b326c7a3a2a66cedbeb2aea6385c6cb9a34b",
+ "descargado_at": "2026-10-10T23:20:10-03:00",
+ "run_id": "intendencias-20261010T2308"
+}

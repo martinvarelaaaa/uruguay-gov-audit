@@ -1,0 +1,12 @@
+{
+ "intendencia": "rivera",
+ "titulo": "Descargar estructura completa",
+ "url_documento": "https://www.rivera.gub.uy/portal/wp-content/uploads/2023/10/DO.SG_.GC_.004-Organigrama-IDR.pdf",
+ "url_pagina_origen": "https://www.rivera.gub.uy/portal/estructura-organizativa/",
+ "categoria": "gabinete",
+ "archivo_local": "data\\intendencias\\rivera\\gabinete_DO.SG_.GC_.004-Organigrama-IDR.pdf",
+ "bytes": 289791,
+ "sha256": "0197eac33e3c796b098102186f3afd3d0484eb53005e0ad77619e78cd500f9d2",
+ "descargado_at": "2026-10-10T23:30:37-03:00",
+ "run_id": "intendencias-20261010T2321"
+}
