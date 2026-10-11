@@ -64,8 +64,11 @@ def import_ocds(c):
 
 def index_transcripts(c):
     n = 0
+    ya = {r[0] for r in c.execute("SELECT DISTINCT video_id FROM transcripciones_fts")}
     for md in glob.glob(os.path.join(DATA, "transcripts", "**", "*.md"), recursive=True):
         vid = os.path.basename(md).replace('.md','')
+        if vid in ya:
+            continue
         canal = os.path.basename(os.path.dirname(md))
         url = f"https://youtube.com/watch?v={vid}"
         texts = []
