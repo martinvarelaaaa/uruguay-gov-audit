@@ -76,14 +76,18 @@ sobre TODOS los JSON presentes en `data/votaciones/`.
 ## Cobertura y extensión histórica
 
 `cobertura_periodo` declarado en `config/votaciones.json`
-(2025-2026 al 2026-10-10; baja backend). El spec
-(`docs/src_spec_votaciones.md`, EXTENSIÓN HISTÓRICA) ordena extender hacia
-atrás a medida que el portal lo permita (diarios de sesiones + asistencias
-desde hace décadas, CKAN del Parlamento desde 1985), con prioridad
-2020-2025 → 2015-2020 → 2010-2015 → 2005-2010 → anterior. Para agregar un
-período: sumar el año a `periodos.<camara>` en `config/votaciones.json` y
-correr el backfill con `--periodo <año>`. Los listados del portal filtran por
-año (un run por año); períodos multi-año se agregan año a año.
+(2025-2026 baja backend; 2020 y 2007 verificados de punta a punta — el motor
+cubre cualquier período desde 1985). El listado de diarios se resuelve por la
+vista JSON del portal con filtro **Cuerpo + Legislatura** (`Cpo_codigo`
+S=Senadores / D=Representantes; `Lgl_Nro`: XLII 1985-1990 … L 2025-2030), por
+lo que la extensión histórica del spec (`docs/src_spec_votaciones.md`,
+EXTENSIÓN HISTÓRICA) no requiere código nuevo: para agregar un año se corre
+`python pipeline/backfill_votaciones.py --camara senadores --periodo <año>`
+(con la regla 1985+5n → legislatura automática). Prioridad según spec:
+2020-2025 → 2015-2020 → 2010-2015 → 2005-2010 → anterior. Confirmado
+2026-10-10: el listado sin filtro solo devuelve la legislatura L (2025-2026);
+con filtro por legislatura baja el histórico completo (ej.: XLIX CSS = 224
+sesiones 2020-2025).
 
 ## Prohibido / límites
 
