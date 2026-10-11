@@ -1,0 +1,6419 @@
+[
+ {
+  "camara": "Senadores",
+  "legislador_id": "10065",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Cosse, Carolina",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": "Presidenta",
+  "descripcion": "PRESIDENTA DE LA ASAMBLEA GENERAL Y DE LA CÁMARA DE SENADORES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/10065",
+  "mails": [
+   "carolina.cosse_sec@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Presidenta de la Asamblea General y de la Cámara de Senadores - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "LA AMPLIA",
+    "sublema": "UNIDAD PARA LA ESPERANZA",
+    "ordinal": "1",
+    "en_eleccion": "COSSE GARRIDO, ANA CAROLINA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "LA AMPLIA",
+   "sublema": "UNIDAD PARA LA ESPERANZA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "CosseCarolina",
+   "cossecarolina"
+  ],
+  "handle_x": "CosseCarolina",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Carolina Cosse",
+   "followers": 155760,
+   "bio": "Vicepresidenta de Uruguay, período 2025 - 2030",
+   "latest_tweet_id": "2083171923328954489",
+   "verificado_at": "2026-10-10T22:47:43-03:00",
+   "url": "https://x.com/CosseCarolina"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "9917",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Andrade, Oscar",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/9917",
+  "mails": [
+   "oandrade@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Senador de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "DEMOCRACIA AVANZADA",
+    "sublema": "UNIDAD PARA LA ESPERANZA",
+    "ordinal": "1",
+    "en_eleccion": "ANDRADE LALLANA, OSCAR",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "DEMOCRACIA AVANZADA",
+   "sublema": "UNIDAD PARA LA ESPERANZA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "oanddee",
+   "oscaranndrade"
+  ],
+  "handle_x": "AndradeSenador",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "institucional",
+   "confianza": "verified",
+   "url": "https://x.com/AndradeSenador",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "8879",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Bianchi, Graciela",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Senadora de la República por el Lema PARTIDO NACIONAL",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/8879",
+  "mails": [
+   "gbianchi@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "AIRE FRESCO",
+    "sublema": "URUGUAY PARA ADELANTE",
+    "ordinal": "3",
+    "en_eleccion": "BIANCHI POLI, GRACIELA ELENA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "AIRE FRESCO",
+   "sublema": "URUGUAY PARA ADELANTE",
+   "ordinal": "3"
+  },
+  "handles_x_candidatos": [
+   "MatiasFBianchi"
+  ],
+  "handle_x": "gbianchi2020",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/gbianchi2020",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "12660",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Blás, Rodrigo",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO NACIONAL",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12660",
+  "mails": [
+   "rodrigo.blas@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO NACIONAL desde el 14/10/2025- Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "HERRERISMO",
+    "sublema": "URUGUAY PARA ADELANTE",
+    "ordinal": "1.2",
+    "en_eleccion": "BLAS SIMONCELLI, RODRIGO",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "HERRERISMO",
+   "sublema": "URUGUAY PARA ADELANTE",
+   "ordinal": "1.2"
+  },
+  "handles_x_candidatos": [
+   "rodrigoblas_"
+  ],
+  "handle_x": "rodrigoblas_",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Rodrigo Blás",
+   "followers": 9210,
+   "bio": "Senador de la Republica 🇺🇾 🤍💙 Padre de Lucía y Juan 👩🏻‍🤝‍👨🏽",
+   "latest_tweet_id": "1885068899265503468",
+   "verificado_at": "2026-10-10T23:34:50-03:00",
+   "url": "https://x.com/rodrigoblas_"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "13664",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Borbonet, Daniel",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13664",
+  "mails": [
+   "daniel.borbonet@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/DANIEL_BORBONET_LEGNANI.pdf"
+  ],
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO desde el 10/07/2025- Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "LA AMPLIA",
+    "sublema": "UNIDAD PARA LA ESPERANZA",
+    "ordinal": "1.3",
+    "en_eleccion": "BORBONET LEGNANI, DANIEL",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "LA AMPLIA",
+   "sublema": "UNIDAD PARA LA ESPERANZA",
+   "ordinal": "1.3"
+  },
+  "handles_x_candidatos": [
+   "chiledaniel",
+   "danielborok"
+  ],
+  "handle_x": "chiledaniel",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Daniel",
+   "followers": 699,
+   "bio": "LoveMyTesla's",
+   "latest_tweet_id": "1759736589113229436",
+   "verificado_at": "2026-10-11T00:35:50-03:00",
+   "url": "https://x.com/chiledaniel"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "922",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Bordaberry Herrán, Juan Pedro",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO COLORADO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/922",
+  "mails": [
+   "pedro.bordaberry@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio00922.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)",
+   " Senador de la República por el Lema PARTIDO COLORADO - Legislatura XLVIII (2015-2020)",
+   " Senador de la República por el Lema PARTIDO COLORADO - Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "VAMOS URUGUAY",
+    "ordinal": "1",
+    "en_eleccion": "BORDABERRY HERRAN, JUAN PEDRO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "VAMOS URUGUAY",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "juancpedreira"
+  ],
+  "handle_x": "PedroBordaberry",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/PedroBordaberry",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "7354",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Botana, Sergio",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO NACIONAL",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/7354",
+  "mails": [
+   "sbotana@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio07354.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)",
+   " Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO 40",
+    "sublema": "URUGUAY PARA ADELANTE",
+    "ordinal": "2",
+    "en_eleccion": "BOTANA ARANCET, LUIS SERGIO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO 40",
+   "sublema": "URUGUAY PARA ADELANTE",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "Seergiot3ck",
+   "sergiotbh"
+  ],
+  "handle_x": "sergiobotana",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/sergiobotana",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "9916",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Caggiani, Daniel",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/9916",
+  "mails": [
+   "dcaggiani@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "5",
+    "en_eleccion": "CAGGIANI GOMEZ, DANIEL",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "5"
+  },
+  "handles_x_candidatos": [
+   "DCaggiani"
+  ],
+  "handle_x": "DCaggiani",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Daniel Caggiani",
+   "followers": 26229,
+   "bio": "Militante politico y social. Senador del Movimiento de Participación Popular / Frente Amplio / Uruguay.",
+   "latest_tweet_id": "1618333307363807232",
+   "verificado_at": "2026-10-10T23:34:54-03:00",
+   "url": "https://x.com/DCaggiani"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "6900",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Camy Antognazza, Carlos",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO NACIONAL",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/6900",
+  "mails": [
+   "ccamy@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)",
+   " Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO 40",
+    "sublema": "URUGUAY PARA ADELANTE",
+    "ordinal": "3.1",
+    "en_eleccion": "CAMY ANTOGNAZZA, CARLOS DANIEL",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO 40",
+   "sublema": "URUGUAY PARA ADELANTE",
+   "ordinal": "3.1"
+  },
+  "handles_x_candidatos": [
+   "Carlos12"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "7604",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Carballo Da Costa, Felipe",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/7604",
+  "mails": null,
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVII (2010-2015)",
+   " Legislatura XLV (2000-2005)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "COMPROMISO FRENTEAMPLISTA",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "1",
+    "en_eleccion": "CARBALLO DA COSTA, FELIPE",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "6.3",
+    "en_eleccion": "CARBALLO DA COSTA, FELIPE",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "COMPROMISO FRENTEAMPLISTA",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "fcarballo711",
+   "CCIUruguay"
+  ],
+  "handle_x": "fcarballo711",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/fcarballo711",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "11585",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Civila López, Gonzalo",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO , actuando como Ministro o Subsecretario desde el 02/03/2025",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11585",
+  "mails": [
+   "gcivila@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "SOCIALISMO",
+    "sublema": "SOCIALISMO ES LIBERTAD",
+    "ordinal": "1",
+    "en_eleccion": "CIVILA LOPEZ, GONZALO MARTIN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "SOCIALISMO",
+   "sublema": "SOCIALISMO ES LIBERTAD",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "gonzacivila"
+  ],
+  "handle_x": "gonzacivila",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Gonzalo Civila",
+   "followers": 18624,
+   "bio": "Ministro de Desarrollo Social de Uruguay 🇺🇾. Oriental, militante socialista y frenteamplista. Profesor de filosofía, ex Secretario General d",
+   "latest_tweet_id": "1395751109122301952",
+   "verificado_at": "2026-10-11T00:06:04-03:00",
+   "url": "https://x.com/gonzacivila"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "5304",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Da Silva, Sebastián",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO NACIONAL",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/5304",
+  "mails": [
+   "sebastian.dasilva@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio05304.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)",
+   " Legislatura XLVI (2005-2010)",
+   " Legislatura XLV (2000-2005)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO 40",
+    "sublema": "URUGUAY PARA ADELANTE",
+    "ordinal": "4",
+    "en_eleccion": "DA SILVA CAMBONE, SEBASTIAN",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "ESPACIO 40",
+    "sublema": "URUGUAY PARA ADELANTE",
+    "ordinal": "2.2",
+    "en_eleccion": "DA SILVA CAMBONE, SEBASTIAN",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO 40",
+   "sublema": "URUGUAY PARA ADELANTE",
+   "ordinal": "4"
+  },
+  "handles_x_candidatos": [
+   "camboue"
+  ],
+  "handle_x": "camboue",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/camboue",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "11634",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Díaz, Bettiana",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11634",
+  "mails": [
+   "bettiana.diaz@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "11",
+    "en_eleccion": "DÍAZ REY, LUCÍA BETTIANA",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "2.3",
+    "en_eleccion": "DÍAZ REY, LUCÍA BETTIANA",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "11"
+  },
+  "handles_x_candidatos": [
+   "betabetania"
+  ],
+  "handle_x": "bettianadiazrey",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/bettianadiazrey",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "10465",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Etcheverry Lima, Lucía",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO , actuando como Ministro o Subsecretario desde el 02/03/2025",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/10465",
+  "mails": [
+   "lucia.etcheverry@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "10",
+    "en_eleccion": "ETCHEVERRY LIMA, LUCIA INES",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "6.1",
+    "en_eleccion": "ETCHEVERRY LIMA, LUCIA INES",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "10"
+  },
+  "handles_x_candidatos": [
+   "blancarodgon"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "10721",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Falero, José Luis",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO NACIONAL",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/10721",
+  "mails": [
+   "jose.falero@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO NACIONAL desde el 05/08/2025- Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "AIRE FRESCO",
+    "sublema": "URUGUAY PARA ADELANTE",
+    "ordinal": "2.1",
+    "en_eleccion": "FALERO BERTOLA, JOSE LUIS",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "AIRE FRESCO",
+   "sublema": "URUGUAY PARA ADELANTE",
+   "ordinal": "2.1"
+  },
+  "handles_x_candidatos": [
+   "JLFalero"
+  ],
+  "handle_x": "JLFalero",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/JLFalero",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "6734",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Fratti, Alfredo",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO , actuando como Ministro o Subsecretario desde el 02/03/2025",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/6734",
+  "mails": [
+   "afratti@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "9",
+    "en_eleccion": "FRATTI SILVEIRA, LUIS ALFREDO",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "2.2",
+    "en_eleccion": "FRATTI SILVEIRA, LUIS ALFREDO",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "9"
+  },
+  "handles_x_candidatos": [
+   "SenadoUy",
+   "DiputadosUY"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "2965",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "García, Javier",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO NACIONAL",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/2965",
+  "mails": [
+   "jgarcia@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio02965.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLVI (2005-2010)",
+   " Legislatura XLIV (1995-2000)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO 40",
+    "sublema": "URUGUAY PARA ADELANTE",
+    "ordinal": "1.1",
+    "en_eleccion": "GARCIA DUCHINI, JAVIER FERNANDO",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO 40",
+   "sublema": "URUGUAY PARA ADELANTE",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "javiergbla"
+  ],
+  "handle_x": "JavierGarcia_Uy",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/JavierGarcia_Uy",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "5259",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Kechichian, Liliam",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/5259",
+  "mails": [
+   "lkechichian@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio05259.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO desde el 08/07/2025- Legislatura L (2025-2030)",
+   " Senadora de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "SEREGNISTAS",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "2",
+    "en_eleccion": "KECHICHIAN GARCIA, NORMA LILIAM",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "SEREGNISTAS",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "simplykech"
+  ],
+  "handle_x": "likechichian",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/likechichian",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "10008",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Lazo, Sandra",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO , actuando como Ministro o Subsecretario desde el 02/03/2025",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/10008",
+  "mails": [
+   "sandra.lazo@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Senadora de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "6",
+    "en_eleccion": "LAZO GUEREQUIZ, SANDRA MARIA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "6"
+  },
+  "handles_x_candidatos": [
+   "diegolazoh"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "11125",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Lema, Martín",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO NACIONAL",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11125",
+  "mails": [
+   "mlema@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "AIRE FRESCO",
+    "sublema": "URUGUAY PARA ADELANTE",
+    "ordinal": "1.1",
+    "en_eleccion": "LEMA PERRETTA, MARTIN ALEJANDRO",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "AIRE FRESCO",
+   "sublema": "URUGUAY PARA ADELANTE",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "MartinLemaUy"
+  ],
+  "handle_x": "MartinLemaUy",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Martin Lema",
+   "followers": 76442,
+   "bio": "Casado con Florencia. Papa de Martín, María Jesús e Ignacio. Senador de la República.",
+   "latest_tweet_id": "1366031666809098243",
+   "verificado_at": "2026-10-10T23:34:57-03:00",
+   "url": "https://x.com/MartinLemaUy"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "11526",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Lustemberg, Cristina",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO , actuando como Ministro o Subsecretario desde el 02/03/2025",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11526",
+  "mails": [
+   "clustemberg@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "4",
+    "en_eleccion": "LUSTEMBERG HARO, MARIA CRISTINA",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "VERTIENTE ARTIGUISTA",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "1",
+    "en_eleccion": "LUSTEMBERG HARO, MARIA CRISTINA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "4"
+  },
+  "handles_x_candidatos": [
+   "LustembergC"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "290",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Moreira, Carlos",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO NACIONAL",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/290",
+  "mails": [
+   "camoreira@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio00290.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO NACIONAL desde el 15/07/2025- Legislatura L (2025-2030)",
+   " Legislatura XLVIII (2015-2020)",
+   " Senador de la República por el Lema PARTIDO NACIONAL - Legislatura XLVII (2010-2015)",
+   " Senador de la República por el Lema PARTIDO NACIONAL - Legislatura XLVI (2005-2010)",
+   " Legislatura XLII (1985-1990)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ACCIÓN RENOVADORA",
+    "sublema": "URUGUAY PARA ADELANTE",
+    "ordinal": "1.2",
+    "en_eleccion": "MOREIRA REISCH, CARLOS ALBERTO",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ACCIÓN RENOVADORA",
+   "sublema": "URUGUAY PARA ADELANTE",
+   "ordinal": "1.2"
+  },
+  "handles_x_candidatos": [
+   "cmoreira"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "9974",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Moreira, Constanza",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/9974",
+  "mails": [
+   "constanza.moreira@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio09974.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Senadora de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVIII (2015-2020)",
+   " Senadora de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "DEMOCRACIA AVANZADA",
+    "sublema": "UNIDAD PARA LA ESPERANZA",
+    "ordinal": "2",
+    "en_eleccion": "MOREIRA VIÑAS, CONSTANZA BEATRIZ",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "DEMOCRACIA AVANZADA",
+   "sublema": "UNIDAD PARA LA ESPERANZA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "Constanza_FA"
+  ],
+  "handle_x": "Constanza_FA",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/Constanza_FA",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "13593",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Ojeda, Andrés",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO COLORADO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13593",
+  "mails": [
+   "andres.ojeda@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "UNIR",
+    "sublema": "UNIR PARA CRECER",
+    "ordinal": "1",
+    "en_eleccion": "OJEDA SPITZ, ANDRES",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "UNIR",
+   "sublema": "UNIR PARA CRECER",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "AndresOjedaOk"
+  ],
+  "handle_x": "AndresOjedaOk",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Andrés Ojeda",
+   "followers": 41202,
+   "bio": "Senador de la República | Secretario General del @partidocolorado | Abogado | Colaborador Docente Derecho Penal | Máster Derecho Penal @aust",
+   "latest_tweet_id": "1836496423174721639",
+   "verificado_at": "2026-10-10T23:35:00-03:00",
+   "url": "https://x.com/AndresOjedaOk"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "5221",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Ortuño, Edgardo",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/5221",
+  "mails": [
+   "eortuno@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio05221.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVI (2005-2010)",
+   " Legislatura XLV (2000-2005)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VERTIENTE ARTIGUISTA",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "2",
+    "en_eleccion": "ORTUÑO SILVA, EDGARDO ULISES",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "4.1",
+    "en_eleccion": "ORTUÑO SILVA, EDGARDO ULISES",
+    "rol": "suplente"
+   },
+   {
+    "agrupacion": "VERTIENTE ARTIGUISTA",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "1.1",
+    "en_eleccion": "ORTUÑO SILVA, EDGARDO ULISES",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VERTIENTE ARTIGUISTA",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "edgardo_rl"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "13594",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Rodríguez González, Blanca",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13594",
+  "mails": [
+   "blanca.rodriguez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "2",
+    "en_eleccion": "RODRIGUEZ GONZALEZ, BLANCA ISABEL",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "blancarodgon"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "9894",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Sabini, Sebastián",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/9894",
+  "mails": [
+   "ssabini@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVIII (2015-2020)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "7",
+    "en_eleccion": "SABINI GIANNECCHINI, SEBASTIAN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "7"
+  },
+  "handles_x_candidatos": [
+   "sebas26",
+   "sebtsb"
+  ],
+  "handle_x": "tatisabini",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/tatisabini",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "13602",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Silva, Robert",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO COLORADO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13602",
+  "mails": [
+   "robert.silva@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "COMPROMISO COLORADO",
+    "sublema": "UNIR PARA CRECER",
+    "ordinal": "1",
+    "en_eleccion": "SILVA GARCIA, ROBERT",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "COMPROMISO COLORADO",
+   "sublema": "UNIR PARA CRECER",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "RobertSilvaUy"
+  ],
+  "handle_x": "RobertSilvaUy",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Robert Silva",
+   "followers": 76635,
+   "bio": "Profesor y abogado, oriundo de Tacuarembó. Ex Presidente de https://t.co/DcBH5hGhzg y Senador de la República por el Partido Colorado.",
+   "latest_tweet_id": "1891151591949959651",
+   "verificado_at": "2026-10-10T23:35:03-03:00",
+   "url": "https://x.com/RobertSilvaUy"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "196",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Viera Duarte, Tabaré",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO COLORADO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/196",
+  "mails": [
+   "tviera@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio00196.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Senador de la República por el Lema PARTIDO COLORADO - Legislatura XLVII (2010-2015)",
+   " Legislatura XLII (1985-1990)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "VAMOS URUGUAY",
+    "ordinal": "2",
+    "en_eleccion": "VIERA DUARTE, TABARE",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "VAMOS URUGUAY",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [],
+  "handle_x": "Tabareviera",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/Tabareviera",
+   "verificado_at": "2026-10-10"
+  },
+  "nota_x": "Sin cuenta X pública identificable (searches multi-motor 2026-10-10); verificar manualmente."
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "11626",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Viera, Nicolás",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11626",
+  "mails": [
+   "nicolas.viera@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO desde el 05/03/2025- Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "12",
+    "en_eleccion": "VIERA DIAZ, NICOLÁS",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "7.1",
+    "en_eleccion": "VIERA DIAZ, NICOLÁS",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "12"
+  },
+  "handles_x_candidatos": [
+   "nicovieradiaz"
+  ],
+  "handle_x": "nicovieradiaz",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/nicovieradiaz",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "3689",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Zubía, Gustavo",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO COLORADO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/3689",
+  "mails": [
+   "gustavo.zubia@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO COLORADO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "JUSTICIA PARA TODOS",
+    "sublema": "UNIR PARA CRECER",
+    "ordinal": "1",
+    "en_eleccion": "ZUBIA BURGHI, GUSTAVO HECTOR",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "UNIR",
+    "sublema": "UNIR PARA CRECER",
+    "ordinal": "2",
+    "en_eleccion": "ZUBIA BURGHI, GUSTAVO HECTOR",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "UNIR",
+    "sublema": "UNIR PARA CRECER",
+    "ordinal": "1.1",
+    "en_eleccion": "ZUBIA BURGHI, GUSTAVO HECTOR",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "JUSTICIA PARA TODOS",
+   "sublema": "UNIR PARA CRECER",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "GustavoZubia"
+  ],
+  "handle_x": "GustavoZubia",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/GustavoZubia",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "11630",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Andrade, Susana",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": "Andrade, Susana Sustituye a la Senadora Ferreira Rodríguez, Zulimar durante la licencia por misión oficial entre el 01/10/2026 y el 11/10/2026 23:59",
+  "titular_de_la_banca_id": "9997",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11630",
+  "mails": null,
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio11630.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "14.2",
+    "en_eleccion": "ANDRADE LEITE, MARTHA SUSANA",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "14.2"
+  },
+  "handles_x_candidatos": [
+   "DiputadosUY",
+   "Parlamento_UY"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "12659",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Antonini, Eduardo",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": "Antonini, Eduardo sustituye al Senador Fratti, Alfredo durante el pasaje a Ministro o Subsecretario desde el 02/03/2025",
+  "titular_de_la_banca_id": "6734",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12659",
+  "mails": [
+   "eduardo.antonini@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO desde el 02/03/2025- Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "ANTONINI PEREZ, HEBERT EDUARDO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "antonini_edu"
+  ],
+  "handle_x": "antonini_edu",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/antonini_edu",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "7845",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Brenta Badano, Eduardo Alfonso",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": "Brenta Badano, Eduardo Alfonso sustituye al Senador Ortuño, Edgardo durante el pasaje a Ministro o Subsecretario desde el 02/03/2025",
+  "titular_de_la_banca_id": "5221",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/7845",
+  "mails": [
+   "ebrenta@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio07845.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO desde el 02/03/2025- Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVII (2010-2015)",
+   " Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VERTIENTE ARTIGUISTA",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "1.2",
+    "en_eleccion": "BRENTA BADANO, EDUARDO ALFONSO",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VERTIENTE ARTIGUISTA",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "1.2"
+  },
+  "handles_x_candidatos": [
+   "eduardobrenta"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "13663",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Gandolfo, Javier",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": "Gandolfo, Javier Sustituye a la Senadora Rodríguez González, Blanca durante la licencia por motivos personales entre el 03/10/2026 y el 21/10/2026 23:59",
+  "titular_de_la_banca_id": "13594",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13663",
+  "mails": null,
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "LA PATRIADA",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "1",
+    "en_eleccion": "GANDOLFO ROSAS, ANGEL JAVIER",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "LA PATRIADA",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "16.3",
+    "en_eleccion": "GANDOLFO ROSAS, ANGEL JAVIER",
+    "rol": "suplente"
+   },
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "3.1",
+    "en_eleccion": "GANDOLFO ROSAS, ANGEL JAVIER",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "LA PATRIADA",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "rgandolfio",
+   "agusgandolfo6",
+   "Fgandoul"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "6966",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "González, Gustavo",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": "González, Gustavo sustituye al Senador Civila López, Gonzalo durante el pasaje a Ministro o Subsecretario desde el 02/03/2025",
+  "titular_de_la_banca_id": "11585",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/6966",
+  "mails": [
+   "gustavo.gonzalez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO desde el 02/03/2025- Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "LA AMPLIA",
+    "sublema": "UNIDAD PARA LA ESPERANZA",
+    "ordinal": "28",
+    "en_eleccion": "GONZALEZ VARELA, GUSTAVO JOAQUIN",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "SIN AGRUPACIÓN",
+    "sublema": "UN SOLO PAIS",
+    "ordinal": "12.1",
+    "en_eleccion": "GONZALEZ PEREIRAS, GUSTAVO",
+    "rol": "suplente"
+   },
+   {
+    "agrupacion": "SIN AGRUPACIÓN",
+    "sublema": "ESPACIO DE LOS PUEBLOS LIBRES",
+    "ordinal": "12.1",
+    "en_eleccion": "GONZALEZ PEREIRAS, GUSTAVO",
+    "rol": "suplente"
+   },
+   {
+    "agrupacion": "SOCIALISMO",
+    "sublema": "SOCIALISMO ES LIBERTAD",
+    "ordinal": "1.1",
+    "en_eleccion": "GONZALEZ SOTO, GUSTAVO DANIEL",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "LA AMPLIA",
+   "sublema": "UNIDAD PARA LA ESPERANZA",
+   "ordinal": "28"
+  },
+  "handles_x_candidatos": [
+   "tavo2366",
+   "GGonzalezPS90"
+  ],
+  "handle_x": "GGonzalezPS90",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Gustavo Gonzalez",
+   "followers": 491,
+   "bio": "Senador por el Partido Socialista de Uruguay, Frente Amplio  y ex Secretario General de la @FUCVAM \n@Socialistas90 - @Frente_Amplio",
+   "latest_tweet_id": "1973393832424157274",
+   "verificado_at": "2026-10-10T23:47:52-03:00",
+   "url": "https://x.com/GGonzalezPS90"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "11521",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Inzaurralde Guillén, Alexandra Karina",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Senadora de la República por el Lema PARTIDO NACIONAL",
+  "sustituciones": "Inzaurralde Guillén, Alexandra Karina sustituye al Senador Blás, Rodrigo durante la licencia por misión oficial entre el 01/10/2026 y el 11/10/2026 23:59",
+  "titular_de_la_banca_id": "12660",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11521",
+  "mails": [
+   "alexandrainzaurralde@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "HERRERISMO",
+    "sublema": "URUGUAY PARA ADELANTE",
+    "ordinal": "1.3",
+    "en_eleccion": "INZAURRALDE GUILLEN, ALEXANDRA KARINA",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "HERRERISMO",
+   "sublema": "URUGUAY PARA ADELANTE",
+   "ordinal": "1.3"
+  },
+  "handles_x_candidatos": [
+   "alexcguillen",
+   "Alejandraaa_d"
+  ],
+  "handle_x": "Alejandraaa_d",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Alejandra",
+   "followers": 10722,
+   "bio": "I customize shoes and stuff.",
+   "latest_tweet_id": "1154870014136246274",
+   "verificado_at": "2026-10-11T00:16:37-03:00",
+   "url": "https://x.com/Alejandraaa_d"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "13599",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Kramer, Patricia",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": "Kramer, Patricia Sustituye a la Senadora Lustemberg, Cristina durante el pasaje a Ministro o Subsecretario desde el 02/03/2025",
+  "titular_de_la_banca_id": "11526",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13599",
+  "mails": [
+   "patricia.kramer@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO desde el 02/03/2025- Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "4.2",
+    "en_eleccion": "KRAMER BELO, PATRICIA NATALIA",
+    "rol": "suplente"
+   },
+   {
+    "agrupacion": "VERTIENTE ARTIGUISTA",
+    "sublema": "POR UN URUGUAY PARA LA GENTE",
+    "ordinal": "2.3",
+    "en_eleccion": "KRAMER BELO, PATRICIA NATALIA",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "POR UN URUGUAY PARA LA GENTE",
+   "ordinal": "4.2"
+  },
+  "handles_x_candidatos": [
+   "mkramer413"
+  ],
+  "handle_x": "EmpatiaUruguay",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "institucional",
+   "confianza": "probable",
+   "url": "https://x.com/EmpatiaUruguay",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Senadores",
+  "legislador_id": "7742",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Pereyra, Aníbal",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": "Pereyra, Aníbal Sustituye a la Senadora Etcheverry Lima, Lucía durante el pasaje a Ministro o Subsecretario desde el 02/03/2025",
+  "titular_de_la_banca_id": "10465",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/7742",
+  "mails": [
+   "apereyra@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO desde el 02/03/2025- Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)",
+   " Representante Nacional por el Lema PARTIDO ENCUENTRO PROGRESISTA-FRENTE AMPLIO-NUEVA MAYORIA - Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "PEREYRA HUELMO, HECTOR ANIBAL",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "PLATAFORMA",
+    "sublema": "NO APLICA",
+    "ordinal": "16.3",
+    "en_eleccion": "PEREYRA SANCHEZ, JORGE ANIBAL",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "Anibal_Pereyra_"
+  ],
+  "handle_x": "Anibal_Pereyra_",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/Anibal_Pereyra_",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "5938",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Goñi Reyes, Rodrigo",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": "Presidente",
+  "descripcion": "PRESIDENTE DE LA CÁMARA DE REPRESENTANTES - Representante Nacional por el Lema PARTIDO NACIONAL, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/5938",
+  "mails": [
+   "rgonir@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Presidente de la Cámara de Representantes desde el 01/03/2026 Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO 40",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "GOÑI REYES, RODRIGO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO 40",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "DipRodrigoGoni"
+  ],
+  "handle_x": "DipRodrigoGoni",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Rodrigo Goñi Reyes",
+   "followers": 19843,
+   "bio": "• Diputado del Partido Nacional, Uruguay. Casado, papá de 3 hijas. Hace falta más ética y menos ideología",
+   "latest_tweet_id": "1395240382234038274",
+   "verificado_at": "2026-10-10T23:45:31-03:00",
+   "url": "https://x.com/DipRodrigoGoni"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "3062",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Abdala, Pablo",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/3062",
+  "mails": [
+   "pablo.abdala@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/AbdalaPabloCV_2.final.pdf"
+  ],
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLVI (2005-2010)",
+   " Legislatura XLIV (1995-2000)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ACCIÓN RENOVADORA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "ABDALA SCHWARZ, PABLO DANIEL",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ACCIÓN RENOVADORA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "pabloabdala66"
+  ],
+  "handle_x": "pabloabdala66",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/pabloabdala66",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13633",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Albisu Emed, Carlos Gabriel",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de SALTO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13633",
+  "mails": [
+   "carlos.albisu@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "AIRE FRESCO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "ALBISU EMED, CARLOS GABRIEL",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "CON SALTO CON TODO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "ALBISU EMED, CARLOS GABRIEL",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "UN SALTO AL PROGRESO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "ALBISU EMED, CARLOS GABRIEL",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "AIRE FRESCO",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "carlostuds",
+   "AlexAlbisu"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13625",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Aldaya González, Victor Martín",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13625",
+  "mails": [
+   "victor.aldaya@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "14",
+    "en_eleccion": "ALDAYA GONZALEZ, VICTOR MARTIN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "14"
+  },
+  "handles_x_candidatos": [
+   "victor_aldaya"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "9892",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Amado, Fernando",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/9892",
+  "mails": [
+   "fernando.amado@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO COLORADO - Legislatura XLVIII (2015-2020)",
+   " Representante Nacional por el Lema PARTIDO COLORADO - Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "AVANZA DIFERENTE",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "AMADO FERNANDEZ, FERNANDO",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "6",
+    "en_eleccion": "AMADO FERNANDEZ, FERNANDO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "AVANZA DIFERENTE",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "fernando_amado"
+  ],
+  "handle_x": "fernando_amado",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Fernando Amado",
+   "followers": 32353,
+   "bio": "Diputado FA (2025/2030) Batllista. Líder de UNIR. Politólogo. Político. Director Turismo de la IM (2020/25) y diputado (2010/20). Escritor e",
+   "latest_tweet_id": "1188618417953300482",
+   "verificado_at": "2026-10-10T23:44:20-03:00",
+   "url": "https://x.com/fernando_amado"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11593",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Andújar, Sebastián",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11593",
+  "mails": [
+   "sandujar@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MARÍA PENA EN PROGRESO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "ANDUJAR ALVAREZ DE RON, SEBASTIAN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MARÍA PENA EN PROGRESO",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "Sebandujar"
+  ],
+  "handle_x": "Sebandujar",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Sebastián Andújar",
+   "followers": 7181,
+   "bio": "Papá de Juan Andrés, María Clara y Agustín. Diputado por Canelones (2015-2030).Partido Nacional.",
+   "latest_tweet_id": "2108213135496610044",
+   "verificado_at": "2026-10-11T00:07:14-03:00",
+   "url": "https://x.com/Sebandujar"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12659",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Antonini, Eduardo",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12659",
+  "mails": [
+   "eduardo.antonini@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO desde el 02/03/2025- Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "ANTONINI PEREZ, HEBERT EDUARDO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "antonini_edu"
+  ],
+  "handle_x": "antonini_edu",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/antonini_edu",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "10937",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Antúnez, Tatiana",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/10937",
+  "mails": [
+   "tatiana.antunez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "DEMOCRACIA AVANZADA",
+    "sublema": "NO APLICA",
+    "ordinal": "3",
+    "en_eleccion": "ANTUNEZ SCALONE, TATIANA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "DEMOCRACIA AVANZADA",
+   "sublema": "NO APLICA",
+   "ordinal": "3"
+  },
+  "handles_x_candidatos": [
+   "Tatiantunez",
+   "_tatiana1_"
+  ],
+  "handle_x": "Tatiantunez",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Tatiana Antúnez",
+   "followers": 3893,
+   "bio": "Feminista, militante social y política. Frenteamplista y de la 1001 🫶 Diputada por el FA. Ricota, Charly y los Buenos. Instagram:@tatitati19",
+   "latest_tweet_id": "2061665188722463190",
+   "verificado_at": "2026-10-11T00:14:16-03:00",
+   "url": "https://x.com/Tatiantunez"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "5212",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Araújo, Mary",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MALDONADO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/5212",
+  "mails": [
+   "mary.araujo@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "ARAUJO DUARTE, MARY BEATRIZ",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "prolegomenos_"
+  ],
+  "handle_x": "prolegomenos_",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Marianna Araujo",
+   "followers": 4276,
+   "bio": "botafoguense, baiana e terraglobista.\nfaço livros na @MorulaEditorial.",
+   "latest_tweet_id": "1798845288863719863",
+   "verificado_at": "2026-10-11T00:20:08-03:00",
+   "url": "https://x.com/prolegomenos_"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13645",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Araújo, Yisela",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CERRO LARGO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13645",
+  "mails": [
+   "yisela.araujo@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "1.1",
+    "en_eleccion": "ARAUJO RODRIGUEZ, YISELA DAIANA",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "isaaaraujodp"
+  ],
+  "handle_x": "isaaaraujodp",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Isadora Araujo",
+   "followers": 12470,
+   "bio": "",
+   "latest_tweet_id": "1515484287705001986",
+   "verificado_at": "2026-10-10T23:49:03-03:00",
+   "url": "https://x.com/isaaaraujodp"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13620",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Auersperg Kosenkov, María Fernanda",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13620",
+  "mails": [
+   "fernanda.auersperg@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO 40",
+    "sublema": "NO APLICA",
+    "ordinal": "3",
+    "en_eleccion": "AUERSPERG KOSENKOV, MARIA FERNANDA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO 40",
+   "sublema": "NO APLICA",
+   "ordinal": "3"
+  },
+  "handles_x_candidatos": [
+   "investors",
+   "mariaedugevezer"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13675",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Badin Vidal, Cecilia Pacuala",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de COLONIA",
+  "sustituciones": "Badin Vidal, Cecilia Pacuala Sustituye al Representante Viera, Nicolás durante el pasaje al Senado desde el 05/03/2025 00:02",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13675",
+  "mails": [
+   "cecilia.badin@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO desde el 05/03/2025- Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+    "sublema": null,
+    "ordinal": "1.1",
+    "en_eleccion": "BADIN VIDAL, CECILIA PASCUALA",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+   "sublema": null,
+   "ordinal": "1.1"
+  },
+  "nota_nombre_ce": "CE escribe PASCUALA; roster parlamento escribe Pacuala",
+  "handles_x_candidatos": [
+   "absatzcecilia",
+   "_ceciliuh"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12635",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Barrera Malrechauffe, Graciela Haydée",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12635",
+  "mails": [
+   "graciela.barrera@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "11",
+    "en_eleccion": "BARRERA MALRECHAUFFE, GRACIELA HAYDÉE",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "3.1",
+    "en_eleccion": "BARRERA MALRECHAUFFE, GRACIELA HAYDÉE",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "11"
+  },
+  "handles_x_candidatos": [
+   "InfoNegocios_UY"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13846",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Britos Alegre, Miriam Jacqueline",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de ARTIGAS",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13846",
+  "mails": [
+   "miriam.britos@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL desde el 01/07/2025- Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ARTIGAS ADELANTE",
+    "sublema": "NO APLICA",
+    "ordinal": "1.1",
+    "en_eleccion": "BRITOS ALEGRE, MIRIAM JACQUELINE",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ARTIGAS ADELANTE",
+   "sublema": "NO APLICA",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "ptbrasil"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12665",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Cairo, Cecilia",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12665",
+  "mails": [
+   "cecilia.cairo@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "CAIRO MODERNEL, ANA CECILIA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "CeciliaforBerk"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13649",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Camarán, Susana",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13649",
+  "mails": [
+   "susana.camaran@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "17",
+    "en_eleccion": "CAMARAN CAWEN, ZULMA SUSANA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "17"
+  },
+  "handles_x_candidatos": [
+   "SimonEducacion",
+   "fj_camara",
+   "camkasky"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12843",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Campo Silveira, Maximiliano",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de TACUAREMBO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12843",
+  "mails": [
+   "maximiliano.campo@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "CAMPO SILVEIRA, MAXIMILIANO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "elpaisuy",
+   "soffsilveira"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "6143",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Casaretto, Federico",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de MALDONADO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/6143",
+  "mails": [
+   "federico.casaretto@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL desde el 14/10/2025- Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "AGRUPACIÓN LISTA 23",
+    "sublema": "NO APLICA",
+    "ordinal": "1.1",
+    "en_eleccion": "CASARETTO GERFAUO, FEDERICO RAMIRO",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "AGRUPACIÓN LISTA 23",
+   "sublema": "NO APLICA",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "Fedecasaretto"
+  ],
+  "handle_x": "Fedecasaretto",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/Fedecasaretto",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13646",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Castro Pisciottano, Elianne Elizabeth",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13646",
+  "mails": [
+   "elianne.castro@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "PRESIDENTE DON JORGE BATLLE IBAÑEZ",
+    "sublema": "NO APLICA",
+    "ordinal": "1.1",
+    "en_eleccion": "CASTRO PISCIOTTANO, ELIANNE ELIZABETH",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "PRESIDENTE DON JORGE BATLLE IBAÑEZ",
+   "sublema": "NO APLICA",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "Picaxso"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12651",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Cervini, Walter",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12651",
+  "mails": [
+   "walter.cervini@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO COLORADO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "CERVINI PRATTO, WALTER SANTIAGO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "CerviPablo"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12657",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Colman, Mario",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de COLONIA",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12657",
+  "mails": [
+   "mario.colman@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "NUESTRA PROPUESTA PARA COLONIA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "COLMAN GIRIBONI, MARIO ENRIQUE",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "NUESTRA PROPUESTA PARA COLONIA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "mariocolman"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12720",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Cortés, Inés",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12720",
+  "mails": [
+   "ines.cortes@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "6",
+    "en_eleccion": "CORTÉS QUIÑONES, MARÍA INÉS",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "2.1",
+    "en_eleccion": "CORTÉS QUIÑONES, MARÍA INÉS",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "6"
+  },
+  "handles_x_candidatos": [
+   "Ines_Cortess"
+  ],
+  "handle_x": "Ines_Cortess",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Inés Cortés",
+   "followers": 3641,
+   "bio": "Diputada del @Frente_Amplio @MPP609 | Politóloga y Magíster en Información y Comunicación de la @Udelaruy | Feminista | Canaria",
+   "latest_tweet_id": "2108384202244673782",
+   "verificado_at": "2026-10-10T23:50:13-03:00",
+   "url": "https://x.com/Ines_Cortess"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11598",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Dastugue, Álvaro",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11598",
+  "mails": [
+   "adastugue@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MARÍA PENA EN PROGRESO",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "DASTUGUE DA ROSA, ALVARO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MARÍA PENA EN PROGRESO",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "AlvaroDastugue"
+  ],
+  "handle_x": "AlvaroDastugue",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/AlvaroDastugue",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "9947",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "De Mattos, Alfredo",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de TACUAREMBO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/9947",
+  "mails": [
+   "alfredo.demattos@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ACCIÓN RENOVADORA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "DE MATTOS DE MELLO, JOSE LUIS ALFREDO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ACCIÓN RENOVADORA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "apirisv"
+  ],
+  "handle_x": "alfredodeMattos",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/alfredodeMattos",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13609",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Delgado Mas, Juan Pablo",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13609",
+  "mails": [
+   "juanpablo.delgado@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ACCIÓN COMUNITARIA",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "DELGADO MAS, JUAN PABLO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ACCIÓN COMUNITARIA",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "juanpab_delgado"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13611",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Diverio Viera, Daniel Israel",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13611",
+  "mails": [
+   "daniel.diverio@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "PARA QUE LAS COSAS PASEN",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "DIVERIO VIERA, DANIEL ISRAEL",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "PARA QUE LAS COSAS PASEN",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "_dvniel_"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13608",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Duque Barreto, Matias Heber",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13608",
+  "mails": [
+   "matias.duque@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "JUNTOS POR URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "DUQUE BARRETO, MATÍAS HEBER",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "JUNTOS POR URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "MatiasDuarte",
+   "matidf22",
+   "uribematias1",
+   "matias"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13695",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Díaz Marrero, Natalia Guadalupe",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13695",
+  "mails": [
+   "natalia.diaz@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO desde el 01/03/2026- Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "DEMOCRACIA AVANZADA",
+    "sublema": "NO APLICA",
+    "ordinal": "1.1",
+    "en_eleccion": "DIAZ MARRERO, NATALIA GUADALUPE",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "DEMOCRACIA AVANZADA",
+   "sublema": "NO APLICA",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "naataliads",
+   "Natdiaz_es",
+   "Natdiaquin",
+   "ndiazhdez"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13182",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Echenique, Graciela",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de CERRO LARGO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13182",
+  "mails": [
+   "graciela.echenique@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "JOSÉ GERVASIO ARTIGAS",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "ECHENIQUE CAETANO, GRACIELA SOFIA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "JOSÉ GERVASIO ARTIGAS",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "gracielanicolee"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12515",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Echeverría Casanova, Diego",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de MALDONADO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12515",
+  "mails": [
+   "diego.echeverria@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "GENTE NUEVA EN POLITICA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "ECHEVERRIA CASANOVA, DIEGO EDWARD",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "GENTE NUEVA EN POLITICA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "echeverriadiego"
+  ],
+  "handle_x": "echeverriadiego",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Diego Echeverría",
+   "followers": 5228,
+   "bio": "Uruguayo y nacionalista. Muy hincha de mi país y su gente.\nOrgulloso Diputado por Maldonado.\nViviendo fuerte",
+   "latest_tweet_id": "1529471566354038785",
+   "verificado_at": "2026-10-10T23:51:24-03:00",
+   "url": "https://x.com/echeverriadiego"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12958",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Fajardo Rieiro, María",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de SORIANO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12958",
+  "mails": [
+   "maria.fajardo@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "FUERZA BLANCA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "FAJARDO RIEIRO, MARIA DE LOS ANGELES",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "FUERZA BLANCA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "pipifajardo_",
+   "mariajacobaf",
+   "DiputadaFajardo",
+   "fajardomaria15"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13629",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Farinha Tacain, Fermín",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de PAYSANDU",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13629",
+  "mails": [
+   "fermin.farinha@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ES AHORA PAYSANDÚ",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "FARINHA TACAIN, CARLOS FERMIN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ES AHORA PAYSANDÚ",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "ferminfarinha",
+   "arrobafermin",
+   "ferminrp"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "9997",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Ferreira Rodríguez, Zulimar",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de TACUAREMBO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/9997",
+  "mails": [
+   "zferreira@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senadora de la República por el Lema PARTIDO FRENTE AMPLIO desde el 09/07/2025- Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "FERREIRA RODRIGUEZ, OLGA ZULIMAR",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "JuanRaFerreira"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11413",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Gianoli, Gabriel",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11413",
+  "mails": [
+   "ggianoli@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO 40",
+    "sublema": "NO APLICA",
+    "ordinal": "2.1",
+    "en_eleccion": "GIANOLI TRAVIESO, HECTOR GABRIEL",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO 40",
+   "sublema": "NO APLICA",
+   "ordinal": "2.1"
+  },
+  "handles_x_candidatos": [
+   "GabrielGianoli"
+  ],
+  "handle_x": "GabrielGianoli",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Gabriel Gianoli",
+   "followers": 5253,
+   "bio": "Representante Nacional @EspacioCuarenta Diputado por Montevideo",
+   "latest_tweet_id": "1988630067434459548",
+   "verificado_at": "2026-10-11T00:00:11-03:00",
+   "url": "https://x.com/GabrielGianoli"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13627",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Giometti Piñeiro, Bruno",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13627",
+  "mails": [
+   "bruno.giometti@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "DEMOCRACIA AVANZADA",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "GIOMETTI PIÑEIRO, BRUNO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "DEMOCRACIA AVANZADA",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "bruno_giometti"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13630",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Gorosterrazú Rivero, Juan",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de PAYSANDU",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13630",
+  "mails": [
+   "juan.gorosterrazu@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "GOROSTERRAZU RIVERO, JUAN ANTONIO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "_juans7",
+   "isthtjuan"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13615",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Grezzi de Armas, Andrés",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de FLORES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13615",
+  "mails": [
+   "andres.grezzi@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ADELANTE CON FE",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "GREZZI DE ARMAS, CESAR ANDRES",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ADELANTE CON FE",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "JND_uy"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "1522",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Gurméndez Armand Ugón, Gabriel",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de MALDONADO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/1522",
+  "mails": [
+   "gabriel.gurmendez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS MALDONADO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "GURMENDEZ ARMAND UGON, GABRIEL",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS MALDONADO",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "ggurmendez"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12777",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Ibarguren Gauthier, Sylvia",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de RIO NEGRO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12777",
+  "mails": [
+   "sylvia.ibarguren@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "FRENTE RÍO NEGRO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "IBARGUREN GAUTHIER, SYLVIA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "FRENTE RÍO NEGRO",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "sdg70",
+   "Silvia_TGT"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "10892",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Inthamoussu, Pablo",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/10892",
+  "mails": [
+   "pablo.inthamoussu@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "12",
+    "en_eleccion": "INTHAMOUSSU ACEVEDO, LUIS PABLO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "12"
+  },
+  "handles_x_candidatos": [
+   "pablointhamouss"
+  ],
+  "handle_x": "pablointhamouss",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/pablointhamouss",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11795",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Jisdonian, Pedro",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11795",
+  "mails": [
+   "pedro.jisdonian@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "DESDE ACÁ",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "JISDONIAN TAKESSIAN, PEDRO FEDERICO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "DESDE ACÁ",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "pedroju16424646",
+   "porjp",
+   "_pedrodjesus"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13619",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Jorge Canadell, Juan Martín",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13619",
+  "mails": [
+   "juanmartin.jorge@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "4",
+    "en_eleccion": "JORGE CANADELL, JUAN MARTIN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "4"
+  },
+  "handles_x_candidatos": [
+   "Juanma15"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12852",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Juri Cajiga, Adrián",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12852",
+  "mails": [
+   "adrian.juri@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "3.1",
+    "en_eleccion": "JURI CAJIGA, ROBERTO ADRIAN",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "3.1"
+  },
+  "handles_x_candidatos": [
+   "adrianoalvareez",
+   "aydrxn"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11638",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Libschitz, Margarita",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11638",
+  "mails": [
+   "margarita.libschitz@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "4",
+    "en_eleccion": "LIBSCHITZ SUAREZ, MARGARITA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "4"
+  },
+  "handles_x_candidatos": [
+   "Mangorrita",
+   "Canal4_UY"
+  ],
+  "handle_x": "LibschitzMarga",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/LibschitzMarga",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12679",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Lima, Álvaro",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de SALTO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12679",
+  "mails": [
+   "alvaro.lima@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "IZQUIERDA DEMOCRÁTICA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "LIMA PROSERPIO, ALVARO RAUL",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "IZQUIERDA DEMOCRÁTICA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "SaltoAlvaroLima"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13631",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Long Zapata, Inés Mercedes",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de RIO NEGRO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13631",
+  "mails": [
+   "mercedes.long@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "JUNTOS POR RÍO NEGRO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "LONG ZAPATA, INES MERCEDES",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "JUNTOS POR RÍO NEGRO",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "__innees"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12646",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Lorenzo, Nicolás",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de ARTIGAS",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12646",
+  "mails": [
+   "nicolas.lorenzo@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "LORENZO MACHADO, EDUARDO NICOLAS",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "NicolasLorenzo",
+   "nicolopezof",
+   "NicolsLorenzo5",
+   "nicolaslorenzom"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "2921",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Mahía, José Carlos",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CANELONES , actuando como Ministro o Subsecretario desde el 05/03/2025",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/2921",
+  "mails": [
+   "jmahia@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Breve%20rese%C3%B1a%20biogr%C3%A1fica%20de%20JC%20Mah%C3%ADa.pdf"
+  ],
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVIII (2015-2020)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVII (2010-2015)",
+   " Legislatura XLVI (2005-2010)",
+   " Representante Nacional por el Lema PARTIDO ENCUENTRO PROGRESISTA - FRENTE AMPLIO - Legislatura XLV (2000-2005)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIV (1995-2000)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ASAMBLEA URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "MAHIA FREIRE, JOSÉ CARLOS",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ASAMBLEA URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "JoseCarlosMahia"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13622",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Maneiro Romero, Sol",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13622",
+  "mails": [
+   "sol.maneiro@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "7",
+    "en_eleccion": "MANEIRO ROMERO, SOL",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "7"
+  },
+  "handles_x_candidatos": [
+   "dman_sol",
+   "canal10uruguay"
+  ],
+  "handle_x": "SolManeiroUy",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/SolManeiroUy",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12776",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Martínez Zaquierez, William",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12776",
+  "mails": [
+   "william.martinez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "5",
+    "en_eleccion": "MARTINEZ ZAQUIEREZ, WILLIAM NICOLÁS",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "5"
+  },
+  "handles_x_candidatos": [
+   "ea0c68ab216b418"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12942",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Mazzini García, Agustín",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12942",
+  "mails": [
+   "agustin.mazzini@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "2.2",
+    "en_eleccion": "MAZZINI GARCIA, AGUSTIN",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "2.2"
+  },
+  "handles_x_candidatos": [
+   "xAgustin72"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13301",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Medina, Nino",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de TREINTA Y TRES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13301",
+  "mails": [
+   "nino.medina@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "SIN ATADURAS",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "MEDINA RIVERO, ROBERT NINO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "SIN ATADURAS",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "theninomedina",
+   "Nino_14th"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13616",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Melo Cedrés, Ana Laura",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de FLORES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13616",
+  "mails": [
+   "analaura.melo@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "MELO CEDRES, ANA LAURA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "anaisdemelo"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12680",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Mesa, Nicolás",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de SAN JOSE",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12680",
+  "mails": [
+   "nicolas.mesa@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "MESA WALLER, NICOLAS",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "thenicolasmaes",
+   "nicolastomas",
+   "nicolasmezac"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13632",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Molins Silva, Martí",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de RIVERA",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13632",
+  "mails": [
+   "marti.molins@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": null,
+    "ordinal": "2",
+    "en_eleccion": "SILVA , MARTI MOLINS",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": null,
+   "ordinal": "2"
+  },
+  "nota_nombre_ce": "CE order invierte apellidos: SILVA, MARTI MOLINS; depto RV (Rivera) como suplente titular",
+  "handles_x_candidatos": [
+   "ohmato"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11806",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Méndez, Aníbal",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de SORIANO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11806",
+  "mails": [
+   "anibal.mendez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "MENDEZ VIERA, ANIBAL ALBERTO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "mendezmendez",
+   "MDN_Uruguay"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13528",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Nedov Rodríguez, Sandra Mónica",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13528",
+  "mails": [
+   "sandra.nedov@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "15",
+    "en_eleccion": "NEDOV RODRIGUEZ, SANDRA MONICA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "15"
+  },
+  "handles_x_candidatos": [
+   "Sandra_NSN",
+   "saandraloopez"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "9896",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Niffouri, Amín",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/9896",
+  "mails": [
+   "aniffouri@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLVIII (2015-2020)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ACCIÓN COMUNITARIA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "NIFFOURI BLANCO, AMIN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ACCIÓN COMUNITARIA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "Paysandu"
+  ],
+  "handle_x": "ANiffouri",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/ANiffouri",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13624",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Noy López, Diana Marina",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13624",
+  "mails": [
+   "diana.noy@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "13",
+    "en_eleccion": "NOY LOPEZ, DIANA MARINA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "13"
+  },
+  "handles_x_candidatos": [
+   "dmnovy",
+   "dianenovy",
+   "dianapineyro1"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13874",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Núñez Cedrés, Fabricio Marcel",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de ROCHA",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13874",
+  "mails": [
+   "fabricio.nunez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL desde el 10/07/2025- Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "AIRE FRESCO",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "NÚÑEZ CEDRÉS, FABRICIO MARCEL",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "AIRE FRESCO",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "Fabriuruguayo",
+   "fabfelipe"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13628",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Obaldía Miraballes, María Inés",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13628",
+  "mails": [
+   "mariaines.obaldia@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "LA AMPLIA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "OBALDIA MIRABALLES, MARIA INES",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "LA AMPLIA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "minesobaldia"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11599",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Olaizola, Juan José",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11599",
+  "mails": [
+   "jjolaizola@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "DESDE ACÁ",
+    "sublema": "NO APLICA",
+    "ordinal": "3.1",
+    "en_eleccion": "OLAIZOLA AMEN, JUAN JOSE",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "DESDE ACÁ",
+   "sublema": "NO APLICA",
+   "ordinal": "3.1"
+  },
+  "handles_x_candidatos": [
+   "juanjoolaizola"
+  ],
+  "handle_x": "juanjoolaizola",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/juanjoolaizola",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "9963",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Osorio, Marne",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de RIVERA",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/9963",
+  "mails": [
+   "mosorio@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO COLORADO - Legislatura XLIX (2020-2025)",
+   " Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "OSORIO LIMA, MARNE JOHN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [],
+  "handle_x": "MarneOsorioLima",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/MarneOsorioLima",
+   "verificado_at": "2026-10-10"
+  },
+  "nota_x": "Sin cuenta X pública identificable (searches multi-motor 2026-10-10); verificar manualmente."
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12667",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Otero Agüero, Gabriel",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12667",
+  "mails": [
+   "gabriel.otero@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "8",
+    "en_eleccion": "OTERO AGUERO, ERNESTO GABRIEL",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "8"
+  },
+  "handles_x_candidatos": [
+   "Mx_Diputados"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13635",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Pereira Sosa, Mónica Asilde",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de TREINTA Y TRES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13635",
+  "mails": [
+   "monica.pereira@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "INNOVACIÓN NACIONALISTA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "PEREIRA SOSA, MONICA ASILDE",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "INNOVACIÓN NACIONALISTA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "monicaapereiraa"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "7742",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Pereyra, Aníbal",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Senador de la República por el Lema PARTIDO FRENTE AMPLIO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/7742",
+  "mails": [
+   "apereyra@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Senador de la República por el Lema PARTIDO FRENTE AMPLIO desde el 02/03/2025- Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)",
+   " Representante Nacional por el Lema PARTIDO ENCUENTRO PROGRESISTA-FRENTE AMPLIO-NUEVA MAYORIA - Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "PEREYRA HUELMO, HECTOR ANIBAL",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "PLATAFORMA",
+    "sublema": "NO APLICA",
+    "ordinal": "16.3",
+    "en_eleccion": "PEREYRA SANCHEZ, JORGE ANIBAL",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "Anibal_Pereyra_"
+  ],
+  "handle_x": "Anibal_Pereyra_",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/Anibal_Pereyra_",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11742",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Pereyra, Estela",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11742",
+  "mails": [
+   "estela.pereyra@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "9",
+    "en_eleccion": "PEREYRA CARDOZO, ESTELA AGRIPINA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "9"
+  },
+  "handles_x_candidatos": [
+   "EstelaUruguay"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "9936",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Perrone Cabrera, Álvaro",
+  "partido_lema": "PARTIDO CABILDO ABIERTO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO CABILDO ABIERTO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/9936",
+  "mails": [
+   "alvaro.perrone@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO CABILDO ABIERTO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO CABILDO ABIERTO - Legislatura XLIX (2020-2025)",
+   " Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "CON LA GENTE Y POR EL CAMBIO - CANELONES",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "PERRONE CABRERA, ALVARO LUIS",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "CON LA GENTE Y POR EL CAMBIO - CANELONES",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "APerrone510"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "7765",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Peña Hernández, Adriana",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de LAVALLEJA",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/7765",
+  "mails": [
+   "adriana.pena@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio07765.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)",
+   " Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "UNIDOS POR LAVALLEJA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "PEÑA HERNANDEZ, MARIA ADRIANA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "UNIDOS POR LAVALLEJA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "adripemi52"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13623",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Presa Cáceres, Marcos Adán",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13623",
+  "mails": [
+   "marcos.presa@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "10",
+    "en_eleccion": "PRESA CACERES, MARCOS ADAN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "10"
+  },
+  "handles_x_candidatos": [
+   "marcbont88",
+   "marcosquintann2"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11532",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Preve Cocco, Federico Mariano",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11532",
+  "mails": [
+   "federico.preve@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "3",
+    "en_eleccion": "PREVE COCCO, FEDERICO MARIANO",
+    "rol": "titular"
+   },
+   {
+    "agrupacion": "PLATAFORMA",
+    "sublema": "NO APLICA",
+    "ordinal": "14.3",
+    "en_eleccion": "PREVE COCCO, FEDERICO MARIANO",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "3"
+  },
+  "handles_x_candidatos": [
+   "fepreco",
+   "federicopineyr1"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12663",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Pérez Bonavita, Silvana",
+  "partido_lema": "PARTIDO CABILDO ABIERTO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO CABILDO ABIERTO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12663",
+  "mails": [
+   "sperezbonavita@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO CABILDO ABIERTO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO CABILDO ABIERTO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ORIENTALES UNIDOS",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "PÉREZ BONAVITA, SILVANA LOURDES",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ORIENTALES UNIDOS",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "silvanaperez_ec",
+   "Silprz86",
+   "Silvana33283448",
+   "LescaSilvana",
+   "sperezprensa"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11709",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Reisch, Nibia",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de COLONIA",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11709",
+  "mails": [
+   "nreisch@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "REISCH VILA, NIBIA ANDREA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "nisl9nib",
+   "nibenabi"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11591",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Reutor, Carlos",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11591",
+  "mails": [
+   "carlos.reutor@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": null,
+  "lista_principal": null,
+  "nota_sector": "Sin candidatura en hoja de votación nacional 2024 (legislador suplente FA Canelones; verificar en datos departamentales de la Corte)",
+  "handles_x_candidatos": [
+   "CarlosR",
+   "carlosr"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13610",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Reyes Álvarez, Carlos Alberto",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13610",
+  "mails": [
+   "carlos.reyes@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "7",
+    "en_eleccion": "REYES ALVAREZ, CARLOS ALBERTO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "7"
+  },
+  "handles_x_candidatos": [
+   "elcarlosreyes",
+   "reyesrico",
+   "United_FA",
+   "ProspectsUsmnt"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13613",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Rielli San Martín, José Domingo",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de DURAZNO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13613",
+  "mails": [
+   "domingo.rielli@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ALIANZA DEPARTAMENTAL NACIONALISTA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "RIELLI SAN MARTIN, JOSÉ DOMINGO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ALIANZA DEPARTAMENTAL NACIONALISTA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "joeriviello"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13648",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Rinaldi, Magela",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de DURAZNO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13648",
+  "mails": [
+   "magela.rinaldi@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "PARA QUE LAS COSAS PASEN",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "RINALDI GONZALEZ, MAGELA DONELY",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "PARA QUE LAS COSAS PASEN",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "MageRinaldi",
+   "mhrinaldi",
+   "rinaldimirella",
+   "magda"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12673",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Rodríguez Da Costa Leites, Juan Martín",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12673",
+  "mails": [
+   "juanmartin.rodriguez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MARIO HEBER - LUIS ALBERTO LACALLE",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "RODRIGUEZ DA COSTA LEITES, JUAN MARTIN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MARIO HEBER - LUIS ALBERTO LACALLE",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "juanma_rguez",
+   "jjrodriguez31_",
+   "juanbiter"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "10032",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Rodríguez Gálvez, Carlos",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de FLORIDA",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/10032",
+  "mails": [
+   "crodriguezgalvez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "RODRIGUEZ GALVEZ, CARLOS GUSTAVO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "exitorama"
+  ],
+  "handle_x": "exitorama",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "C.W.33 RADIO FLORIDA",
+   "followers": 14673,
+   "bio": "El medio de comunicación más importante del departamento. Líder indiscutido en audiencia.\n LA NOTICIA NO ES NOTICIA SI NO PASA POR LA 33.",
+   "latest_tweet_id": "1342108012715126784",
+   "verificado_at": "2026-10-11T00:03:42-03:00",
+   "url": "https://x.com/exitorama"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12735",
+  "banca": "titular",
+  "en_ejercicio": false,
+  "nombre": "Rodríguez Hunter, Álvaro",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de FLORIDA",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12735",
+  "mails": [
+   "alvaro.rodriguez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MANUEL ORIBE",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "RODRIGUEZ HUNTER, ALVARO HORACIO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MANUEL ORIBE",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "ALRORO49",
+   "alvarodrigueza",
+   "alvaroodriguezz",
+   "alvarodlz"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11597",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Rodríguez, Conrado",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11597",
+  "mails": [
+   "conrodriguez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO COLORADO - Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO COLORADO - Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "RODRIGUEZ MERLO, CONRADO HERNAN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "ConradoRodUy"
+  ],
+  "handle_x": "ConradoRodUy",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/ConradoRodUy",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13617",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Rydstrom Henderson, Carlos Augusto",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13617",
+  "mails": [
+   "carlos.rydstrom@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "RYDSTROM HENDERSON, CARLOS AUGUSTO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "caarlos_dl"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13612",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Salle Lorier, Gustavo Alberto",
+  "partido_lema": "PARTIDO IDENTIDAD SOBERANA",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO IDENTIDAD SOBERANA, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13612",
+  "mails": [
+   "gustavo.salle@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "NOSOTROS MISMOS",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "SALLE LORIER, GUSTAVO ALBERTO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "NOSOTROS MISMOS",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "gustasi",
+   "tintadown",
+   "gussand"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13647",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Salle, Nicolle",
+  "partido_lema": "PARTIDO IDENTIDAD SOBERANA",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO IDENTIDAD SOBERANA, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13647",
+  "mails": [
+   "nicolle.salle@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO IDENTIDAD SOBERANA - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "NOSOTROS MISMOS",
+    "sublema": "NO APLICA",
+    "ordinal": "1.1",
+    "en_eleccion": "SALLE PEREIRA, NICOLLE",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "NOSOTROS MISMOS",
+   "sublema": "NO APLICA",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "nicoleasales"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11704",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Satdjian, José",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11704",
+  "mails": [
+   "jsatdjian@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "DESDE ACÁ",
+    "sublema": "NO APLICA",
+    "ordinal": "1.1",
+    "en_eleccion": "SATDJIAN DEMIRDJIAN, JOSE LUIS",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "DESDE ACÁ",
+   "sublema": "NO APLICA",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "OSU_UY",
+   "Uruguay__EN",
+   "mediospublicosu"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12504",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Schipani, Felipe",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12504",
+  "mails": [
+   "felipe.schipani@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO COLORADO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "CIUDADANOS",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "SCHIPANI LARRAURI, FELIPE",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "CIUDADANOS",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "FelipeSchipani"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13621",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Sierra Franco, Julieta Beatríz",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13621",
+  "mails": [
+   "julieta.sierra@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "5",
+    "en_eleccion": "SIERRA FRANCO, JULIETA BEATRIZ",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "5"
+  },
+  "handles_x_candidatos": [
+   "julietasierraf"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "8307",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Silva, Rubenson",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de RIVERA",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/8307",
+  "mails": [
+   "rsilva@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/RUBENSON%20SILVA%20PELUFFO.pdf"
+  ],
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLVII (2010-2015)",
+   " Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "1.1",
+    "en_eleccion": "SILVA PELUFFO, RUBENSON",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "RubensonSilva"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13626",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Sotelo del Giacco, Gerardo",
+  "partido_lema": "PARTIDO INDEPENDIENTE",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO INDEPENDIENTE, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13626",
+  "mails": [
+   "gerardo.sotelo@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO INDEPENDIENTE - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "LIBRES",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "SOTELO DEL GIACCO, GERARDO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "LIBRES",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "Cybertario"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12666",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Tucci Montes de oca, Mariano",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12666",
+  "mails": [
+   "mariano.tucci@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "4",
+    "en_eleccion": "TUCCI MONTES DE OCA, ANGEL MARIANO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "4"
+  },
+  "handles_x_candidatos": [],
+  "handle_x": null,
+  "handle_x_verificacion": null,
+  "nota_x": "Sin cuenta X pública identificable (searches multi-motor 2026-10-10); verificar manualmente."
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "10034",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Umpiérrez, Javier",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de LAVALLEJA",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/10034",
+  "mails": [
+   "jumpierrez@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "UMPIERREZ DIANO, JAVIER ERNESTO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "impouruguay"
+  ],
+  "handle_x": "jumpierrez609",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/jumpierrez609",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11808",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Valdomir, Sebastián",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11808",
+  "mails": [
+   "sebastian.valdomir@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Presidente de la Cámara de Representantes desde el 15/02/2025 Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "VALDOMIR MUSLERA, CARLOS SEBASTIAN",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "SValdomir609"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11784",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Valverde, Sergio",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de SAN JOSE",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11784",
+  "mails": [
+   "sergio.valverde@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL - Legislatura L (2025-2030)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "SUMATE",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "VALVERDE CARRETTO, JULIO SERGIO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "SUMATE",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "svalver",
+   "SergioV19541431",
+   "svg153"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "7754",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Varela Nestier, Carlos",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/7754",
+  "mails": [
+   "cvarela@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/Bio07754.PDF"
+  ],
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVIII (2015-2020)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVII (2010-2015)",
+   " Representante Nacional por el Lema PARTIDO ENCUENTRO PROGRESISTA-FRENTE AMPLIO-NUEVA MAYORIA - Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "FUERZA RENOVADORA",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "VARELA NESTIER, CARLOS RICARDO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "FUERZA RENOVADORA",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "cvarela",
+   "CarlosVerareal",
+   "cavr22",
+   "elmagicovarela1"
+  ],
+  "handle_x": "varela2121",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/varela2121",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "9973",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Verri, Walter",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de PAYSANDU",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/9973",
+  "mails": [
+   "walter.verri@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO COLORADO - Legislatura XLVIII (2015-2020)",
+   " Representante Nacional por el Lema PARTIDO COLORADO - Legislatura XLVII (2010-2015)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "VERRI PIRIZ, WALTER ROBINSON",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "waltervieira",
+   "walterverri"
+  ],
+  "handle_x": "walterverri",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/walterverri",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13634",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Viera Dutruel, Mauricio Omar",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de SAN JOSE",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13634",
+  "mails": [
+   "mauricio.viera@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "VIERA DUTRUEL, MAURICIO OMAR",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "maurici0vera",
+   "Mvot_Uruguay"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "7982",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "Zavala, Alejandro",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MONTEVIDEO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/7982",
+  "mails": [
+   "alejandro.zavala@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura L (2025-2030)",
+   " Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVI (2005-2010)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "IR. IZQUIERDA CON UN NUEVO SENTIDO.",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "ZAVALA RABAJOLI, ALEJANDRO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "IR. IZQUIERDA CON UN NUEVO SENTIDO.",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "Ale_Zavala_",
+   "sabater10"
+  ],
+  "handle_x": "Ale_Zavala_",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/Ale_Zavala_",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13607",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "de Armas González, María Paula",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de CANELONES",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13607",
+  "mails": [
+   "paula.dearmas@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "VAMOS URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "DE ARMAS GONZÁLEZ, MARÍA PAULA",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "VAMOS URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "_maariaXO",
+   "mariadelima_uy",
+   "mariadesu"
+  ],
+  "handle_x": "PauladeArmasOK",
+  "handle_x_verificacion": {
+   "via": "fuentes_previas_x.com (commit bae56bf)",
+   "nombre_ce": null,
+   "tipo": "personal",
+   "confianza": "verified",
+   "url": "https://x.com/PauladeArmasOK",
+   "verificado_at": "2026-10-10"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11847",
+  "banca": "titular",
+  "en_ejercicio": true,
+  "nombre": "de Brum Delgado, Horacio Javier",
+  "partido_lema": "PARTIDO COLORADO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO COLORADO, departamento de SALTO",
+  "sustituciones": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11847",
+  "mails": [
+   "horacio.debrum@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO COLORADO - Legislatura L (2025-2030)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ARQ. ARMANDO I. BARBIERI",
+    "sublema": "NO APLICA",
+    "ordinal": "1",
+    "en_eleccion": "DE BRUM DELGADO, HORACIO JAVIER",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ARQ. ARMANDO I. BARBIERI",
+   "sublema": "NO APLICA",
+   "ordinal": "1"
+  },
+  "handles_x_candidatos": [
+   "horaciodesauce",
+   "HoracioDiYorio",
+   "pieroyhoracioUY",
+   "Horacito"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13668",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Constenla Stabilito, Pablo Fernando",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de SALTO",
+  "sustituciones": null,
+  "titular_de_la_banca_id": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13668",
+  "mails": [
+   "pablo.constenla@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO NACIONAL desde el 23/04/2025- Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "AIRE FRESCO",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "CONSTENLA STABILITO, PABLO FERNANDO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "AIRE FRESCO",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "_pablopj"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "5150",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Gallo Cantera, Luis Enrique",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CANELONES",
+  "sustituciones": "Gallo Cantera, Luis Enrique Sustituye al Representante Mahía, José Carlos durante el pasaje a Ministro o Subsecretario desde el 05/03/2025 00:02",
+  "titular_de_la_banca_id": "2921",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/5150",
+  "mails": [
+   "legallo@parlamento.gub.uy"
+  ],
+  "bio_pdf": [
+   "https://parlamento.gub.uy/sites/default/files/personas/biografias/CV%20LUIS%20ENRIQUE%202015.pdf"
+  ],
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO desde el 05/03/2025- Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLVIII (2015-2020)",
+   " Legislatura XLVI (2005-2010)",
+   " Legislatura XLV (2000-2005)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ASAMBLEA URUGUAY",
+    "sublema": "NO APLICA",
+    "ordinal": "1.1",
+    "en_eleccion": "GALLO CANTERA, LUIS ENRIQUE",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ASAMBLEA URUGUAY",
+   "sublema": "NO APLICA",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "Luisssimo",
+   "lubegach"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13656",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Garlo Alonsoperez, Joaquín",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de MALDONADO",
+  "sustituciones": "Garlo Alonsoperez, Joaquín Sustituye al Representante Antonini, Eduardo durante el pasaje al Senado desde el 05/03/2025 00:02",
+  "titular_de_la_banca_id": "12659",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13656",
+  "mails": [
+   "joaquin.garlo@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO desde el 05/03/2025- Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "1.1",
+    "en_eleccion": "GARLO ALONSOPEREZ, JOAQUÍN",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "joaquingarlo"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13892",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "González Albano, Omar Andrés",
+  "partido_lema": "PARTIDO NACIONAL",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO NACIONAL, departamento de FLORIDA",
+  "sustituciones": null,
+  "titular_de_la_banca_id": null,
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13892",
+  "mails": null,
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MANUEL ORIBE",
+    "sublema": "NO APLICA",
+    "ordinal": "6",
+    "en_eleccion": "GONZALEZ ALBANO, OMAR ANDRES",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MANUEL ORIBE",
+   "sublema": "NO APLICA",
+   "ordinal": "6"
+  },
+  "handles_x_candidatos": [
+   "omargonzalez6"
+  ],
+  "handle_x": "omargonzalez6",
+  "handle_x_verificacion": {
+   "via": "syndication_twitter_publico",
+   "nombre_ce": "Omar Gonzalez Moreno",
+   "followers": 38099,
+   "bio": "Periodista, educador, escritor y político. Diputado a la AN, miembro de la Dirección Nacional del partido Vente Venezuela",
+   "latest_tweet_id": "1957028120181023126",
+   "verificado_at": "2026-10-11T00:04:53-03:00",
+   "url": "https://x.com/omargonzalez6"
+  }
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "13900",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "González Bergonzoni, Antonio",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de CANELONES",
+  "sustituciones": "González Bergonzoni, Antonio Sustituye al Representante Reyes Álvarez, Carlos Alberto durante la licencia por enfermedad entre el 16/09/2026 00:02 y el 13/10/2026 23:59",
+  "titular_de_la_banca_id": "13610",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/13900",
+  "mails": null,
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Legislatura L (2025-2030)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "5.1",
+    "en_eleccion": "GONZÁLEZ BERGONZONI, ANTONIO",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "5.1"
+  },
+  "handles_x_candidatos": [
+   "pacogonzaleztv",
+   "bergonzoli",
+   "CGonzal50312082"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "11675",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Guerrero, Gustavo",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de TACUAREMBO",
+  "sustituciones": "Guerrero, Gustavo Sustituye al Representante Ferreira Rodríguez, Zulimar durante el pasaje al Senado desde el 15/07/2025 10:12",
+  "titular_de_la_banca_id": "9997",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/11675",
+  "mails": [
+   "gustavo.guerrero@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO desde el 15/07/2025- Legislatura L (2025-2030)",
+   " Legislatura XLIX (2020-2025)",
+   " Legislatura XLVIII (2015-2020)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+    "sublema": "NO APLICA",
+    "ordinal": "2",
+    "en_eleccion": "GUERRERO PALERMO, CESAR GUSTAVO",
+    "rol": "titular"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "MOVIMIENTO DE PARTICIPACION POPULAR",
+   "sublema": "NO APLICA",
+   "ordinal": "2"
+  },
+  "handles_x_candidatos": [
+   "GustavoJosuGue1"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ },
+ {
+  "camara": "Representantes",
+  "legislador_id": "12677",
+  "banca": "suplente_en_ejercicio",
+  "en_ejercicio": true,
+  "nombre": "Tinaglini, Gabriel",
+  "partido_lema": "PARTIDO FRENTE AMPLIO",
+  "cargo": null,
+  "descripcion": "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO, departamento de ROCHA",
+  "sustituciones": "Tinaglini, Gabriel Sustituye al Representante Pereyra, Aníbal durante el pasaje al Senado desde el 05/03/2025 00:02",
+  "titular_de_la_banca_id": "7742",
+  "url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/12677",
+  "mails": [
+   "gabriel.tinaglini@parlamento.gub.uy"
+  ],
+  "bio_pdf": null,
+  "trayectoria_legislaturas": [
+   "Representante Nacional por el Lema PARTIDO FRENTE AMPLIO desde el 05/03/2025- Legislatura L (2025-2030)",
+   " Representante Nacional por el Lema PARTIDO FRENTE AMPLIO - Legislatura XLIX (2020-2025)"
+  ],
+  "sector_lista": [
+   {
+    "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+    "sublema": "NO APLICA",
+    "ordinal": "1.1",
+    "en_eleccion": "TINAGLINI TEJERA, RUBEN GABRIEL",
+    "rol": "suplente"
+   }
+  ],
+  "lista_principal": {
+   "agrupacion": "ESPACIO POPULAR POR EL CAMBIO",
+   "sublema": "NO APLICA",
+   "ordinal": "1.1"
+  },
+  "handles_x_candidatos": [
+   "Gabe_cc",
+   "Gabriel_Twnk"
+  ],
+  "handle_x": null,
+  "handle_x_verificacion": null
+ }
+]

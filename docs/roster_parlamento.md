@@ -1,73 +1,44 @@
-# roster_parlamento
+# roster_parlamento — Roster 100% del Parlamento (legislatura 50, 2025-2030)
 
-Roster 100% del Parlamento uruguayo, legislatura L (2025–2030): **130 legisladores** — 31 senadores y 99 diputados (96 titulares + 3 que asumieron por suplencias: Cosse→Sabini/Caggiani/Rodríguez González, Fratti→Antonini, Ortuño→Brenta, Civila→González, Blás→Inzaurralde, Lustemberg→Kramer, Etcheverry→Pereyra, Mahía→Gallo Cantera, Reyes Álvarez→González Bergonzoni, Ferreira→Guerrero + suplentes activos).
+## Qué es
+Snapshot estructurado de los 145 legisladores que integran hoy el Parlamento uruguayo
+(31 Senadores incl. Presidenta + 99 Representantes titulares + 14 suplentes en ejercicio),
+con partido/lema, sector (agrupación-política y sublema de la hoja de votación 2024,
+ordinal y rol), trayectoria de legislaturas, contacto oficial y handle X cuando existe.
 
-## Generación
+## Archivos (git-able, under data/metadata/roster/)
+- `roster_parliament_v1.json` — roster completo (145 registros). Campos:
+  - `camara`, `nombre`, `legislador_id` (id numérico del portal), `url` ficha oficial
+  - `partido_lema`, `descripcion` (cargo/depto según ficha oficial), `cargo` (Presidente/a)
+  - `banca`: `titular` | `suplente_en_ejercicio`; `en_ejercicio` bool
+  - `sustituciones` (texto oficial de la suplencia activa)
+  - `sector_lista`: lista de candidaturas 2024 (agrupación/sublema/ordinal/rol) — fuente: CSV integración hojas de votación (Corte Electoral)
+  - `lista_principal`: la candidatura primera (mayor jerarquía) de `sector_lista`
+  - `trayectoria_legislaturas`: las legislaturas del portal (L, XLIX, XLVIII…)
+  - `mails`, `bio_pdf` (URL del CV oficial si existe)
+  - `handle_x` + `handle_x_verificacion` — cuando la verificación pública vía syndication (sin login) ya corrió; los no verificados quedan en `handles_x_candidatos` con candaditos ordenados por verosimilitud
+- `export/roster_2025_2030.csv` — export plano para consumo fácil.
+- `integracion_senadores.json` / `integracion_representantes.json` — JSON oficial de integración de cada Cámara (actuantes hoy + sustituciones).
+- `titulares_tab.json` / `titulares_map.json` — titularidad de banca vs actuante, con el id del titular reemplazado.
+- `asistencias_*.json` — asistencias legislatura 50 (portal datos abiertos).
+- `fichas_pages/<id>.json` — ficha por legislador (141 + 4 en licencia = 145 irrelevantes en runtime).
 
-```bash
-# 1. scrapes (idempotentes, guardan en data/metadata/roster/)
-C:/Users/marti/uruguay-gov-audit/.venv/Scripts/python.exe data/metadata/roster/scrape_fichas.py   # fichas por legislador
-C:/Users/marti/uruguay-gov-audit/.venv/Scripts/python.exe data/metadata/roster/bios_extract.py    # PDFs de bio -> texto
-# 2. handles X (búsquedas web + verificación de bio en x.com)
-#    pipeline/roster_handles.py (requiere sesion con hermes_tools)
-# 3. build
-C:/Users/marti/uruguay-gov-audit/.venv/Scripts/python.exe pipeline/build_roster.py
-```
+## Fuentes (provenance)
+- `parlamento.gub.uy` — integración de plenarios (HTML+JSON `/integracion/json`), fichas de legisladores, asistencias.
+  URLs exactas grabadas en cada JSON (`href`, `url`, `sustituciones` son texto literal de latada).
+- Corte Electoral: `data/electoral/2024_-integracion-de-hojas-de-votacion-eleccion-nacional.csv`
+  (descarga de CKAN; checksum en ledger `resultados_electoral`) para lista/sublema/ordinal.
+- X: verificación vía `syndication.twitter.com/srv/timeline-profile/screen-name/<handle>` (público, sin login,
+  mismo protocolo que `pipeline/backfill_x.py`); nombres/bio/followers/latest_tweet_id registrados en `x_handles.json`.
 
-Salidas:
-- `data/metadata/roster/roster_parlamento.json` — array completo (fuente de verdad)
-- `data/export/roster_parlamento.csv` — export plano para diffs en git
-- ledger: `source='roster_parlamento'`, un item por cámara (`roster_senadores`, `roster_representantes`)
+## Cómo actualizar (refresh)
+1. Actantes hoy: `GET https://parlamento.gub.uy/camarasycomisiones/{senadores|representantes}/plenario/integracion/json?page&_format=json`
+   (y `/titulares`) → re-parse con los regex de `titulares_map.json` parsing (script paso pendiente de modularizar).
+2. X: loop `x_queue.py --` a 70s/handle; resumible: reiniciar el proceso y sigue del último pendiente.
+3. Refresh full: re-corrida de `scrape_fichas.py` (idempotente por `fichas_pages/`).
 
-## Schema (por legislador)
-
-```json
-{
-  "nombre": "Cosse, Carolina",
-  "camara": "senadores",                              // senadores | representantes
-  "partido": "PARTIDO FRENTE AMPLIO",
-  "departamento": "",                                  // diputados: depto por el que ocupan banca
-  "lista_sector": "Lista 609",                         // solo cuando la evidencia la muestra (bio/handle)
-  "banca_num": null,                                   // el Parlamento no publica número de banca en sus fichas
-  "cargo": "Senador de la República por el Lema ...",  // descripción oficial de la ficha
-  "cargo_previo": ["Diputado ... XLIX (2020-2025)", "..."],
-  "bio_resumen": "...",                                // solo si hay PDF de bio oficial (16 fichas)
-  "handle_x": "CosseCarolina",
-  "handle_tipo": "personal",                           // personal | institucional
-  "handle_confianza": "verified",                       // verified | probable | sin_cuenta
-  "mail": "carolina.cosse_sec@parlamento.gub.uy",
-  "id_parlamento": "10065",
-  "legislaturas": ["Senador ... - Legislatura L (2025-2030)", " ... XLIX (2020-2025)"],
-  "fuentes": [{"url": "https://parlamento.gub.uy/camarasycomisiones/legisladores/10065", "fecha": "2026-10-10"}]
-}
-```
-
-## Cobertura (2026-10-10)
-
-| métrica | valor |
-|---|---|
-| legisladores | 130 (31 senadores + 99 representantes) |
-| con cargo_previo | 79 |
-| con mail oficial | 125 |
-| con bio oficial (PDF) | 16 |
-| con lista/sector explícito | 16 |
-| con handle X (verified) | 45 |
-| con handle X (probable) | 2 |
-| sin cuenta X hallable | 83 |
-
-Partido por cámara: senadores FA 17 / PN 9 / PC 5; representantes FA 48 / PN 29 / PC 17 / CA 2 / IS 2 / PI 1.
-
-## Criterio de verificación de handles
-
-- `verified`: la bio del perfil en x.com menciona el nombre (≥2 tokens), el cargo (senador/diputado/intendente/ministro), o el cargo + partido/sector como evidencia directa; o el propio perfil es vinculado por la ficha/search de primera fuente.
-- `probable`: cuenta del sector o lista del legislador (p. ej. `@EmpatiaUruguay` para Kramer, `@laampliafa` para Borbonet) sin mención nominal.
-- `sin_cuenta`: sin hallazgo después de 2 pasadas de búsqueda por persona (`"<Nombre> twitter"` y `"<Nombre> twitter perfil @"`) + verificación de bio cuando hubo candidato.
-
-Ambigüedades resueltas a rechazo: `@CarlitoxMoreira` (parodia de Carlos Moreira, 638 seguidores), `@cmoreira` (WordPress dev), `@Sebastian_AOE` (gamer por homónimo en Wikidata), `@MarneOsorioLima` para Silva, Rubenson (es de otra persona), `@AlvaroDelgadoUy` (presidente del PN, no el diputado Delgado Mas), `@DiputadosUY`/`@Parlamento_UY` (cuentas del cuerpo, no personales).
-
-## Cómo actualizar
-
-1. Re-correr `scrape_fichas.py` (resumible por `data/metadata/roster/fichas_pages/`).
-2. Re-correr `build_roster.py` — fusiona fichas + handles + bios.
-3. Para nuevos handles: agregar a `data/metadata/roster/handles_stage1.json` con el mismo schema (`estado: verificado|probable`, `handle`, `tipo`, `evidencia bio`) y re-correr build.
-4. Número de banca: el Parlamento no lo publica por legislador; si aparece una fuente nueva (p. ej. listas de votaciones por banca), agregarla a `banca_num`.
+## Cautela
+- La relación banca↔persona cambia por licencias/pasos a ministerios con frecuencia; refrescar semanal
+  (el mismo endpoint define a quién se le atribuyen discursos/asistencias).
+- Handles X: verificación por per-auditable vía public endpoint; sólo quedan `handle_x` cuando el match de nombre/descriptiva
+  es directo. Para los demás, `handles_x_candidatos` necesita revisión humana o verificación posterior.
