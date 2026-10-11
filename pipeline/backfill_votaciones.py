@@ -64,57 +64,88 @@ _APELIDOS_CACHE = None
 
 
 def _apellido_tokens():
-    """Tokens de apellido desde el roster del módulo de legisladores (si existe).
-    roster_provisional.json usa 'Apellido, Nombre' (puede ser compuesto: tokenizamos).
-    NO lo genera este módulo (spec: solo LEE si existe)."""
+    """Índice de apellidos desde el roster del módulo de legisladores (si existe):
+    roster .jah | roster_provisional.json | asistencias_{senadores,representantes}.json
+    (todo generado por OTRO módulo — este solo LEE, spec: no implementa roster).
+    Dos vistas: tokens sueltos (fold sin acentos) y frases 'Apellido Apellido'
+    completas ('Apellido, Nombre' antes de la coma). Para apellidos compuestos"""
     global _APELIDOS_CACHE
     if _APELIDOS_CACHE is not None:
         return _APELIDOS_CACHE
-    aps = set()
+    import unicodedata
+
+    def fold(s):
+        return "".join(c for c in unicodedata.normalize("NFD", s or "")
+                       if unicodedata.category(c) != "Mn")
+
+    aps, frases = set(), set()
     try:
-        roster = None
+        srcs = []
         if os.path.exists(ROSTER):
-            roster = json.load(open(ROSTER, encoding="utf-8"))
-        elif os.path.exists(ROSTER_PROV):
-            roster = json.load(open(ROSTER_PROV, encoding="utf-8"))
-        elif os.path.exists(ROSTER_FALLBACK):
-            roster = json.load(open(ROSTER_FALLBACK, encoding="utf-8"))
-        if roster:
+            srcs = [json.load(open(ROSTER, encoding="utf-8"))]
+        else:
+            for p in (ROSTER_PROV,
+                      os.path.join(ROOT, "data", "metadata", "roster", "asistencias_senadores.json"),
+                      os.path.join(ROOT, "data", "metadata", "roster", "asistencias_representantes.json")):
+                if os.path.exists(p):
+                    srcs.append(json.load(open(p, encoding="utf-8")))
+        for roster in srcs:
+            if not isinstance(roster, list):
+                continue
             for it in roster:
                 if not isinstance(it, dict):
                     continue
-                nm = it.get("nombre") or it.get("Nombre") or ""
-                for frag in nm.split(",")[0].split("/")[0].split():
-                    frag = re.sub(r"[^A-ZÁÉÍÓÚÜÑ]", "", frag.upper())
-                    if len(frag) >= 4 and frag.isalpha():
+                nm = (it.get("nombre") or it.get("Nombre") or "").strip()
+                ap = fold(nm.split(",")[0]).upper().strip()
+                if not ap or len(ap) < 4:
+                    continue
+                frases.add(re.sub(r"\s+", " ", ap))
+                for frag in ap.split():
+                    frag = re.sub(r"[^A-Z]", "", frag)
+                    if len(frag) >= 4:
                         aps.add(frag)
     except (OSError, ValueError):
         pass
-    _APELIDOS_CACHE = aps if aps else None
+    _APELIDOS_CACHE = (aps, frases) if aps else None
     return _APELIDOS_CACHE
 
 
 def _es_legislador(nm):
-    """Filtro de nombres de legislador: el roster del módulo de legisladores
-    (roster_provisional.json como fallback; el .jah cuando lo genere ese módulo)
-    da el set de apellidos reales — se acepta el nombre cuyo primer token
-    matchea un apellido conocido. Sin roster, heurística débil de 1-2 palabras."""
+    """Filtro de nombres de legislador contra el roster del módulo de
+    legisladores (solo LEE). Acepta 2-4 palabras (CRR usa 'Nombre Apellido'
+    o 'Nombre Apellido Apellido'; diarios traen paréntesis de suplencias que ya
+    se limpian a nivel de parse). Matchea si algún token/n-grama de tokens del
+    nombre (fold sin acentos) coincide con un apellido o frase de apellidos del
+    roster. Sin roster, heurística débil de 2-3 palabras con iniciales."""
     nm = re.sub(r"\s+", " ", (nm or "").strip())
-    if not nm or not (1 <= len(nm.split()) <= 2 and len(nm) >= 5):
+    partes = nm.split()
+    if not nm or len(nm) < 5:
         return False
-    if len(nm.split()) == 2 and not nm.split()[1][0].isupper():
+    if re.search(r"[.;:«»()\d,–—-]", partes[0]) or re.search(r"[.;:«»()\d,]", partes[-1]):
         return False
-    if re.search(r"[.;:«»()\d,–—-]", nm):
+    if re.search(r"SEÑOR|PRESIDENTA|COMISIÓN|COMISION|OPORTUNAMENTE|REPARTIDAS|informad|"
+                 r"destino|con licencia|con aviso|sin aviso|proyecto|FALTAN|EJERCEN|"
+                 r"Balance de|Cuerpo|urdido el", nm, re.I):
         return False
-    if re.search(r"SEÑOR|PRESIDENTA|COMISIÓN|OPORTUNAMENTE|REPARTIDAS|informad|destino|con licencia|"
-                 r"con aviso|sin aviso|proyecto|FALTAN|EJERCEN|Balance de|Cuerpo", nm, re.I):
+    import unicodedata
+
+    def fold(s):
+        return "".join(c for c in unicodedata.normalize("NFD", s or "")
+                       if unicodedata.category(c) != "Mn")
+
+    toks = [fold(t).upper() for t in partes]
+    if not (2 <= len(toks) <= 4):
         return False
-    aps = _apellido_tokens()
-    if aps:
-        first = re.sub(r"[^A-ZÁÉÍÓÚÜÑ]", "", nm.split()[0].upper())
-        return first in aps
-    # sin roster: heurística débil — 1-2 palabras, primera inicial mayúscula
-    return bool(re.match(r"^[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]+$", nm.split()[0]))
+    idx = _apellido_tokens()
+    if idx:
+        aps, frases = idx
+        for i in range(len(toks)):
+            for j in range(i + 1, min(len(toks), i + 4) + 1):
+                if " ".join(toks[i:j]) in frases:
+                    return True
+        return any(t in aps for t in toks)
+    # sin roster: heurística débil
+    return bool(re.match(r"^[A-ZÁÉÍÓÚÜÑ]", partes[0]))
 
 # ------------------------------------------------- números en letras (CRR) -> dígitos
 
@@ -365,28 +396,49 @@ def parse_votos(texto, camara):
 
 # ------------------------------------------------------------ descarga de una sesión
 
+# Código de "Cuerpo" del filtro del listado histórico (verificado contra el portal 2026-10-10):
+# A=Asamblea General, C=Comisión Permanente, D=Cámara de Representantes, S=Cámara de Senadores.
+CPO_CODIGO = {"senadores": "S", "representantes": "D"}
+
+# Una URL base del listado de diarios (histórico) con filtro por cuerpo + legislatura.
+URL_LISTADO = "%s/documentosyleyes/documentos/diarios-de-sesion/json" % BASE
+
+
+def _legislatura_de_periodo(periodo):
+    """Legislatura que contiene un período (año). Del JSON del propio portal
+    (Lgl_FechaInicial/Final); fallback a la regla fija 1985+5n."""
+    n = 42 + (int(periodo) - 1985) // 5
+    return n
+
+
 def _lista_diarios(camara, periodo):
-    """Del HTML del listado del portal: pares {portal_id, fecha, resumen}.
-    El id real de la página del PDF NO es el nº de diario (sirve vista histórica)."""
+    """Listado JSON del portal filtrado por cuerpo + legislatura: filas
+    {sesion_nro, fecha_iso, portal_id, resumen} del período pedido. Funciona
+    para la legislatura amplio (histórico incluido, desde 1985, XLII)."""
     cam = CAMARAS[camara]
-    url = "%s/camarasycomisiones/%s/plenario/documentos/diarios-de-sesion" % (BASE, cam["slug"])
-    html = http_get(url)
+    lgl = _legislatura_de_periodo(periodo)
     year = str(periodo)
+    url = "%s?Cpo_codigo=%s&Lgl_Nro=%d&_format=json" % (URL_LISTADO, CPO_CODIGO[camara], lgl)
+    raw = http_get(url)
+    if not raw.strip():
+        return []
+    try:
+        rows = json.loads(raw)
+    except ValueError as e:
+        raise ValueError("listado diarios JSON inválido para %s %d: %s (%dB)" % (camara, periodo, e, len(raw)))
     out = []
-    fechas = re.findall(r'views-field-DS-Fecha" [^>]*>(\d{2})-(\d{2})-(\d{4})', html)
-    nros = re.findall(r'views-field-Ssn-Nro">\s*(\d{1,3})\s*<', html)
-    links = re.findall(r'diario-de-sesion/(\d+)/IMG', html)
-    resumenes = [re.sub(r"\s+", " ", m).strip() for m in re.findall(
-        r'views-field-DS-Texto-Sumario">\s*([^<]+)<', html)]
-    for i, mdate in enumerate(re.finditer(r'views-field-DS-Fecha" [^>]*>(\d{2})-(\d{2})-(\d{4})', html)):
-        y = mdate.group(3)
-        if y != year:
+    for r in rows:
+        if not isinstance(r, dict):
             continue
-        out.append({"sesion_nro": nros[i] if i < len(nros) else "",
-                    "fecha_ddmmyyyy": mdate.group(0),
-                    "fecha_iso": "%s-%s-%s" % (y, mdate.group(2), mdate.group(1)),
-                    "portal_id": links[i] if i < len(links) else "",
-                    "resumen": resumenes[i] if i < len(resumenes) else ""})
+        fecha = r.get("Fecha") or ""
+        if not fecha or fecha[:4] != year:
+            continue
+        mlink = re.search(r'diario-de-sesion/(\d+)/IMG', r.get("Documento") or "")
+        out.append({"sesion_nro": str(r.get("Sesion") or ""),
+                    "fecha_ddmmyyyy": fecha[:10].replace("-", "-"),
+                    "fecha_iso": fecha[:10],
+                    "portal_id": mlink.group(1) if mlink else "",
+                    "resumen": re.sub(r"\s+", " ", r.get("Resumen") or "").strip()})
     return out
 
 
