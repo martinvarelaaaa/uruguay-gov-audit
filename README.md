@@ -56,6 +56,17 @@ python pipeline/ledger.py --export   # refresh runs/ledger.csv
 python mcp_server/server.py          # FastMCP stdio
 ```
 
+## Alcance temporal (decisión del owner, 10/10/26)
+
+**Límite oficial: post-1985.** Todo lo previo a 1985 (dictadura y antes) queda
+FUERA de scope — no digitalizado, archivos físicos. Las coberturas y timestamps
+de los datasets arrancan en 1985 (o el primer año disponible posterior).
+
+Todo dataset/fuente debe declarar `cobertura_periodo` explícito (e.g.
+`"1985-2026"`) en su config JSON y en los manifests que genera el pipeline.
+Un WRITE de coverage sin ese campo está incompleto. Ver
+`docs/CONVENCIONES.md` para la convención completa.
+
 ## Provenance
 
 Cada tool del MCP devuelve un bloque `provenance` con la fuente y notas.
