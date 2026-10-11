@@ -32,6 +32,7 @@ OUT_VOT = os.path.join(ROOT, "data", "votaciones")
 OUT_EXPORT = os.path.join(ROOT, "data", "export", "votaciones.csv")
 TMP = os.path.join(os.environ.get("TEMP", os.path.join(ROOT, "data", "tmp")), "votaciones_pdfs")
 ROSTER = os.path.join(ROOT, "data", "metadata", "roster", "roster_parlamento.jah")
+ROSTER_PROV = os.path.join(ROOT, "data", "metadata", "roster", "roster_provisional.json")
 ROSTER_FALLBACK = os.path.join(ROOT, "data", "metadata", "roster", "_probe_cards.json")
 
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -40,6 +41,9 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
 SLEEP_S = 4.0  # rate limit: >=4s entre requests, 1 in flight (llamadas estrictamente secuenciales)
 
 BASE = "https://parlamento.gub.uy"
+
+CAMARAS = {"senadores": {"code": "CSS", "slug": "senadores"},
+           "representantes": {"code": "CRR", "slug": "representantes"}}
 
 # ---------------------------------------------------------------- utilidades básicas
 
@@ -52,6 +56,65 @@ def http_get(url, timeout=240, binary=False):
 
 def sleep_rate():
     time.sleep(SLEEP_S)
+
+
+# ------------------------------------------------- normalización de nombres vía roster
+
+_APELIDOS_CACHE = None
+
+
+def _apellido_tokens():
+    """Tokens de apellido desde el roster del módulo de legisladores (si existe).
+    roster_provisional.json usa 'Apellido, Nombre' (puede ser compuesto: tokenizamos).
+    NO lo genera este módulo (spec: solo LEE si existe)."""
+    global _APELIDOS_CACHE
+    if _APELIDOS_CACHE is not None:
+        return _APELIDOS_CACHE
+    aps = set()
+    try:
+        roster = None
+        if os.path.exists(ROSTER):
+            roster = json.load(open(ROSTER, encoding="utf-8"))
+        elif os.path.exists(ROSTER_PROV):
+            roster = json.load(open(ROSTER_PROV, encoding="utf-8"))
+        elif os.path.exists(ROSTER_FALLBACK):
+            roster = json.load(open(ROSTER_FALLBACK, encoding="utf-8"))
+        if roster:
+            for it in roster:
+                if not isinstance(it, dict):
+                    continue
+                nm = it.get("nombre") or it.get("Nombre") or ""
+                for frag in nm.split(",")[0].split("/")[0].split():
+                    frag = re.sub(r"[^A-ZÁÉÍÓÚÜÑ]", "", frag.upper())
+                    if len(frag) >= 4 and frag.isalpha():
+                        aps.add(frag)
+    except (OSError, ValueError):
+        pass
+    _APELIDOS_CACHE = aps if aps else None
+    return _APELIDOS_CACHE
+
+
+def _es_legislador(nm):
+    """Filtro de nombres de legislador: el roster del módulo de legisladores
+    (roster_provisional.json como fallback; el .jah cuando lo genere ese módulo)
+    da el set de apellidos reales — se acepta el nombre cuyo primer token
+    matchea un apellido conocido. Sin roster, heurística débil de 1-2 palabras."""
+    nm = re.sub(r"\s+", " ", (nm or "").strip())
+    if not nm or not (1 <= len(nm.split()) <= 2 and len(nm) >= 5):
+        return False
+    if len(nm.split()) == 2 and not nm.split()[1][0].isupper():
+        return False
+    if re.search(r"[.;:«»()\d,–—-]", nm):
+        return False
+    if re.search(r"SEÑOR|PRESIDENTA|COMISIÓN|OPORTUNAMENTE|REPARTIDAS|informad|destino|con licencia|"
+                 r"con aviso|sin aviso|proyecto|FALTAN|EJERCEN|Balance de|Cuerpo", nm, re.I):
+        return False
+    aps = _apellido_tokens()
+    if aps:
+        first = re.sub(r"[^A-ZÁÉÍÓÚÜÑ]", "", nm.split()[0].upper())
+        return first in aps
+    # sin roster: heurística débil — 1-2 palabras, primera inicial mayúscula
+    return bool(re.match(r"^[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]+$", nm.split()[0]))
 
 # ------------------------------------------------- números en letras (CRR) -> dígitos
 
@@ -168,6 +231,7 @@ def parse_asistencia(flat, camara):
             nm = re.sub(r"^(?:el señor|la señora|señor|señora|señores senadores|señores representantes)\s+",
                         "", nm).strip()
             if nm and re.match(r"^[A-ZÁÉÍÓÚÜÑ]", nm) and len(nm) >= 5 and nm[0].isupper() \
+                    and _es_legislador(nm) \
                     and "senado" not in nm.lower() and "secretar" not in nm.lower() \
                     and "cámara" not in nm.lower() and "presidente" not in nm.lower():
                 asist[nm] = "asistio"
@@ -183,7 +247,8 @@ def parse_asistencia(flat, camara):
             nm = re.sub(r"^(?:con licencia[,:\s]*|con aviso[,:\s]*|sin aviso[,:\s]*)", "", nm)
             nm = re.sub(r"^(?:el señor|la señora|señor|señora|señores senadores|señores representantes)\s+",
                         "", nm).strip()
-            if nm and re.match(r"^[A-ZÁÉÍÓÚÜÑ]", nm) and len(nm) >= 5 and nm[0].isupper():
+            if nm and re.match(r"^[A-ZÁÉÍÓÚÜÑ]", nm) and len(nm) >= 5 and nm[0].isupper() \
+                    and _es_legislador(nm):
                 asist.setdefault(nm, "ausente")
     return asist
 
@@ -199,17 +264,17 @@ def parse_nominal(flat):
     for m in re.finditer(r"A\s*favor(?:es)?\s*:?\s*([^«»]{0,900}?)(?=\s*En\s*contra|\s*Abstenciones|$)", flat, re.I):
         for p in re.split(r"\s*,\s*|\s+y\s+", m.group(1)):
             nm = p.strip()
-            if nm and re.match(r"^[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]", nm) and len(nm.split()) <= 4:
+            if nm and _es_legislador(nm):
                 out[nm] = "a_favor"
     for m in re.finditer(r"En\s*contra\s*:?\s*([^«»]{0,900}?)(?=\s*Abstenciones|$)", flat, re.I):
         for p in re.split(r"\s*,\s*|\s+y\s+", m.group(1)):
             nm = p.strip()
-            if nm and re.match(r"^[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]", nm) and len(nm.split()) <= 4:
+            if nm and _es_legislador(nm):
                 out[nm] = "en_contra"
     for m in re.finditer(r"Abstenciones\s*:?\s*([^«»]{0,600})", flat, re.I):
         for p in re.split(r"\s*,\s*|\s+y\s+", m.group(1)):
             nm = p.strip()
-            if nm and re.match(r"^[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]", nm) and len(nm.split()) <= 4:
+            if nm and _es_legislador(nm):
                 out.setdefault(nm, "abstencion")
     return out
 
@@ -301,32 +366,40 @@ def parse_votos(texto, camara):
 # ------------------------------------------------------------ descarga de una sesión
 
 def _lista_diarios(camara, periodo):
-    """CSV del portal: filas {Sesión, Fecha dd-mm-aaaa, Diario, Resumen}. Filtra por año."""
+    """Del HTML del listado del portal: pares {portal_id, fecha, resumen}.
+    El id real de la página del PDF NO es el nº de diario (sirve vista histórica)."""
     cam = CAMARAS[camara]
-    url = "%s/camarasycomisiones/%s/plenario/documentos/diarios-de-sesion/csv?_format=csv" % (BASE, cam["slug"])
-    raw = http_get(url)
-    rows = list(csv.DictReader(io.StringIO(raw)))
+    url = "%s/camarasycomisiones/%s/plenario/documentos/diarios-de-sesion" % (BASE, cam["slug"])
+    html = http_get(url)
     year = str(periodo)
-    # fecha dd-mm-aaaa; si el periodo no matchea el año de la fecha, queda fuera
     out = []
-    for r in rows:
-        f = (r.get("Fecha") or "").strip()
-        m = re.match(r"^(\d{2})-(\d{2})-(\d{4})$", f)
-        if m and m.group(3) == year:
-            out.append({"sesion_nro": r.get("Sesión"), "fecha_ddmmyyyy": f,
-                        "fecha_iso": "%s-%s-%s" % (m.group(3), m.group(2), m.group(1)),
-                        "diario": r.get("Diario"), "resumen": r.get("Resumen")})
+    fechas = re.findall(r'views-field-DS-Fecha" [^>]*>(\d{2})-(\d{2})-(\d{4})', html)
+    nros = re.findall(r'views-field-Ssn-Nro">\s*(\d{1,3})\s*<', html)
+    links = re.findall(r'diario-de-sesion/(\d+)/IMG', html)
+    resumenes = [re.sub(r"\s+", " ", m).strip() for m in re.findall(
+        r'views-field-DS-Texto-Sumario">\s*([^<]+)<', html)]
+    for i, mdate in enumerate(re.finditer(r'views-field-DS-Fecha" [^>]*>(\d{2})-(\d{2})-(\d{4})', html)):
+        y = mdate.group(3)
+        if y != year:
+            continue
+        out.append({"sesion_nro": nros[i] if i < len(nros) else "",
+                    "fecha_ddmmyyyy": mdate.group(0),
+                    "fecha_iso": "%s-%s-%s" % (y, mdate.group(2), mdate.group(1)),
+                    "portal_id": links[i] if i < len(links) else "",
+                    "resumen": resumenes[i] if i < len(resumenes) else ""})
     return out
 
 
 def _pagina_y_pdf(camara, sesion, run_id=None):
     """URL de provenance (página del diario en el portal) + link del PDF real."""
     cam = CAMARAS[camara]
-    n = sesion["diario"]
-    nro = (n or "").strip()
-    url_pag = "%s/camarasycomisiones/%s/documentos/diario-de-sesion/%s/IMG" % (BASE, cam["slug"], nro)
+    url_pag = "%s/camarasycomisiones/%s/documentos/diario-de-sesion/%s/IMG" % (
+        BASE, cam["slug"], sesion["portal_id"])
     html = http_get(url_pag)
-    links = sorted(set(re.findall(r'https://infolegislativa\.parlamento\.gub\.uy/temporales/[^"]+', html)))
+    m = re.search(r'<a[^>]+href="(https://infolegislativa\.parlamento\.gub\.uy/temporales/[^"]+)"', html)
+    links = [m.group(1)] if m else \
+        sorted(set(u.rstrip('"\')') for u in
+                 re.findall(r'https://infolegislativa\.parlamento\.gub\.uy/temporales/[^\s">]+', html)))
     return url_pag, links
 
 
@@ -334,10 +407,10 @@ def descarga_sesion(camara, sesion, run_id, base_dir, force=False):
     """Baja el PDF del diario de sesión y genera data/votaciones/<camara>/<periodo>/<sesion>.json.
     Devuelve dict resumen para el ledger"""
     cam = CAMARAS[camara]
-    if not sesion["diario"]:
+    if not sesion.get("portal_id"):
         return None
-    nro = sesion["diario"].strip()
-    eid = record_start(run_id, "votaciones_nominales", "%s-%s" % (cam["code"], nro),
+    nro = sesion["portal_id"]           # id del portal (página del PDF)
+    eid = record_start(run_id, "votaciones_nominales", "%s-%s-%s" % (cam["code"], sesion["sesion_nro"], sesion["fecha_iso"]),
                        item_url=sesion.get("_url_pag"), meta={"fecha": sesion["fecha_iso"]})
     url_pag = None
     try:
@@ -367,14 +440,15 @@ def descarga_sesion(camara, sesion, run_id, base_dir, force=False):
         doc = {"camara": camara, "periodo": str(sesion["fecha_iso"][:4]),
                "sesion_id": "%s-s%02d-%s" % (cam["code"], int(sesion["sesion_nro"] or 0), sesion["fecha_iso"]),
                "sesion_nro": sesion["sesion_nro"], "sesion_fecha": sesion["fecha_iso"],
-               "url_origen": pdf_url, "url_pagina": url_pag, "diario_nro": nro,
+               "resumen": sesion.get("resumen", ""),
+               "url_origen": pdf_url, "url_pagina": url_pag, "diario_portal_id": nro,
                "checksum": "sha256:" + sha, "descargado": now_iso(),
                "asistencia": asist, "votaciones": votos}
         with open(destino, "w", encoding="utf-8") as f:
             json.dump(doc, f, ensure_ascii=False, indent=1)
-        record_finish(eid, "ok", rows=len(votos), bytes_=len(pdf), file_path=destino, sha256=sha,
-                      meta={"sesion": doc["sesion_id"], "url": pdf_url})
-        return {"status": "ok", "path": destino, "votos": len(votos), "asist": len(asist)}
+        record_finish(eid, "ok", rows=len(votos), bytes_=len(pdf), file_path=destino, sha256=sha)
+        return {"status": "ok", "path": destino, "votos": len(votos), "asist": len(asist), "url": pdf_url,
+                "sesion": doc["sesion_id"]}
     except Exception as e:
         record_finish(eid, "error", error=str(e))
         return {"status": "error", "error": str(e)}

@@ -9,5 +9,7 @@
     "senadores": [2025, 2026],
     "representantes": [2025, 2026]
   },
+  "_cobertura_periodo": "2025-2026 (baja backend); extensión histórica dirigida por docs/src_spec_votaciones.md EXTENSIÓN HISTÓRICA hacia 1985 agregando años a periodos (diarios de sesiones del portal + CKANdsp desde 1985)",
+  "cobertura_periodo": "2025-2026",
   "rate_limit": {"sleep_segundos": 4, "max_en_flight": 1}
 }
