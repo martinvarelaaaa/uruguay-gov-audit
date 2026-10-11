@@ -25,6 +25,7 @@ data/planes/
 data/govaudit.sqlite3
 data/ledger.sqlite3*
 data/export/
+!data/export/
 data/transcripts/senado/
 data/transcripts/diputados/
 data/transcripts/parlamento/
