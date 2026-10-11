@@ -16,7 +16,10 @@ data/departamentales/
 data/electoral/
 data/metadata/ckan/
 data/metadata/departamentales/
-data/metadata/roster/
+# roster: fuente de verdad commiteada; scrapes intermedios NO
+data/metadata/roster/*
+!data/metadata/roster/roster_parlamento.json
+!data/metadata/roster/handles_stage1.json
 data/metadata/youtube/senado.json
 data/metadata/youtube/diputados.json
 data/metadata/youtube/presidencia.json
