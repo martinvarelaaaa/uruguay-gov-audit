@@ -1,0 +1,57 @@
+{
+  "_nota": "Programas de gobierno históricos (elección -> período). Solo LEE este archivo; NO es el config/planes.json de la elección vigente. Fuente preferida: publicaciones de la Corte Electoral (PDF oficial presentado ante la CE).",
+  "2019": {
+    "fa": {
+      "nombre": "Frente Amplio",
+      "url_pdf": "https://www.gub.uy/corte-electoral/sites/corte-electoral/files/documentos/publicaciones/Programa%2Bde%2BGobierno%2BFrente%2BAmplio.pdf",
+      "url_web": "https://www.gub.uy/corte-electoral/comunicacion/publicaciones/programas-gobierno-partidos-politicos-para-periodo-2020-2025",
+      "nota": "Bases Programáticas 2020-2025, presentadas ante la Corte Electoral (expediente 2019-18-1-015093)."
+    },
+    "pn": {
+      "nombre": "Partido Nacional",
+      "url_pdf": "https://www.gub.uy/corte-electoral/sites/corte-electoral/files/documentos/publicaciones/Programa%2Bde%2BGobierno%2B2019%2B-%2BP%2BNacional.pdf",
+      "url_web": "https://www.gub.uy/corte-electoral/comunicacion/publicaciones/programas-gobierno-partidos-politicos-para-periodo-2020-2025",
+      "nota": "Programa de gobierno 2020-2025 del Partido Nacional, presentado ante la Corte Electoral."
+    },
+    "pc": {
+      "nombre": "Partido Colorado",
+      "url_pdf": "https://www.gub.uy/corte-electoral/sites/corte-electoral/files/documentos/publicaciones/Programa%2BPartido%2BColorado%2B-%2BWeb_compressed.pdf",
+      "url_web": "https://www.gub.uy/corte-electoral/comunicacion/publicaciones/programas-gobierno-partidos-politicos-para-periodo-2020-2025",
+      "nota": "Programa de gobierno 2020-2025 del Partido Colorado (Un pequeño país modelo), presentado ante la Corte Electoral."
+    }
+  },
+  "2014": {
+    "fa": {
+      "nombre": "Frente Amplio",
+      "url_pdf": "https://www.gub.uy/corte-electoral/sites/corte-electoral/files/documentos/publicaciones/Programa_nacional_FA_2015_2020.pdf",
+      "url_web": "https://www.gub.uy/corte-electoral/comunicacion/publicaciones/programa-gobierno-partidos-politicos-para-periodo-2015-2020",
+      "nota": "Bases Programáticas Tercer Gobierno 2015-2020."
+    },
+    "pn": {
+      "nombre": "Partido Nacional",
+      "url_pdf": "https://www.gub.uy/corte-electoral/sites/corte-electoral/files/documentos/publicaciones/Programa%20de%20Gobierno%202015%20-%20P%20Nacional%20-%20Imprenta.pdf",
+      "url_web": "https://www.gub.uy/corte-electoral/comunicacion/publicaciones/programa-gobierno-partidos-politicos-para-periodo-2015-2020",
+      "nota": "Programa de gobierno Partido Nacional 2015-2020."
+    },
+    "pc": {
+      "nombre": "Partido Colorado",
+      "url_pdf": "https://www.gub.uy/corte-electoral/sites/corte-electoral/files/documentos/publicaciones/Plan_Uruguay_2015_2020_Partido_Colorado_compressed%20%281%29_0.pdf",
+      "url_web": "https://www.gub.uy/corte-electoral/comunicacion/publicaciones/programa-gobierno-partidos-politicos-para-periodo-2015-2020",
+      "nota": "Plan Uruguay 2015-2020."
+    }
+  },
+  "2009": {
+    "fa": {
+      "nombre": "Frente Amplio",
+      "url_pdf": "https://www.frenteamplio.uy/wp-content/uploads/programa_2010_2015_1_0-2.pdf",
+      "url_web": "https://www.frenteamplio.uy/documento/programa-2010-2015/",
+      "nota": "Programa 2010-2015 (V Congreso Extraordinario Zelmar Michelini, 2008), archivo oficial frenteamplio.uy."
+    },
+    "pn": {
+      "nombre": "Partido Nacional",
+      "url_pdf": "https://alianzanacional.com.uy/web/wp-content/uploads/programa.pdf",
+      "url_web": "https://alianzanacional.com.uy",
+      "nota": "'Un país independiente, justo y próspero' — Programa de Gobierno 2010-2015 (fórmula Lacalle - Alianza Nacional). Programa del lema ganador de la interna; programa unificado del PN no disponible en línea."
+    }
+  }
+}
