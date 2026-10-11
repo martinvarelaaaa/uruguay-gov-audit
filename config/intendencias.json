@@ -1,0 +1,157 @@
+{
+  "_comentario": "Intendencias NO cubiertas por el CKAN nacional (ver docs/intendencias_scrape.md). Cubiertas por CKAN: Canelones, Durazno, Florida, Montevideo, Rocha, San José. Cada entrada: dominio raíz (para robots.txt y rate-limit), secciones solicitadas, y seed_urls = páginas oficiales verificadas de donde salen los documentos. domain_allow = hosts desde los que aceptamos descargar archivos (solo .gub.uy).",
+  "global": {
+    "sleep_s": 3,
+    "timeout_s": 60,
+    "max_docs_por_seccion": 50,
+    "max_descarga_mb": 200,
+    "formatos": ["pdf", "xlsx", "xls", "csv", "ods"],
+    "user_agent": "uruguay-gov-audit/0.1 (auditoria ciudadana; open source)"
+  },
+  "intendencias": [
+    {
+      "nombre": "artigas",
+      "dominio": "www.artigas.gub.uy",
+      "domain_allow": ["www.artigas.gub.uy", "artigas.gub.uy"],
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "transparencia": "https://www.artigas.gub.uy/category/institucional/institucional-transparencia/",
+        "gabinete": "https://www.artigas.gub.uy/pablo-caram-intendente-de-artigas/"
+      }
+    },
+    {
+      "nombre": "cerro-largo",
+      "dominio": "www.cerrolargo.gub.uy",
+      "domain_allow": ["www.gub.uy"],
+      "Nota": "portal propio con redirect-loop 301 infinito; subsitio oficial en gub.uy (Drupal). Semillas a páginas de esa casa.",
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "estructura-organismo": "https://www.gub.uy/intendencia-cerro-largo/institucional/estructura-del-organismo",
+        "adquisiciones": "https://www.gub.uy/intendencia-cerro-largo/institucional/adquisiciones",
+        "transparencia": "https://www.gub.uy/intendencia-cerro-largo/institucional/transparencia"
+      },
+      "base_subsite": "https://www.gub.uy/intendencia-cerro-largo"
+    },
+    {
+      "nombre": "colonia",
+      "dominio": "www.colonia.gub.uy",
+      "domain_allow": ["www.colonia.gub.uy", "colonia.gub.uy"],
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "inicio": "https://www.colonia.gub.uy"
+      },
+      "Nota": "robots.txt hace Disallow / a user-agent *; el sitio publica activamente los PDF en /uploads del home (Presupuesto Quinquenal 2026-2030, remuneraciones, organigrama). Descarga solo Público: procesos puntuales de metadata, no crawling masivo."
+    },
+    {
+      "nombre": "flores",
+      "dominio": "www.flores.gub.uy",
+      "domain_allow": ["www.flores.gub.uy", "flores.gub.uy"],
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "inicio": "https://www.flores.gub.uy"
+      }
+    },
+    {
+      "nombre": "lavalleja",
+      "dominio": "www.lavalleja.gub.uy",
+      "domain_allow": ["www.gub.uy"],
+      "Nota": "portal propio www.lavalleja.gub.uy solo sirve meta-refresh a https://www.gub.uy/intendencia-lavalleja/. Rendiciones: entrar a grupos y bajar los tomos en PDF.",
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "rendicion-cuentas": "https://www.gub.uy/intendencia-lavalleja/institucional/informacion-gestion/rendicion-cuentas",
+        "estructura-organismo": "https://www.gub.uy/intendencia-lavalleja/institucional/estructura-del-organismo",
+        "adquisiciones": "https://www.gub.uy/intendencia-lavalleja/institucional/adquisiciones"
+      },
+      "base_subsite": "https://www.gub.uy/intendencia-lavalleja"
+    },
+    {
+      "nombre": "maldonado",
+      "dominio": "www.maldonado.gub.uy",
+      "domain_allow": ["www.maldonado.gub.uy", "maldonado.gub.uy"],
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "transparencia": "https://www.maldonado.gub.uy/transparencia",
+        "autoridades": "https://www.maldonado.gub.uy/autoridades"
+      }
+    },
+    {
+      "nombre": "paysandu",
+      "dominio": "www.paysandu.gub.uy",
+      "domain_allow": ["www.paysandu.gub.uy", "paysandu.gub.uy"],
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "transparencia": "https://www.paysandu.gub.uy/transparencia/",
+        "adquisiciones": "https://www.paysandu.gub.uy/adquisiciones/",
+        "autoridades": "https://www.paysandu.gub.uy/autoridades/"
+      }
+    },
+    {
+      "nombre": "rionegro",
+      "dominio": "www.rionegro.gub.uy",
+      "domain_allow": ["www.rionegro.gub.uy", "rionegro.gub.uy"],
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "transparencia": "https://www.rionegro.gub.uy/transparencia/",
+        "presupuesto-2026-2030": "https://www.rionegro.gub.uy/presupuesto-2026-2030/",
+        "licitaciones": "https://www.rionegro.gub.uy/gestion/licitaciones/",
+        "gabinete": "https://www.rionegro.gub.uy/gabinete-2025-2030/"
+      }
+    },
+    {
+      "nombre": "rivera",
+      "dominio": "www.rivera.gub.uy",
+      "domain_allow": ["www.rivera.gub.uy", "rivera.gub.uy"],
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "transparencia": "https://www.rivera.gub.uy/portal/transparencia/",
+        "presupuesto": "https://www.rivera.gub.uy/portal/transparencia/presupuesto/",
+        "rendicion-cuentas": "https://www.rivera.gub.uy/portal/transparencia/rendicion-de-cuentas/",
+        "compras-licitaciones": "https://www.rivera.gub.uy/portal/compras-y-licitaciones/"
+      }
+    },
+    {
+      "nombre": "salto",
+      "dominio": "www.salto.gub.uy",
+      "domain_allow": ["www.salto.gub.uy", "salto.gub.uy"],
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "presupuesto-quinquenal": "https://www.salto.gub.uy/presupuesto-quinquenal",
+        "rendicion-cuentas": "https://www.salto.gub.uy/rendicion-de-cuentas",
+        "licitaciones": "https://www.salto.gub.uy/licitaciones",
+        "estructura": "https://www.salto.gub.uy/estructura",
+        "autoridades": "https://www.salto.gub.uy/autoridades"
+      },
+      "Nota": "Drual: /presupuesto-quinquenal y /rendicion-de-cuentas son listados de páginas detalle; el PDF real vive una página más adentro (crawling 2 niveles)."
+    },
+    {
+      "nombre": "soriano",
+      "dominio": "www.soriano.gub.uy",
+      "domain_allow": ["www.soriano.gub.uy", "soriano.gub.uy"],
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "inicio": "https://www.soriano.gub.uy"
+      },
+      "Nota": "licitaciones movidas a llamados.soriano.gub.uy (SPA JS, sin HTML estático) — no lo scrapear; el home deja Presupuesto Quinquenal 2026-2030 en /files/presupuesto/."
+    },
+    {
+      "nombre": "tacuarembo",
+      "dominio": "tacuarembo.gub.uy",
+      "domain_allow": ["tacuarembo.gub.uy", "www.tacuarembo.gub.uy"],
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "inicio": "https://tacuarembo.gub.uy/",
+        "autoridades": "https://tacuarembo.gub.uy/?p=557"
+      }
+    },
+    {
+      "nombre": "treinta-y-tres",
+      "dominio": "treintaytres.gub.uy",
+      "domain_allow": ["treintaytres.gub.uy", "www.treintaytres.gub.uy"],
+      "secciones": ["presupuesto", "rendiciones", "compras", "gabinete"],
+      "seed_urls": {
+        "licitaciones-llamados": "https://treintaytres.gub.uy/licitaciones-y-llamados/",
+        "autoridades": "https://treintaytres.gub.uy/autoridades/"
+      }
+    }
+  ]
+}

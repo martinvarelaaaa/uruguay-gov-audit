@@ -1,0 +1,13 @@
+{
+  "_comentario": "Módulo votaciones_nominales. Periodos por cámara. Las URLs se resuelven al vuelo (listado CSV de diarios de sesiones del portal + página diario-de-sesion/<id>/IMG -> PDF en infolegislativa); aquí solo fijan qué período/cámara procesar. No tocar fuentes: el motor pipeline/backfill_votaciones.py las descubre.",
+  "_limitacion": "El portal NO publica 'quién votó cómo' nominal como dato estructurado (verificado 2026-10-10). El motor deriva voto individual en sesiones con UNANIMIDAD (asistieron a_favor|en_contra, ausentes ausente) y lo deja agregado (a_favor_n/en_contra_n, voto_agregado=true) en el resto. Votaciones declaradas NOMINALES en el diario se parsean nominal (parse_nominal).",
+  "camaras": {
+    "senadores": {"code": "CSS", "slug_portal": "senadores"},
+    "representantes": {"code": "CRR", "slug_portal": "representantes"}
+  },
+  "periodos": {
+    "senadores": [2025, 2026],
+    "representantes": [2025, 2026]
+  },
+  "rate_limit": {"sleep_segundos": 4, "max_en_flight": 1}
+}

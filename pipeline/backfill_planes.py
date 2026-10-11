@@ -60,12 +60,19 @@ def sha256_file(path):
 
 
 def convert_docling(pdf_path, md_path):
-    """Convierte PDF -> markdown con docling (encabezados/secciones preservados)."""
+    """Convierte PDF -> markdown con docling (encabezados/secciones preservados).
+
+    Desactiva OCR: los programas son PDFs de texto nativo, no escaneados.
+    """
     try:
-        from docling.document_converter import DocumentConverter
+        from docling.document_converter import DocumentConverter, PdfFormatOption
+        from docling.datamodel.base_models import InputFormat
+        from docling.datamodel.pipeline_options import PdfPipelineOptions
     except ImportError:
         return False
-    conv = DocumentConverter()
+    opts = PdfPipelineOptions()
+    opts.do_ocr = False
+    conv = DocumentConverter(format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=opts)})
     result = conv.convert(pdf_path)
     md = result.document.export_to_markdown()
     with open(md_path, "w", encoding="utf-8") as f:
@@ -84,6 +91,17 @@ def convert_pdfplumber(pdf_path, md_path):
     with open(md_path, "w", encoding="utf-8") as f:
         f.write("\n\n".join(parts) + "\n")
     return True
+
+
+def _update_meta(extraction_id, meta):
+    """Actualiza la columna meta de una extracción ya cerrada (record_finish no acepta meta)."""
+    import sqlite3
+    conn = sqlite3.connect(os.path.abspath(ledger.DB_PATH), timeout=30)
+    try:
+        conn.execute("UPDATE extractions SET meta=? WHERE id=?", (meta, extraction_id))
+        conn.commit()
+    finally:
+        conn.close()
 
 
 def count_sections(md):
@@ -141,8 +159,9 @@ def process_partido(key, meta, run_id, skip_existing=True):
         write_front_matter(md_path, url, checksum, conv_method)
         n_sections = count_sections(open(md_path, encoding="utf-8").read())
         ledger.record_finish(eid, status="ok", rows=n_sections, bytes_=size,
-                             file_path=md_path, sha256=checksum,
-                             meta={"conversion": conv_method, "nombre": meta["nombre"]})
+                             file_path=md_path, sha256=checksum)
+        extra = json.dumps({"conversion": conv_method}, ensure_ascii=False)
+        _update_meta(eid, extra)
         print(f"[{key}] ok: {size} bytes, {n_sections} secciones, conversión={conv_method}")
         return "ok"
     except Exception as e:

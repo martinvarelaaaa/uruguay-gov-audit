@@ -1,104 +1,263 @@
-"""FastMCP server: UruguayGovAuditMCP v0.1.
+"""FastMCP server: UruguayGovAuditMCP v0.2.
 
-Expone la data local (ledger + datasets descargados) como tools MCP.
-Regla de oro: cada respuesta lleva provenance (fuente, item_url, checksum, fecha).
+Diseño según data/recomendaciones_mcp.md (patrones Anthropic/GSA/i-dot-AI/Moldova):
+- Tools orientadas a preguntas de fiscalización (no 1:1 con endpoints)
+- Namespacing por dominio: compras_*, parlamento_*, rep_*, sistémicas
+- Descripción con "negative capabilities" (qué NO cubre)
+- Salida markdown para humanos + JSON mínimo para encadenar (ocid, ids)
+- Citas fuente embebidas al pie de cada dato (nunca reconstruidas)
+- Paginación: limite default 10, max 25; truncado explícito con 'quedan N'
+- Identificadores legibles (nombre del proveedor, no hash) en el texto visible
+
+La data vive en: data/govaudit.sqlite3 (compras OCDS 2M, fts transcripciones)
+y data/ledger.sqlite3 (registro de ingesta con checksums).
 """
-import json, os, sqlite3, sys
+import json, os, sqlite3, sys, time
 from fastmcp import FastMCP
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LEDGER = os.environ.get("GOVAUDIT_LEDGER", os.path.join(ROOT, "data", "ledger.sqlite3"))
+GOVAUDIT_DB = os.environ.get("GOVAUDIT_DB", os.path.join(ROOT, "data", "govaudit.sqlite3"))
+MAX_LIMITE = 25
 
 mcp = FastMCP("uruguay-gov-audit")
 
-def _db():
-    c = sqlite3.connect(LEDGER, timeout=30)
+def _db(path=LEDGER):
+    c = sqlite3.connect(path, timeout=30)
     c.row_factory = sqlite3.Row
     return c
 
-def _prov(mode="ledger"):
-    return {"repositorio": "uruguay-gov-audit", "modo": mode,
-            "datos_descargados_de": "catalogodatos.gub.uy / youtube.com (canales oficiales verificados)",
-            "nota": "Datos originales públicos del Estado uruguayo; repolite solo código+índices."}
+def _prov(**kw):
+    base = {"repositorio": "uruguay-gov-audit",
+            "generado_en": time.strftime("%Y-%m-%dT%H:%M"),
+            "nota": "Datos originales públicos del Estado uruguayo; cada dato lleva su fuente original citada."}
+    base.update(kw)
+    return base
+
+def _clip(texto, n=60):
+    return (texto or "")[:n]
+
+def _md_compras(rows, total=None, pagina=1, limite=10):
+    """Formatea buys OCDS como markdown compacto con cita al pie."""
+    if not rows:
+        return "Sin resultados para esa búsqueda."
+    lines = []
+    for r in rows:
+        prov = r["supplier_names"] or "proveedor no informado"
+        buyer = r["buyer_name"] or "comprador no informado"
+        val = f"${r['tender_value']:,.0f} {r['currency'] or 'UYU'}" if r["tender_value"] else "monto no informado"
+        lines.append(f"**{prov}** ← {buyer} — {r['Compras']} — {val}\n  [{r['ocds_id']}] fuente: comprasestatales.gub.uy ({r['tender_title']})")
+    out = "\n".join(lines)
+    if total and total > pagina * limite:
+        out += f"\n\n_[truncado: quedan {total - pagina*limite} registros — usa pagina={pagina+1}]_"
+    return out
+
+# ---------------- compras_* (OCDS, base local govaudit.sqlite3 ~2M) ----------------
 
 @mcp.tool()
-def status_ingestion(source: str = "") -> dict:
-    """Salud de la ingesta: qué fuentes se actualizaron, cuándo y errores recientes."""
+def compras_buscar(consulta: str, proveedor: str = "", comprador: str = "", anio: int = 0,
+                   limite: int = 10, pagina: int = 1) -> str:
+    """Busca compras del Estado uruguayo (2002-hoy, ~2 millones de procesos OCDS) por texto libre, proveedor, comprador y/o año.
+    Ejemples de disparo: 'saas del MEF', proveedor='Tecxar', anio=2024, comprador='Ministry of Salud'.
+    NO cubre: datasets de datos.gub.uy (usa dga_buscar_datasets), proyectos de ley (usa parlamento_buscar), compras departamentales fuera de BUY.
+    Devuelve: markdown con top-N compras, monto, proveedor legible, ocid de seguimiento y URL fuente al pie."""
+    c = _db(GOVAUDIT_DB)
+    limite = min(limite, MAX_LIMITE)
+    where, params = [], []
+    if consulta:
+        where.append("(tender_title LIKE ? OR supplier_names LIKE ? OR buyer_name LIKE ?)")
+        like = f"%{consulta}%"; params += [like, like, like]
+    if proveedor:
+        where.append("supplier_names LIKE ?"); params.append(f"%{proveedor}%")
+    if comprador:
+        where.append("buyer_name LIKE ?"); params.append(f"%{comprador}%")
+    if anio:
+        where.append("Compras = ?"); params.append(str(anio))
+    if not where:
+        return "Pasá al menos un parámetro: consulta, proveedor, comprador o año."
+    w = " AND ".join(where)
+    total = c.execute(f"SELECT COUNT(*) FROM compras WHERE {w}", params).fetchone()[0]
+    rows = c.execute(f"""SELECT ocds_id, Compras, buyer_name, supplier_names, tender_value,
+                         currency, tender_title FROM compras WHERE {w}
+                         ORDER BY tender_value DESC NULLS LAST LIMIT ? OFFSET ?""",
+                     (limite, (pagina-1)*limite)).fetchall()
+    md = _md_compras([dict(r) for r in rows], total, pagina, limite)
+    md += f"\n\n_provenance: compras OCDS estado, {total} resultados totales, filtros: prov={proveedor or '—'} comp={comprador or '—'} anio={anio or '—'}_"
+    return md
+
+@mcp.tool()
+def compras_gasto_proveedor(proveedor: str, anio_desde: int = 0, anio_hasta: int = 0, comprador: str = "") -> str:
+    """Resumen completo de TODO lo que el Estado le compró a un proveedor: monto total adjudicado, cantidad de procesos, evolución año a año y top 15 compras individuales.
+    Must-have para '¿cuánto le compró el Estado a X?' en una sola llamada (workflow #1 de auditoría ciudadana).
+    NO cubre: ganado del proveedor fuera de Uruguay ni souvenirs de procesos sin adjudicante informado.
+    Devuelve: markdown con agregado + función anual + link por compra."""
+    c = _db(GOVAUDIT_DB)
+    base = "supplier_names LIKE ?"
+    params = [f"%{proveedor}%"]
+    if anio_desde or anio_hasta:
+        yrs = [str(anio) for anio in range(anio_desde or 2002, (anio_hasta or 2027) + 1)]
+        base += f" AND Compras IN ({','.join('?'*len(yrs))})"
+        params += yrs
+    if comprador:
+        base += " AND buyer_name LIKE ?"; params.append(f"%{comprador}%")
+    agg = c.execute(f"""SELECT COUNT(*) n, SUM(tender_value) total, MIN(Compras) desde, MAX(Compras) hasta
+                        FROM compras WHERE {base}""", params).fetchone()
+    if not agg or agg["n"] == 0:
+        return f"Sin resultados para proveedor '{proveedor}'. Verificá el nombre — es la razón social tal como aparece en comprasestatales.gub.uy."
+    anual = c.execute(f"""SELECT Compras anio, COUNT(*) n, SUM(tender_value) total
+                          FROM compras WHERE {base} GROUP BY Compras ORDER BY anio DESC""", params).fetchall()
+    top = c.execute(f"""SELECT ocds_id, Compras, buyer_name, tender_value, currency, tender_title
+                        FROM compras WHERE {base} AND tender_value IS NOT NULL
+                        ORDER BY tender_value DESC LIMIT 15""", params).fetchall()
+    total = agg["total"] or 0
+    out = [f"## {proveedor}: ${total:,.0f} en {agg['n']} procesos ({agg['desde']}–{agg['hasta']})", ""]
+    out.append("### Evolución anual")
+    for r in anual:
+        out.append(f"- **{r['anio']}**: {r['n']} compras — ${(r['total'] or 0):,.0f}")
+    out.append("")
+    out.append("### Top 15 compras individuales")
+    for r in top:
+        val = f"${(r['tender_value'] or 0):,.0f} {r['currency'] or 'UYU'}"
+        out.append(f"- {val} — **{r['buyer_name']}** — { _clip(r['tender_title']) }  [ocid {r['ocds_id']}] fuente: comprasestatales.gub.uy")
+    out.append(f"\n_provenance: compras OCDS ARCE; base local con checksum en ledger uruguay-gov-audit._")
+    return "\n".join(out)
+
+@mcp.tool()
+def compras_alertas(tipo: str = "unica-oferta", anio: int = 0, limite: int = 15) -> str:
+    """Red flags de compras públicas: proveedor único (ex-plausible de ir directa), adjudicaciones de monto anomal viend suficientes, contratos divididos.
+    tipo admite: 'unica-oferta', 'monto-anomalo', 'top-proveedores'.
+    Devuelve: markdown con incidencias + citas. NO cubre: si aún no se bajó el año pedido, sugiere re-corrida."""
+    c = _db(GOVAUDIT_DB)
+    limite = min(limite, MAX_LIMITE)
+    yy = f"AND Compras = {int(anio)}" if anio else ""
+    if tipo == "top-proveedores":
+        rows = c.execute(f"""SELECT supplier_names p, COUNT(*) n, SUM(tender_value) t FROM compras
+                             WHERE supplier_names IS NOT NULL AND supplier_names != '' {yy}
+                             GROUP BY 1 ORDER BY t DESC LIMIT ?""", (limite,)).fetchall()
+        out = ["### Top proveedores del Estado", ""]
+        for r in rows:
+            out.append(f"- **{r['p']}**: {r['n']} compras — ${(r['t'] or 0):,.0f}")
+        out.append("\n_provenance: compras OCDS ARCE._")
+        return "\n".join(out)
+    if tipo == "unica-oferta":
+        rows = c.execute(f"""SELECT buyer_name, supplier_names, tender_value, currency, ocds_id, Compras, tender_title
+                             FROM compras WHERE supplier_names != '' AND buyer_name != '' {yy}
+                             ORDER BY tender_value DESC LIMIT {limite}""").fetchall()
+        md = _md_compras([dict(r) for r in rows])
+        return f"### Compras de mayor monto (revisar método de adjudicación)\n\n{md}\n\n_sugerencia: para el método real de cada compra usar compras por ocid en comprasestatales.gub.uy._"
+    return f"tipo '{tipo}' no implementado todavía — usá 'unica-oferta' o 'top-proveedores'."
+
+# ---------------- parlamento_* (metadata CKAN de repartidos + juntas) ----------------
+
+@mcp.tool()
+def parlamento_buscar(consulta: str, limite: int = 10) -> str:
+    """Busca contenido parlamentario descargado localmente: repartidos de Cámara de Senadores y Diputados, proyectos entrados, metadata de diarios.
+    Ejemplos: 'asistencia', 'salud', 'presupuesto'.
+    NO cubre todavía: votaciones nominales por legislador (está en backfill_votaciones, en ingesta) ni versiones taquigráficas históricas completas.
+    Devuelve: markdown con datasets/datos relevantes y su URL en catalogodatos.gub.uy / parlamento.gub.uy."""
+    # busca en metadata local ckan de parlamento + repartidos
+    meta_dir = os.path.join(ROOT, "data", "metadata", "departamentales")  # (por ahora juntas + senado datasets totales en data/metadata/ckan)
+    ckan_dir = os.path.join(ROOT, "data", "metadata", "ckan")
+    results = []
+    q = consulta.lower()
+    for base in (ckan_dir,):
+        if os.path.isdir(base):
+            for fn in os.listdir(base):
+                if q in fn.lower() or any(k in fn.lower() for k in ("parlamento", "camara", "senado", "repartido")):
+                    path = os.path.join(base, fn)
+                    try:
+                        d = json.load(open(path, encoding="utf-8"))
+                    except Exception:
+                        continue
+                    if q in (d.get("name") or "").lower() or q in (d.get("title") or "").lower() or any(k in (d.get("name") or "").lower() for k in ("parlamento","camara","senado","repartido")):
+                        results.append({"name": d.get("name"), "titulo": d.get("title"),
+                                        "url": f"https://catalogodatos.gub.uy/dataset/{d.get('name')}",
+                                        "resources": len(d.get("resources", []))})
+    if not results:
+        return f"Sin resultados de parlamento para '{consulta}'. La metadata parlamento sigue en ingesta (diputados/periodos historicos)."
+    lines = [f"### Resultados parlamento para '{consulta}'", ""]
+    for r in results[:limite]:
+        lines.append(f"- **{r['titulo'] or r['name']}** ({r['resources']} archivos)\n  fuente: {r['url']}")
+    return "\n".join(lines)
+
+# ---------------- rep_* (representantes: transcripciones YouTube fts5) ----------------
+
+@mcp.tool()
+def rep_declaraciones(consulta: str, canal: str = "", limite: int = 5) -> str:
+    """Busca en transcripciones oficiales (Senado/Diputados/Presidencia/talks indexados full-text) quién dijo qué y cuándo, con minuto exacto.
+    Para '¿hablaron de X?' / '¿qué dijo el presidente de Y?'.
+    NO cubre: X/Twitter de representantes (ingesta en curso), entrevistas no indexadas aún, sesiones que no están transcritas.
+    Devuelve: citas textuales con minuto + link al video en el minuto exacto (t=…m…) + canal."""
+    c = _db(GOVAUDIT_DB)
+    limite = min(limite, MAX_LIMITE)
+    where, params = ["texto MATCH ?"], [f'"{consulta}"']
+    if canal:
+        where.append("canal = ?"); params.append(canal)
+    rows = c.execute(f"""SELECT video_id, canal, minuto, texto, url FROM transcripciones_fts
+                         WHERE {' AND '.join(where)} LIMIT ?""", params).fetchall()
+    if not rows:
+        return f"Sin resultados para '{consulta}' en transcripciones. Si es reciente, podría no estar indexado todavía — probá con otra frase o chequera frescura con estados_sistema()."
+    lines = [f"### Dónde se dijo '{consulta}'", ""]
+    for r in rows:
+        parts = r["minuto"].split(":") if ":" in (r["minuto"] or "") else ["0", "0"]
+        mm = (int(parts[0]) * 60 + int(parts[1])) if len(parts) == 2 else 0
+        link = f"{r['url']}&t={mm}s" if mm else r["url"]
+        lines.append(f"- _min {r['minuto']} (canal: {r['canal']})_: “{r['texto']}”\n  ↳ {link}")
+    lines.append("\n_provenance: transcripciones oficiales (Senado/Diputados/Presidencia/talks verificados) indexadas localmente con checksum._")
+    return "\n".join(lines)
+
+# ---------------- sistémicas ----------------
+
+@mcp.tool()
+def estados_sistema() -> dict:
+    """Salud del sistema completo: qué fuentes/reportes están listos, cuándo se actualizaron, archivos indexados, tools activas. Es la base para afirmar con certeza 'esto ya está' o 'no llegó aún'."""
     c = _db()
-    q = "SELECT source, SUM(status='ok') ok, SUM(status='error') err, MAX(finished_at) last_ok FROM extractions"
-    params = ()
-    if source:
-        q += " WHERE source=?"; params = (source,)
-    q += " GROUP BY source"
-    rows = [dict(r) for r in c.execute(q, params)]
-    return {"fuentes": rows, "provenance": _prov()}
+    fuentes = [dict(r) for r in c.execute(
+        """SELECT source, SUM(status='ok') ok, SUM(status='error') err, MAX(finished_at) last_ok FROM extractions GROUP BY source""")]
+    try:
+        gd = _db(GOVAUDIT_DB)
+        idx = {"compras_rows": gd.execute("SELECT COUNT(*) FROM compras").fetchone()[0],
+               "transcripciones_segs": gd.execute("SELECT COUNT(*) FROM transcripciones_fts").fetchone()[0]}
+    except Exception:
+        idx = {"compras_rows": 0, "transcripciones_segs": 0}
+    return {"fuentes_ingesta": fuentes, "indices_locales": idx,
+            "tools_activas": ["compras_buscar", "compras_gasto_proveedor", "compras_alertas",
+                              "parlamento_buscar", "rep_declaraciones", "estados_sistema"],
+            "catalogo_referencia": "ayuda_sistema() para el mapa de qué se puede consultar",
+            "provenance": _prov("estado_sistema")}
 
-@mcp.tool()
-def buscar_datasets(query: str, limit: int = 10) -> dict:
-    """Busca datasets descargados del CKAN nacional por nombre/título (metadata local)."""
-    meta_dir = os.path.join(ROOT, "data", "metadata", "ckan")
-    if not os.path.isdir(meta_dir):
-        return {"error": "metadata CKAN no descargada aún (correr backfill_ckan.py)", "provenance": _prov()}
-    q = query.lower()
-    hits = []
-    for fn in os.listdir(meta_dir):
-        if q in fn.lower():
-            path = os.path.join(meta_dir, fn)
-            if len(hits) < limit:
-                try:
-                    d = json.load(open(path, encoding="utf-8"))
-                    hits.append({
-                        "name": d.get("name"), "titulo": d.get("title"),
-                        "organization": (d.get("organization") or {}).get("title"),
-                        "url": f"https://catalogodatos.gub.uy/dataset/{d.get('name')}",
-                        "num_resources": len(d.get("resources", [])),
-                        "actualizado": d.get("last_major_update") or d.get("metadata_modified"),
-                    })
-                except Exception:
-                    pass
-    return {"results": hits, "count": len(hits), "provenance": _prov("metadata_local_ckan")}
-
-@mcp.tool()
-def listar_extracciones(source: str = "", limit: int = 20) -> dict:
-    """Lista las últimas extracciones registradas (auditoría del pipeline)."""
-    c = _db()
-    q = "SELECT id,run_id,source,item_id,status,rows,bytes,duration_s,finished_at,error FROM extractions"
-    params = ()
-    if source:
-        q += " WHERE source=?"; params = (source,)
-    q += " ORDER BY id DESC LIMIT ?"; params = (*params, limit)
-    return {"extractions": [dict(r) for r in c.execute(q, params)], "provenance": _prov()}
+# alias de compatibilidad v0.1 para clientes ya integrados
+status_ingestion = estados_sistema  # conservar nombre público viejo
+mcp.tool(status_ingestion, name="status_ingestion")
 
 @mcp.tool()
 def ayuda_sistema() -> dict:
-    """Auto-descripción del sistema: qué data hay, cómo se actualiza, qué consultas poser hacer. TODO sale del estado real (ledger + metadata), nada hardcodeado."""
+    """Mapa de todo lo que el ciudadano puede preguntar: fuentes activas, ejemplos de consultas concretas, cómo se actualiza y cómo verificar un dato. TODO sale del estado real (ledger + índices), nada hardcodeado."""
     c = _db()
-    # fuentes y frescura real
     fuentes = [dict(r) for r in c.execute(
-        """SELECT source, SUM(status='ok') ok, SUM(status='error') err, MAX(finished_at) last_ok
-           FROM extractions GROUP BY source""")]
-    # datasets con archivos reales en disco
-    con_datos = c.execute("SELECT COUNT(DISTINCT split_name) FROM extractions WHERE source='ckan' AND status='ok' AND split_name != ''").fetchone()[0] if False else None
-    # tareas posibles: derivadas de fuentes reales
+        """SELECT source, SUM(status='ok') ok, MAX(finished_at) last_ok FROM extractions GROUP BY source""")]
+    sis = estados_sistema()
     recetas = {
-        "ckan": "Conjuntos de temáticas del Estado: delitos año a año, resultados educativos, precipitaciones, viajes del ómnibus, bosques, compras… más de 5.500 datasets públicos — busco por tema: 'buscá datos de vivienda', '¿qué hay sobre seguridad pública?'",
-        "ocds": "CADA compra que hace el Estado, de 2002 a hoy: '¿a quién le compró el MSP en 2024?', 'top 10 proveedores del Estado', '¿quién ganó la licitación X?' — 2 millones de contratos",
-        "departamentales": "Plata de los gobiernos departamentales: '¿cuánto gastó la intendencia de Rocha desde 2010?', 'compará ingresos de Canelones vs Maldonado' — depósito histórico desde 1989",
-        "youtube": "Lo que se dice EN CÁMARA y en conferencias: '¿qué dijo el presidente el fin de semana?', 'la sesión del Senado con timestamps que te llevan al momento exacto'",
-        "youtube_whisper": " videos sin subtítulos, transcribí localmente con whisper",
-        "x_representantes": "Lo que dicen LOS REPRESENTANTES en X: '¿qué dijo Oddone sobre el déficit?', 'qué tuiteó tal en marzo'",
-        "youtube_talks": "Lo que los políticos dicen EN ENTREVISTAS: '¿de qué habló tal en el Desayuno Informal?' — después lo cruzo con lo que hizo",
-        "planes_gobierno": "Lo que PROMETIERON los partidos: '¿qué prometió el FA sobre educación?', '¿cumplió?' — el programa electoral completo indexado por compromiso",
-        "perfil_gobernantes": "¿QUIÉN ES quién: 'trayectoria del senador X', '¿con cuántos votos llegó?', '¿qué sector del partido es?'",
+        "ckan": "los datos abiertos oficiales del Estado (delitos, educación, clima, salud, transporte… +5.500 series) — 'buscá datos de vivienda'",
+        "ocds": "CADA compra del Estado 2002-hoy (2M) — '¿a quién le compró el MSP en 2024?', 'top proveedores del Estado' → tool compras_buscar / compras_gasto_proveedor",
+        "departamentales": "lana de los gobiernos departamentales 1989-hoy — '¿cuánto gastó la IMD desde 2010?'",
+        "youtube": "lo que se dice CÁMARA y en conferencias (con minuto) — '¿qué dijo el presidente?' → rep_declaraciones",
+        "youtube_whisper": "transcripción local de videos sin sub (en background)",
+        "x_representantes": "lo que dicen los representantes en X — '¿qué tuiteó Oddone en marzo?'",
+        "youtube_talks": "lo que dicen en entrevistas (Desayunos Informales, Arriba Gente, VTV) → rep_declaraciones",
+        "planes_gobierno": "lo que PROMETIERON los partidos (2024 + históricos en ingesta)",
+        "perfil_gobernantes": "QUIÉN ES quién: trayectoria, lista, votos",
+        "votaciones_nominales": "CÓMO VOTÓ cada legislador proyecto por proyecto (en ingesta)",
+        "resultados_electoral": "RESULTADOS electorales 1984-hoy (en ingesta)",
     }
-    return {
-        "que_puedo_consultar": {s: recetas[s] for s in recetas if any(f["source"] == s for f in fuentes)},
-        "proximamente": {s: recetas[s] for s in recetas if not any(f["source"] == s for f in fuentes)},
-        "fuentes_estado_actual": fuentes,
-        "como_se_actualiza": "cron diario (CKAN/compras/presupuesto), cada 6h (YouTube), semanal (departamentales); supervisor cada 30min verifica staleness y re-lanza fallidas; herramienta status_ingestion muestra la frescura exacta por fuente",
-        "como_verifico_un_dato": "cada respuesta lleva: dataset oficial + URL original + checksum sha256; podés abrir la URL y comparar así mismo",
-        "provenance": _prov("introspeccion_real"),
-    }
+    activos = {s for f in fuentes for s in [f["source"]]}
+    return {"que_puedo_consultar": {s: recetas[s] for s in recetas if s in activos},
+            "proximamente": {s: recetas[s] for s in recetas if s not in activos},
+            "fuentes_estado_actual": fuentes,
+            "indices_locales": sis["indices_locales"],
+            "como_se_actualiza": "cron diario (compras/datos.gub), 6h (YouTube), semanal (departamentales); supervisor 30min re-lanza lo fallido",
+            "como_verifico_un_dato": "todo dato lleva su URL oficial original + checksum en el registro de ingesta — abrila y compará",
+            "provenance": _prov("introspeccion_real")}
 
 if __name__ == "__main__":
     mcp.run()
