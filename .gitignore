@@ -26,6 +26,7 @@ data/metadata/youtube/presidencia.json
 data/metadata/youtube/parlamento.json
 data/planes/
 data/votaciones/
+data/intendencias/
 data/govaudit.sqlite3
 data/ledger.sqlite3*
 data/export/

@@ -130,7 +130,9 @@ def classify(url, title=""):
 
 
 class Crawler:
+    MAX_DEPTH = 2
     MAX_PAGES_PER_SEED = 12     # límite de páginas detalle por seed (crawling acotado)
+    MAX_TOTAL_PAGES = 40        # techo global de páginas rastreadas por intentencia/run
 
     def __init__(self, globals_, fetcher, intendencia, run_id):
         self.g = globals_
@@ -142,6 +144,8 @@ class Crawler:
         self.dom_files = os.path.join(OUT_FILES, self.name)
         self.dom_meta = os.path.join(OUT_META, self.name)
         self.found = {}   # url_abs -> {"title","url","page_url","category"}
+        self._crawled = set()
+        self._pages_budget = self.MAX_TOTAL_PAGES
 
     # ---------- descubrimiento ----------
     def _is_doc(self, url):
@@ -156,6 +160,12 @@ class Crawler:
         """Descubre en una página: documentos directos y subpáginas de sección."""
         if not self._allowed_host(page_url):
             return
+        if page_url in self._crawled:
+            return
+        if self._pages_budget <= 0:
+            return  # techo de crawling alcanzado (no hammering)
+        self._crawled.add(page_url)
+        self._pages_budget -= 1
         eid = record_start(self.run_id, "intendencias_scrape", f"page:{page_url}",
                            item_url=page_url, meta={"intendencia": self.name, "depth": depth})
         try:
@@ -180,8 +190,11 @@ class Crawler:
                             self.found[absu] = {"title": title[:120], "url": absu,
                                                 "page_url": final,
                                                 "category": cat if cat != "otros" else self.found.get(absu, {}).get("category", "otros")}
-                elif depth < 2 and any(low.endswith(p) for p in ("/", ".html")) and self._allowed_host(absu):
-                    # subpáginas de sección: rutas con vocab audit-key en la URL
+                elif depth < self.MAX_DEPTH and self._allowed_host(absu):
+                    # nunca rastrear dentro de subdirectorios de archivos (son docs, no secciones)
+                    if any(s in low for s in ("/wp-content/uploads/", "/sites/default/files/", "/uploads/", "/files/", "/images/", "/multimedia/")):
+                        continue
+                    # subpáginas de sección: URLs con vocab de auditoría (listado o página detalle)
                     if any(pat.search(absu) for _, pat in CATEGORY_PATTERNS):
                         follow.append(absu)
             record_finish(eid, "ok", rows=len(follow) + 1, file_path=final)
