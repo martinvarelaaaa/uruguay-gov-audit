@@ -50,3 +50,11 @@ url_origen: 'https://www.parlamento.gub.uy/...', checksum: '...', descargado: '2
 - No toques otros backfills, ledger, supervisor, mcp_server (otros agentes en uso)
 - No implementes el módulo de roster_parlamento (otro agente lo tiene, en vuelo) — solo LEE su output si ya existe
 - Difusión en redes / Facebook / X scraping (otro agente)
+
+## EXTENSIÓN HISTÓRICA (agregada por orden de Martín 10/10/26)
+Al finalizar el período 2025-2030 (el vigente), extender hacia atrás mientras el portal lo permita — el portal del Parlamento tiene versiones taquigráficas y asistencias desde hace décadas (los datasets CKAN de diarios de sesiones van desde 1985). Objetivo: cada legislatura desde ~1985 hacia atrás si la fuente lo permite, prioridad a:
+1. 2020-2025 (gobierno Lacalle Pou — comparación directa con actual)
+2. 2015-2020 (2º gobierno VA — muyp contexto de performance histórica)
+3. 2010-2015 (1º gobierno VA)
+4. 2005-2010 (1ª gobierno FA — primera izquierda)
+5. anterior si el portal lo permite
