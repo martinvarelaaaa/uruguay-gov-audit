@@ -1,0 +1,37 @@
+{
+  "fa": {
+    "nombre": "Frente Amplio",
+    "url_pdf": "https://frenteamplio.uy/wp-content/uploads/Bases-Programaticas-2025-2030.pdf",
+    "url_web": "https://www.frenteamplio.uy/programa/",
+    "elegido": true,
+    "nota": "Bases programáticas 2025-2030; alternativo oficial de la Corte Electoral: https://www.gub.uy/corte-electoral/sites/corte-electoral/files/documentos/publicaciones/Partido%20Frente%20Amplio_1.pdf"
+  },
+  "pn": {
+    "nombre": "Partido Nacional",
+    "url_pdf": "https://www.gub.uy/corte-electoral/sites/corte-electoral/files/documentos/publicaciones/Partido%20Nacional_1.pdf",
+    "url_web": "https://www.partidonacional.com.uy",
+    "elegido": false,
+    "nota": "Presentado ante la Corte Electoral (período 2025-2030); en partidonacional.com.uy se reparte por canal de WhatsApp"
+  },
+  "pc": {
+    "nombre": "Partido Colorado",
+    "url_pdf": "https://programapartidocolorado.uy/wp-content/uploads/2024/08/libro_programa_vfinal_compressed.pdf",
+    "url_web": "https://programapartidocolorado.uy/",
+    "elegido": false,
+    "nota": "Contrato con Uruguay — programa 2025-2030"
+  },
+  "ca": {
+    "nombre": "Cabildo Abierto",
+    "url_pdf": "https://www.gub.uy/corte-electoral/sites/corte-electoral/files/documentos/publicaciones/Partido%20Cabildo%20Abierto_1.pdf",
+    "url_web": "https://cabildoabierto.uy/programa-de-gobierno-de-cabildo-abierto-2025-2030/",
+    "elegido": false,
+    "nota": "Programa 2025-2030 presentado ante la Corte Electoral"
+  },
+  "pi": {
+    "nombre": "Partido Independiente",
+    "url_pdf": "https://www.gub.uy/corte-electoral/sites/corte-electoral/files/documentos/publicaciones/Partido%20Independiente.pdf",
+    "url_web": "https://partidoindependiente.uy/programa/",
+    "elegido": false,
+    "nota": "Programa de Gobierno 2025-2030"
+  }
+}
