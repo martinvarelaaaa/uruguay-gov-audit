@@ -66,6 +66,27 @@ Tools (v0.2 + 2 nuevas):
 Las salidas van en markdown con **provenance embebido** (dataset, URL oficial,
 fecha de descarga). Negative capabilities declaradas en cada docstring.
 
+## Docker (sin instalar Python)
+
+```bash
+docker build -t govaudit-mcp .
+echo '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"t","version":"1"}}}' | \
+  docker run --rm -v "$PWD/data:/app/data" -i govaudit-mcp   # responde con capabilities → OK
+```
+
+## Data inicial sin correr el pipeline
+
+Release `data-bundle-20261011` con la base completa (compras 2.12M + votaciones +
+ledger + roster): `gh release download data-bundle-20261011 -R
+martinvarelaaaa/uruguay-gov-audit -p "*.zip" -O bundle.zip && unzip bundle.zip`
+
+## Onboarding para agentes de código
+
+Hermes / OpenClaw / Claude Code / Cursor / Claude Desktop: ver
+`docs/AGENT_ONBOARDING.md` — instalación, carga inicial (bundle pre-construido o
+regenerar desde la fuente), checklist de verificación con tool-calls, y
+actualización incremental.
+
 ## Uso rápido
 
 ```bash
