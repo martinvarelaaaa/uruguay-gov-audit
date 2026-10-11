@@ -96,7 +96,7 @@ hasta que supervisor.py la incorpore.
 
 | intendencia | docs descubiertos (límite de corrida) | comentarios |
 |---|---|---|
-| artigas | 15+ (5 bajados) | transparencia + presupuesto 2026 + rendición 2023 |
+| artigas | 15+ (5 bajados) | transparencia + presupuesto 2026-2030 + rendicion 2023 + organigramas |
 | cerro-largo | 0 en secciones | subsitio gub.uy con estructura solo en texto; adquisiciones sin llamados vigentes |
 | colonia | 14+ (3 bajados) | robots Disallow-/ respetado; PDFs por URL directa del home |
 | flores | 3+ | home con links de datos abiertos (RC 2025, rendiciones) |
