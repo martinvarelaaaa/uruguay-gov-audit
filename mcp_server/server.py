@@ -194,7 +194,7 @@ def rep_declaraciones(consulta: str, canal: str = "", limite: int = 5) -> str:
     if canal:
         where.append("canal = ?"); params.append(canal)
     rows = c.execute(f"""SELECT video_id, canal, minuto, texto, url FROM transcripciones_fts
-                         WHERE {' AND '.join(where)} LIMIT ?""", params).fetchall()
+                         WHERE {' AND '.join(where)} LIMIT ?""", params + [limite]).fetchall()
     if not rows:
         return f"Sin resultados para '{consulta}' en transcripciones. Si es reciente, podría no estar indexado todavía — probá con otra frase o chequera frescura con estados_sistema()."
     lines = [f"### Dónde se dijo '{consulta}'", ""]
