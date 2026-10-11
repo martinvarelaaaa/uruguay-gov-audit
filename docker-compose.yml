@@ -1,0 +1,13 @@
+# Docker: docker compose up -d va a descargar primero las DB del release, luego deja listo un contenedor con MCP listo
+services:
+  gov-audit-mcp:
+    build: .
+    container_name: uruguay-gov-audit
+    # stdio MCP: NO exponer puertos. Un cliente MCP ejecuta docker run y
+    # conecta stdin/stdout al contenedor (ver README / docs/AGENT_ONBOARDING.md).
+    volumes:
+      - ./data:/app/data
+    stdin_open: true
+    tty: false
+    init: true
+    restart: "no"

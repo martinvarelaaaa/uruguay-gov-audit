@@ -50,3 +50,5 @@ _scratch*
 !data/metadata/roster/roster_parliament_v2.json
 !data/metadata/roster/export/
 !data/metadata/roster/roster_sectores.json
+docker/release/
+data/govaudit-compact.sqlite3
