@@ -22,7 +22,7 @@ def main():
     total = 0
     for mes in MESES:
         destino = os.path.join(OUT, f"a-{mes}-2026.json")
-        if os.path.exists(destino) and os.path.getsize(destino) > 1000:
+        if os.path.exists(destino) and os.path.getsize(destino) > 2_000_000:
             print(f"2026-{mes}: ya está, skip")
             continue
         try:
